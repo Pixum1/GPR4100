@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    PlayerController PlayerCtrl;
+    private PlayerController PlayerCtrl;
 
-    List<int> lastLevels; //a list of all levels that have previously been loaded
+    private List<int> lastLevels; //a list of all levels that have previously been loaded
 
     private int numberOfCoins; //amount of coins in the scene
     private bool canExitLevel; //true if all coins have been collected
