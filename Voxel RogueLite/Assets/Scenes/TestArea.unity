@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_impulsePower: 20
   m_lifeSpan: 3
   m_attacksPerSecond: 3
-  m_minShootRange: 2
+  m_minShootRange: 1
 --- !u!1 &1337125963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1861,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 15
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2056763494
 GameObject:
