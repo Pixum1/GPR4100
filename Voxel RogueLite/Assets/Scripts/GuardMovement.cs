@@ -39,29 +39,40 @@ namespace Guard
         }
         private void Update()
         {
+            //on Start when guard has no path he patrols
+            if (!agent.hasPath)
+                Patrol();
+
+
             //if guard sees player
             if (gVision.InSight)
             {
                 MoveTowardsPlayer(gVision.LastKnownPlayerPos);
             }
-            else
+            //else if guard does not see player, he knows where the player was last at, and walked to that point
+            else if (!gVision.InSight && gVision.LastKnownPlayerPos != null&& Vector3.Distance(transform.position, gVision.LastKnownPlayerPos) <= 1)
             {
                 Patrol(); //patrol
+            }
+            //else (the guard did not walk to the last known location yet)
+            else
+            {
+                agent.isStopped = false; //sstart to move again
             }
             Debug.DrawLine(transform.position, agent.destination, Color.red); //Debug: Draw line to current destination
         }
         private void MoveTowardsPlayer(Vector3 _location)
         {
+            agent.SetDestination(_location); //set ai destination to location
             //if distance to the players location is greater than 3
-            if (Vector3.Distance(transform.position, gVision.LastKnownPlayerPos) >= maxDistanceToPlayer && gVision.InSight)
+            if (Vector3.Distance(transform.position, gVision.LastKnownPlayerPos) >= maxDistanceToPlayer)
             {
-                //Move towards the player
-                agent.SetDestination(_location); //set ai destination to location
+                agent.isStopped = false; //start to move
             }
             else
             {
                 transform.LookAt(gVision.LastKnownPlayerPos); //rotate to the player
-                agent.ResetPath();
+                agent.isStopped = true; //stop movement
             }
         }
         private void Patrol()
@@ -72,6 +83,7 @@ namespace Guard
                 //search random patrolpoint and set destination to it's position
                 int p = Random.Range(0, patrolPoints.Count);
                 agent.SetDestination(patrolPoints[p].position);
+                agent.isStopped = false; //start movement
             }
         }
     }

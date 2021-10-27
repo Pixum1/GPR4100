@@ -38,4 +38,11 @@ public class HPData : MonoBehaviour
             }
         }
     }
+    private void Update()
+    {
+        if(CurrentHP <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }

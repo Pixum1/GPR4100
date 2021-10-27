@@ -11,7 +11,6 @@ namespace Guard
 
         public Vector3 LastKnownPlayerPos { get { return lastKnownPlayerPos; } }
         Vector3 lastKnownPlayerPos; //the coordinates where the guard saw the player last
-
         private void OnTriggerStay(Collider _other)
         {
             PlayerController player = _other.GetComponent<PlayerController>();
@@ -30,7 +29,9 @@ namespace Guard
                         lastKnownPlayerPos = player.transform.position; //players position is saved
                     }
                     else
+                    {
                         inSight = false; //player is out of sight
+                    }
                 }
             }
         }

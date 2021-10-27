@@ -10,11 +10,16 @@ public class Projectile : MonoBehaviour
     private float m_damage; //the damage the projectile does on impact
     private Rigidbody m_rigidbody; //rigidbody
     private GameObject objectThatShot; //the GameObject that launched the projectile
+    [SerializeField]
+    private AudioSource m_launchSound;
 
     private void Awake()
     {
         m_rigidbody = GetComponent<Rigidbody>();
-
+    }
+    private void Start()
+    {
+        PlayLaunchSound();
     }
     private void FixedUpdate()
     {
@@ -31,7 +36,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject); //destroy the projectile
         }
     }
-    public void Init(Vector3 _impulse, float _lifeSpan, GameObject _whoShot)
+    public void Launch(Vector3 _impulse, float _lifeSpan, GameObject _whoShot)
     {
         objectThatShot = _whoShot; //set object that hot equal to the given object
         m_rigidbody.AddForce(_impulse, ForceMode.Impulse); //launch the projectile
@@ -41,5 +46,12 @@ public class Projectile : MonoBehaviour
     private void OnDestroy()
     {
         
+    }
+    private void PlayLaunchSound()
+    {
+        float rndPitch = Random.Range(m_launchSound.pitch - .5f, m_launchSound.pitch + .5f);
+        m_launchSound.pitch = rndPitch;
+        m_launchSound.Play();
+        Debug.Log("Sound played");
     }
 }

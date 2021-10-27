@@ -53,7 +53,7 @@ namespace Guard
             if(m_attackTimeLeft < 0)
             {
                 Projectile go = Instantiate(m_projectilePrefab, m_projectileSpawn.position, m_projectileSpawn.rotation); //instantiate projectile
-                go.Init(transform.forward * m_impulsePower, m_lifeSpan, gameObject); //launch projectile
+                go.Launch(transform.forward * m_impulsePower, m_lifeSpan, gameObject); //launch projectile
 
                 m_attackTimeLeft = 1.0f / m_attacksPerSecond; //update attack time
             }

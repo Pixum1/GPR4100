@@ -26,9 +26,8 @@ public class GameManager : MonoBehaviour
         //if the current scene index is not equal to the main menu's index
         if(SceneManager.GetActiveScene().buildIndex != 0)
         {
-            player = FindObjectOfType<PlayerController>().gameObject;
             //if no player was found
-            if (player == null)
+            if (GameObject.FindGameObjectWithTag("Player") == null)
             {
                 SceneManager.LoadScene(0); //load Main Menu
                 Destroy(gameObject); //destroy the game manager
