@@ -8,6 +8,8 @@ TagManager:
   - Exit
   - GameManager
   - PatrolPoint
+  - Guard
+  - GuardVision
   layers:
   - Default
   - TransparentFX

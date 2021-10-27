@@ -4,27 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private GameManager gm;
-
     #region Movement variables
-    [SerializeField] private float m_moveSpeed = 5f;
-    private float maxSpeed;
-    private Vector3 currMoveDir;
+    [SerializeField]
+    private float m_moveSpeed = 5f; //player's movementspeed
+    private float maxSpeed; //player's maximum allowed movementspeed
+    private Vector3 currMoveDir; //direction that the player moves in
     private Rigidbody rb;
     #endregion
 
-    private bool isLeaving;
-    public bool GetIsLeaving() { return isLeaving; }
-
     private void Awake()
     {
-        #region GetObjects
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        #endregion
-
-        #region Get Components
         rb = GetComponent<Rigidbody>();
-        #endregion
     }
     private void Start()
     {
@@ -62,30 +52,6 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
 
-        #endregion
-    }
-    private void OnTriggerEnter(Collider _other)
-    {
-        #region Collect coin
-        //if player collects coin
-        if (_other.CompareTag("Coin"))
-        {
-            Destroy(_other.gameObject); //delete coin
-        }
-        #endregion
-    }
-    private void OnTriggerStay(Collider _other)
-    {
-        #region Exit Level
-        //if player enters exit
-        if (_other.CompareTag("Exit"))
-        {
-            //if player wants to exit && can exit level
-            if (Input.GetKeyDown(KeyCode.E) && gm.GetCanExitLevel() == true)
-            {
-                isLeaving = true; //activate next Level Load Function in GameManager
-            }
-        }
         #endregion
     }
 }
