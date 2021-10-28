@@ -2,46 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Guard
+public class GuardVision : MonoBehaviour
 {
-    public class GuardVision : MonoBehaviour
+    GuardBehaviour gBehaviour;
+    public bool SeesPlayer { get { return seesPlayer; } }
+    private bool seesPlayer;
+    public Vector3 LastKnownPlayerPos { get { return lastKnownPlayerPos; } set { lastKnownPlayerPos = value; } }
+    Vector3 lastKnownPlayerPos; //the coordinates where the guard saw the player last
+    private void Awake()
     {
-        public bool InSight { get { return inSight; } }
-        private bool inSight; //bool that checks if player entered vision
-
-        public Vector3 LastKnownPlayerPos { get { return lastKnownPlayerPos; } }
-        Vector3 lastKnownPlayerPos; //the coordinates where the guard saw the player last
-        private void OnTriggerStay(Collider _other)
+        gBehaviour = GetComponentInParent<GuardBehaviour>();
+    }
+    private void OnTriggerStay(Collider _other)
+    {
+        PlayerController player = _other.GetComponent<PlayerController>();
+        if (player != null)
         {
-            PlayerController player = _other.GetComponent<PlayerController>();
-            if (player != null)
-            {
-                RaycastHit hit;
-                Vector3 dir = _other.transform.position - transform.position; //Vector from guard position to player position
+            RaycastHit hit;
+            Vector3 dir = _other.transform.position - transform.position; //Vector from guard position to player position
 
-                //cast ray towards player's position | collide with everything
-                if (Physics.Raycast(transform.position, dir, out hit, Mathf.Infinity))
+            //cast ray towards player's position | collide with everything
+            if (Physics.Raycast(transform.position, dir, out hit, Mathf.Infinity))
+            {
+                //if ray collides with player's collider
+                if (hit.collider.CompareTag("Player"))
                 {
-                    //if ray collides with player's collider
-                    if (hit.collider.CompareTag("Player"))
-                    {
-                        inSight = true; //player is in sight
-                        lastKnownPlayerPos = player.transform.position; //players position is saved
-                    }
-                    else
-                    {
-                        inSight = false; //player is out of sight
-                    }
+                    seesPlayer = true;
+                    gBehaviour.CurrentBehaviour = (int)GuardBehaviour.EBehaviour.chasing;
+                    lastKnownPlayerPos = player.transform.position; //players position is saved
                 }
-            }
-        }
-        private void OnTriggerExit(Collider _other)
-        {
-            PlayerController player = _other.GetComponent<PlayerController>();
-            //if player exits vision
-            if (player != null)
-            {
-                inSight = false; //player is out of sight
+                else
+                {
+                    seesPlayer = false;
+                }
             }
         }
     }

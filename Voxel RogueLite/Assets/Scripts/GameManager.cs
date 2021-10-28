@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private List<int> lastLevels; //a list of all levels that have previously been loaded
     private List<Coin> coins; //a list of all coins in the level
     public List<Coin> Coins { get { return coins; } }
+    public List<GuardBehaviour> Guards { get { return guards; } }
+    private List<GuardBehaviour> guards;
 
     private void Awake()
     {    
@@ -19,8 +21,8 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject.transform);
         lastLevels = new List<int>();
         coins = new List<Coin>();
+        guards = new List<GuardBehaviour>();
     }
-
     private void LateUpdate()
     {
         //if the current scene index is not equal to the main menu's index
@@ -33,6 +35,14 @@ public class GameManager : MonoBehaviour
                 Destroy(gameObject); //destroy the game manager
             }
         }
+    }
+    public void AddGuard(GuardBehaviour _guard)
+    {
+        guards.Add(_guard);
+    }
+    public void RemoveGuard(GuardBehaviour _guard)
+    {
+        guards.Remove(_guard);
     }
     public void AddCoin(Coin _coin)
     {
