@@ -6,9 +6,9 @@ public class GuardBehaviour : MonoBehaviour
 {
     private GameManager gm;
     private GuardVision gVision;
-    public int CurrentBehaviour { get { return currentBehaviour; } set { currentBehaviour = value; } }
+    public EBehaviour CurrentBehaviour { get { return currentBehaviour; } set { currentBehaviour = value; } }
     public enum EBehaviour { patrolling, chasing }
-    private int currentBehaviour;
+    private EBehaviour currentBehaviour;
 
     private void Awake()
     {
@@ -29,7 +29,7 @@ public class GuardBehaviour : MonoBehaviour
     public void AlarmGuards()
     {
         PlayerController player = FindObjectOfType<PlayerController>();
-        currentBehaviour = 1;
+        currentBehaviour = EBehaviour.chasing;
         gVision.LastKnownPlayerPos = player.transform.position;
         Debug.Log("Switch");
     }

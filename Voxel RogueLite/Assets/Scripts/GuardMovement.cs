@@ -41,13 +41,13 @@ public class GuardMovement : MonoBehaviour
     {
         if (gVision.LastKnownPlayerPos != null && Vector3.Distance(transform.position, gVision.LastKnownPlayerPos) <= 1)
         {
-            gBehaviour.CurrentBehaviour = (int)GuardBehaviour.EBehaviour.patrolling;
+            gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
         }
-        if (gBehaviour.CurrentBehaviour == (int)GuardBehaviour.EBehaviour.chasing)
+        if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
         {
             MoveTowardsPlayer(gVision.LastKnownPlayerPos);
         }
-        else if (gBehaviour.CurrentBehaviour == (int)GuardBehaviour.EBehaviour.patrolling)
+        else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
         {
             Patrol();
         }

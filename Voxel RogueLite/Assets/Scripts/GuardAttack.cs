@@ -23,6 +23,8 @@ public class GuardAttack : MonoBehaviour
     [SerializeField]
     [Tooltip("Range at which the guard should start shooting at the player based on the distance he should keep between him and the player")]
     private float m_minShootRange;
+    [SerializeField]
+    private AudioSource m_launchSound;
 
     private GuardBehaviour gBehaviour; //vision component
     private GuardMovement gMovement; //movement compon
@@ -37,7 +39,7 @@ public class GuardAttack : MonoBehaviour
     private void Update()
     {
         //if player is in sight
-        if (gBehaviour.CurrentBehaviour == (int)GuardBehaviour.EBehaviour.chasing && gVision.SeesPlayer)
+        if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing && gVision.SeesPlayer)
         {
             //if guard reached his minimal shoot range distance to the player
             if (Vector3.Distance(gMovement.Agent.transform.position, gMovement.Agent.destination) <= gMovement.MaxDistanceToPlayer + m_minShootRange)
@@ -54,9 +56,17 @@ public class GuardAttack : MonoBehaviour
         {
             Projectile go = Instantiate(m_projectilePrefab, m_projectileSpawn.position, m_projectileSpawn.rotation); //instantiate projectile
             go.Launch(transform.forward * m_impulsePower, m_lifeSpan, gameObject); //launch projectile
+            PlayLaunchSound();
 
             m_attackTimeLeft = 1.0f / m_attacksPerSecond; //update attack time
         }
+    }
+    private void PlayLaunchSound()
+    {
+        float rndPitch = Random.Range(m_launchSound.pitch - .15f, m_launchSound.pitch + .15f);
+        m_launchSound.pitch = rndPitch;
+        m_launchSound.Play();
+        Debug.Log("Sound played");
     }
 }
 

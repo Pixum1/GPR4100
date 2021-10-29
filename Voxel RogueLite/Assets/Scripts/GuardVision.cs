@@ -28,7 +28,7 @@ public class GuardVision : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     seesPlayer = true;
-                    gBehaviour.CurrentBehaviour = (int)GuardBehaviour.EBehaviour.chasing;
+                    gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.chasing;
                     lastKnownPlayerPos = player.transform.position; //players position is saved
                 }
                 else
