@@ -10,6 +10,7 @@ TagManager:
   - PatrolPoint
   - Guard
   - GuardVision
+  - Ignore Projectile
   layers:
   - Default
   - TransparentFX

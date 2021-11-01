@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter(Collider _other)
     {
         //if anything else than the guards vision hitbox was hit
-        if (!_other.CompareTag("GuardVision"))
+        if (!_other.CompareTag("GuardVision") && !_other.CompareTag("Ignore Projectile"))
         {
             Destroy(gameObject); //destroy the projectile
         }

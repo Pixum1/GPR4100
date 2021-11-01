@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.83F126EB" = ""
+	"last_search.83F126EB" = "t:Prefab"
 	"InspectorPreview.83F126EB" = "0"
 	"currentGroup.83F126EB" = "asset"
 	"last_search.7F95D817" = "audio"
@@ -52,6 +52,7 @@ providers = {
 	}
 }
 recentSearches = [
+	"t:Prefab"
 	"audio"
 ]
 searchItemFavorites = [

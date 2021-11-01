@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 currMoveDir; //direction that the player moves in
     private Rigidbody rb;
     #endregion
+    [SerializeField]
+    private Transform m_playerSprites;
 
     private void Awake()
     {
@@ -37,6 +39,32 @@ public class PlayerController : MonoBehaviour
             //if +, move to upper right || if -, move to lower left
             currMoveDir += new Vector3(z, 0, z);
         }
+        #endregion
+
+        #region RotatePlayerSprites
+        if (currMoveDir == new Vector3(0,0,2)) //move upperleft
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -180));
+
+        if (currMoveDir == new Vector3(1, 0, 1)) //move up
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -135));
+
+        if (currMoveDir == new Vector3(2, 0, 0)) //move upperright
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -90));
+
+        if (currMoveDir == new Vector3(1, 0, -1)) //move right
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -45));
+
+        if (currMoveDir == new Vector3(0, 0, -2)) //move lowerright
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 0));
+
+        if (currMoveDir == new Vector3(-1, 0, -1)) //move down
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 45));
+
+        if (currMoveDir == new Vector3(-2, 0, 0)) //move lowerleft
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 90));
+
+        if (currMoveDir == new Vector3(-1, 0, 1)) //move left
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 135));
         #endregion
     }
     private void FixedUpdate()

@@ -30,12 +30,21 @@ public class GuardVision : MonoBehaviour
                     seesPlayer = true;
                     gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.chasing;
                     lastKnownPlayerPos = player.transform.position; //players position is saved
+                    gBehaviour.Alarmed = false;
                 }
                 else
                 {
                     seesPlayer = false;
                 }
             }
+        }
+    }
+    private void OnTriggerExit(Collider _other)
+    {
+        PlayerController player = _other.GetComponent<PlayerController>();
+        if(player != null)
+        {
+            seesPlayer = false;
         }
     }
 }

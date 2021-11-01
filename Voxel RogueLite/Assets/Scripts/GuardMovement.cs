@@ -39,19 +39,66 @@ public class GuardMovement : MonoBehaviour
     }
     private void Update()
     {
+        CalculateAction();
+        Debug.DrawLine(transform.position, agent.destination, Color.red); //Debug: Draw line to current destination
+    }
+    private void CalculateAction()
+    {
+        #region Guard saw player and reached its destination
         if (gVision.LastKnownPlayerPos != null && Vector3.Distance(transform.position, gVision.LastKnownPlayerPos) <= 1)
         {
-            gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
+            gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling; //set current behaviour to patrolling
+            //if this guard was sent to the location because of an alarm
+            if(gBehaviour.Alarmed)
+                GuardClearedAlarm(); //clear alarm for all guards
         }
+        #endregion
+
+        #region Guard is chasing and has a valid path
         if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
         {
-            MoveTowardsPlayer(gVision.LastKnownPlayerPos);
+            if(PathIsValid(gVision.LastKnownPlayerPos)) //if the guard can reach the location
+                MoveTowardsPlayer(gVision.LastKnownPlayerPos); //move to location
+            
+            else //if not
+                gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling; //return to patrolling
         }
-        else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
+        #endregion
+
+        #region Guard is patrolling
+        if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
         {
             Patrol();
         }
-        Debug.DrawLine(transform.position, agent.destination, Color.red); //Debug: Draw line to current destination
+        #endregion
+    }
+    /// <summary>
+    /// This function sends all guards back to their patroling path once one guard reached the location of the alarm
+    /// </summary>
+    private void GuardClearedAlarm()
+    {
+        GameManager gm = FindObjectOfType<GameManager>();
+        foreach (var guard in gm.Guards)
+        {
+            if (guard.gameObject != null)
+            {
+                GuardMovement move = guard.gameObject.GetComponent<GuardMovement>();
+                guard.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling; //set current behaviour to patroling
+                move.agent.ResetPath(); //reset path so guard can patrol
+                guard.Alarmed = false; //guard is no longer alarmed
+            }
+        }
+    }
+    private bool PathIsValid(Vector3 _targetLocation)
+    {
+        NavMeshPath path = new NavMeshPath();
+
+        //if guard can reach its destination
+        if (agent.CalculatePath(_targetLocation, path) && path.status == NavMeshPathStatus.PathComplete)
+            return true;
+        
+        else
+            return false;
     }
     private void MoveTowardsPlayer(Vector3 _location)
     {
