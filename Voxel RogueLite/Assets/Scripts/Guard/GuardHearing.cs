@@ -16,8 +16,8 @@ public class GuardHearing : MonoBehaviour
     {
         if (_other.CompareTag("NoiseObj"))
         {
+            noiseLocation = _other.gameObject.transform.position;
             GetComponentInParent<GuardBehaviour>().SearchNoise();
-            noiseLocation = _other.transform.position;
         }
     }
 }

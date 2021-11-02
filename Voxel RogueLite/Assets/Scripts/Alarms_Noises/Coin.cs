@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    private Noise noiseObj;
+    private void Awake()
+    {
+        noiseObj = GetComponent<Noise>();
+    }
     private void OnCollisionEnter(Collision _other)
     {
+        noiseObj.StartCoroutine(noiseObj.MakeNoise());
+
         if(_other.gameObject.CompareTag("Guard"))
             Destroy(gameObject);
     }

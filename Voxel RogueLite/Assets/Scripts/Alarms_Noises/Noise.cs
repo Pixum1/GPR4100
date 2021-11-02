@@ -8,10 +8,6 @@ public class Noise : MonoBehaviour
     private float noiseDuration = 1f;
     [SerializeField]
     private SphereCollider noiseRadius;
-    private void OnCollisionEnter(Collision _other)
-    {
-        StartCoroutine(MakeNoise());
-    }
 
     public IEnumerator MakeNoise()
     {
@@ -19,8 +15,12 @@ public class Noise : MonoBehaviour
         yield return new WaitForSeconds(noiseDuration);
         noiseRadius.enabled = false;
     }
-    public void MakeNoiseOnce()
+    public void ActivateNoise()
     {
         noiseRadius.enabled = true;
+    }
+    public void DeactivateNoise()
+    {
+        noiseRadius.enabled = false;
     }
 }

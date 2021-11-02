@@ -17,11 +17,11 @@ public class Projectile : MonoBehaviour
     {
         m_rigidbody = GetComponent<Rigidbody>();
 
-        noiseObj = GetComponentInChildren<Noise>();
+        noiseObj = GetComponent<Noise>();
     }
     private void Start()
     {
-        noiseObj.MakeNoiseOnce();
+        noiseObj.ActivateNoise();
     }
     private void FixedUpdate()
     {
@@ -33,7 +33,7 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter(Collision _other)
     {
         //if anything else than the guards vision hitbox was hit
-        if (!_other.gameObject.CompareTag("Ignore Projectile") && !_other.gameObject.CompareTag("NoiseObj"))
+        if (!_other.gameObject.CompareTag("Ignore Projectile"))
         {
             Destroy(gameObject); //destroy the projectile
         }

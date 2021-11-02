@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7258865081093083691}
   - component: {fileID: 7258865081093083693}
   - component: {fileID: 5545113671066766223}
+  - component: {fileID: 1036680099025488840}
   m_Layer: 2
   m_Name: Projectile
   m_TagString: Untagged
@@ -128,6 +129,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_damage: 10
+--- !u!114 &1036680099025488840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258865081093083692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cf0cb6a2649f4409b9c7976e310ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseDuration: 1
+  noiseRadius: {fileID: 4623743976852405176}
 --- !u!1 &8365928441695300751
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +153,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4276954057021991704}
   - component: {fileID: 4623743976852405176}
-  - component: {fileID: 5695531214384284849}
   m_Layer: 0
   m_Name: NoiseRadius
   m_TagString: NoiseObj
@@ -173,17 +187,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 30
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5695531214384284849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8365928441695300751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74cf0cb6a2649f4409b9c7976e310ca5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noiseDuration: 1
-  noiseRadius: {fileID: 4623743976852405176}
