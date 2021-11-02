@@ -67,7 +67,6 @@ public class GuardAttack : MonoBehaviour
         float rndPitch = Random.Range(m_launchSound.pitch - .15f, m_launchSound.pitch + .15f);
         m_launchSound.pitch = rndPitch;
         m_launchSound.Play();
-        Debug.Log("Sound played");
     }
 }
 

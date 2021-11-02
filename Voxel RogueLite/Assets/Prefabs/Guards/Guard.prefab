@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3665277394605641835}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Ignore Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c44c9b401e2728248a39c7049fc2fb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_projectilePrefab: {fileID: 7258865081093083690, guid: 090d290308ecd0e40885a85c2046ab06, type: 3}
+  m_projectilePrefab: {fileID: 5545113671066766223, guid: 090d290308ecd0e40885a85c2046ab06, type: 3}
   m_projectileSpawn: {fileID: 1456994585812282654}
   m_impulsePower: 20
   m_lifeSpan: 3
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 1456994585551948214}
   m_Layer: 0
   m_Name: Vision
-  m_TagString: GuardVision
+  m_TagString: Ignore Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -603,9 +603,9 @@ GameObject:
   - component: {fileID: 4704649928930529292}
   - component: {fileID: 3266009420303977608}
   - component: {fileID: 1271169379383776024}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Hearing
-  m_TagString: Untagged
+  m_TagString: Ignore Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

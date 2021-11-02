@@ -17,6 +17,7 @@ public class GuardBehaviour : MonoBehaviour
     {
         gm = FindObjectOfType<GameManager>();
         gVision = GetComponentInChildren<GuardVision>();
+        gHearing = GetComponentInChildren<GuardHearing>();
     }
     private void Start()
     {

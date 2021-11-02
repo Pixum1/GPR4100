@@ -24,16 +24,15 @@ public class HPData : MonoBehaviour
     {
         CurrentHP = m_maxHP;
     }
-    private void OnTriggerEnter(Collider _other)
+    private void OnCollisionEnter(Collision _other)
     {
-        Projectile projectile = _other.GetComponent<Projectile>();
+        Projectile projectile = _other.gameObject.GetComponent<Projectile>();
         //if hit by projectile
         if (projectile != null)
         {
             //if projectile hits the gameobject that launched it
             if(projectile.ObjectThatShot.tag != gameObject.tag)
             {
-                Debug.Log($"Hit {this.gameObject.name}");
                 CurrentHP -= projectile.Damage; //subtract projectile damage
             }
         }

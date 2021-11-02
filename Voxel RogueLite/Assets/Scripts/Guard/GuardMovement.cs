@@ -138,32 +138,30 @@ public class GuardMovement : MonoBehaviour
     /// <param name="_location">The position of the desired Location</param>
     private void MoveToPlayerCalc(Vector3 _location)
     {
-        //if distance to the players location is greater than 3
+        //if guard is not in range to shoot player
         if (Vector3.Distance(transform.position, _location) >= maxDistanceToPlayer)
         {
             agent.isStopped = false; //start to move
         }
-
-        //if guard sees player and is on maxDistance
-        if (Vector3.Distance(transform.position, _location) <= maxDistanceToPlayer && gVision.SeesPlayer)
+        else
         {
-            transform.LookAt(_location); //rotate to the player
-            agent.isStopped = true; //stop movement
+            if (gVision.SeesPlayer)
+            {
+                transform.LookAt(_location); //rotate to the player
+                agent.isStopped = true; //stop movement
+            }
+            else
+                agent.isStopped = false;
+
+            if (Vector3.Distance(transform.position, gVision.LastKnownPlayerPos) <= 2)
+            {
+                gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
+
+                if (gBehaviour.Alarmed)
+                    GuardClearedAlarm(); //clear alarm for all guards
+            }
         }
 
-        //if guard does not see player and is on maxDistance
-        if (Vector3.Distance(transform.position, _location) <= maxDistanceToPlayer && !gVision.SeesPlayer)
-        {
-            agent.isStopped = false;
-        }
-
-        if (Vector3.Distance(transform.position, gVision.LastKnownPlayerPos) <= 1)
-        {
-            gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
-
-            if (gBehaviour.Alarmed)
-                GuardClearedAlarm(); //clear alarm for all guards
-        }
     }    
 
     /// <summary>
@@ -177,6 +175,7 @@ public class GuardMovement : MonoBehaviour
         if (Vector3.Distance(transform.position, _location) <= 1f)
         {
             gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
+            gBehaviour.Alarmed = false;
 
             if (gBehaviour.Alarmed)
                 GuardClearedAlarm(); //clear alarm for all guards

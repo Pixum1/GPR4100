@@ -6,26 +6,34 @@ public class Projectile : MonoBehaviour
 {
     public float Damage { get { return m_damage; } }
     public GameObject ObjectThatShot { get { return objectThatShot; } }
-    [SerializeField] 
+    [SerializeField]
     private float m_damage; //the damage the projectile does on impact
     private Rigidbody m_rigidbody; //rigidbody
     private GameObject objectThatShot; //the GameObject that launched the projectile
 
+    private Noise noiseObj;
+
     private void Awake()
     {
         m_rigidbody = GetComponent<Rigidbody>();
+
+        noiseObj = GetComponentInChildren<Noise>();
+    }
+    private void Start()
+    {
+        noiseObj.MakeNoiseOnce();
     }
     private void FixedUpdate()
     {
-        if(m_rigidbody.velocity.sqrMagnitude > 0)
+        if (m_rigidbody.velocity.sqrMagnitude > 0)
         {
             transform.forward = m_rigidbody.velocity;
         }
     }
-    private void OnTriggerEnter(Collider _other)
+    private void OnCollisionEnter(Collision _other)
     {
         //if anything else than the guards vision hitbox was hit
-        if (!_other.CompareTag("GuardVision") && !_other.CompareTag("Ignore Projectile"))
+        if (!_other.gameObject.CompareTag("Ignore Projectile") && !_other.gameObject.CompareTag("NoiseObj"))
         {
             Destroy(gameObject); //destroy the projectile
         }
@@ -34,11 +42,10 @@ public class Projectile : MonoBehaviour
     {
         objectThatShot = _whoShot; //set object that hot equal to the given object
         m_rigidbody.AddForce(_impulse, ForceMode.Impulse); //launch the projectile
-
         Destroy(gameObject, _lifeSpan); //destroy the projectile after X seconds
     }
     private void OnDestroy()
     {
-        
+
     }
 }

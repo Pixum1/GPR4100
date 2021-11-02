@@ -9,7 +9,6 @@ TagManager:
   - GameManager
   - PatrolPoint
   - Guard
-  - GuardVision
   - Ignore Projectile
   - NoiseObj
   - Collectible
