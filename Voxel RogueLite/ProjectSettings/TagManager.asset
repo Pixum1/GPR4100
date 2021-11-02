@@ -11,6 +11,8 @@ TagManager:
   - Guard
   - GuardVision
   - Ignore Projectile
+  - NoiseObj
+  - Collectible
   layers:
   - Default
   - TransparentFX

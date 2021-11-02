@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Collectible : MonoBehaviour
 {
     [SerializeField]
     private float m_Value;

@@ -14,7 +14,7 @@ public class Exit : MonoBehaviour
     }
     private void Update()
     {
-        if (m_Gm.Coins.Count == 0)
+        if (m_Gm.Collectibles.Count == 0)
             canExit = true;
     }
 

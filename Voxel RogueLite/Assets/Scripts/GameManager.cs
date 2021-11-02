@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     private GameObject player;
 
     private List<int> lastLevels; //a list of all levels that have previously been loaded
-    private List<Coin> coins; //a list of all coins in the level
-    public List<Coin> Coins { get { return coins; } }
+    private List<Collectible> collectibles; //a list of all coins in the level
+    public List<Collectible> Collectibles { get { return collectibles; } }
     public List<GuardBehaviour> Guards { get { return guards; } }
     private List<GuardBehaviour> guards;
 
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
          */
         DontDestroyOnLoad(gameObject.transform);
         lastLevels = new List<int>();
-        coins = new List<Coin>();
+        collectibles = new List<Collectible>();
         guards = new List<GuardBehaviour>();
     }
     private void LateUpdate()
@@ -44,14 +44,15 @@ public class GameManager : MonoBehaviour
     {
         guards.Remove(_guard);
     }
-    public void AddCoin(Coin _coin)
+    public void AddCoin(Collectible _coin)
     {
-        coins.Add(_coin);
+        collectibles.Add(_coin);
     }
-    public void RemoveCoin(Coin _coin)
+    public void RemoveCoin(Collectible _coin)
     {
-        coins.Remove(_coin);
+        collectibles.Remove(_coin);
     }
+
     /// <summary>
     /// A new random scene from the build that hasn't been loaded before is taken and loaded
     /// </summary>

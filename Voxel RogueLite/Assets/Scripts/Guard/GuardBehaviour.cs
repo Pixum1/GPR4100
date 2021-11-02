@@ -6,10 +6,11 @@ public class GuardBehaviour : MonoBehaviour
 {
     private GameManager gm;
     private GuardVision gVision;
+    private GuardHearing gHearing;
     public bool Alarmed { get { return alarmed; } set { alarmed = value; } }
     private bool alarmed = false;
     public EBehaviour CurrentBehaviour { get { return currentBehaviour; } set { currentBehaviour = value; } }
-    public enum EBehaviour { patrolling, chasing }
+    public enum EBehaviour { patrolling, chasing, searching }
     private EBehaviour currentBehaviour;
 
     private void Awake()
@@ -21,20 +22,17 @@ public class GuardBehaviour : MonoBehaviour
     {
         gm.AddGuard(this);
     }
-    private void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.E))
-        //{
-        //    AlarmGuards();
-        //}
-    }
     public void AlarmGuards()
     {
         alarmed = true;
-        PlayerController player = FindObjectOfType<PlayerController>();
         currentBehaviour = EBehaviour.chasing;
+        PlayerController player = FindObjectOfType<PlayerController>();
         gVision.LastKnownPlayerPos = player.transform.position;
-        Debug.Log("Switch");
+    }
+    public void SearchNoise()
+    {
+        alarmed = true;
+        currentBehaviour = EBehaviour.searching;
     }
     private void OnDestroy()
     {
