@@ -116,10 +116,11 @@ public class GuardMovement : MonoBehaviour
     private void MoveTowardsLocation(Vector3 _location)
     {
         DesiredLocCalc();
-        agent.SetDestination(_location); //set ai destination to location
 
         if (PathIsValid(_location))
         {
+            agent.SetDestination(_location); //set ai destination to location
+
             if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
                 MoveToPlayerCalc(_location);
 
