@@ -13,7 +13,7 @@ public class Coin : MonoBehaviour
     {
         noiseObj.StartCoroutine(noiseObj.MakeNoise());
 
-        if(_other.gameObject.CompareTag("Guard"))
+        if (_other.gameObject.CompareTag("Guard"))
             Destroy(gameObject);
     }
     private void Start()

@@ -4,23 +4,13 @@ using UnityEngine;
 
 public class Noise : MonoBehaviour
 {
-    [SerializeField]
-    private float noiseDuration = 1f;
-    [SerializeField]
-    private SphereCollider noiseRadius;
+    public bool MadeNoise { get { return madeNoise; } }
+    private bool madeNoise = false;
 
     public IEnumerator MakeNoise()
     {
-        noiseRadius.enabled = true;
-        yield return new WaitForSeconds(noiseDuration);
-        noiseRadius.enabled = false;
-    }
-    public void ActivateNoise()
-    {
-        noiseRadius.enabled = true;
-    }
-    public void DeactivateNoise()
-    {
-        noiseRadius.enabled = false;
+        madeNoise = true;
+        yield return new WaitForSeconds(1f);
+        madeNoise = false;
     }
 }

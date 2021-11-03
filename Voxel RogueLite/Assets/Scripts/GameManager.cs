@@ -44,13 +44,13 @@ public class GameManager : MonoBehaviour
     {
         guards.Remove(_guard);
     }
-    public void AddCoin(Collectible _coin)
+    public void AddCollectible(Collectible _collectible)
     {
-        collectibles.Add(_coin);
+        collectibles.Add(_collectible);
     }
-    public void RemoveCoin(Collectible _coin)
+    public void RemoveCollectible(Collectible _collectible)
     {
-        collectibles.Remove(_coin);
+        collectibles.Remove(_collectible);
     }
 
     /// <summary>

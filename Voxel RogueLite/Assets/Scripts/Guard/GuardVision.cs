@@ -38,6 +38,25 @@ public class GuardVision : MonoBehaviour
                 }
             }
         }
+        if(_other.CompareTag("Guard"))
+        {
+            RaycastHit hit;
+            Vector3 dir = _other.transform.position - transform.position;
+            if (Physics.Raycast(transform.position, dir, out hit, Mathf.Infinity))
+            {
+                if(hit.collider.CompareTag("Guard"))
+                {
+                    //if the other guard is chasing the player the guard will adapt to that behaviour
+                    if (_other.GetComponent<GuardBehaviour>().CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
+                    {
+                        {
+                            gBehaviour.CurrentBehaviour = _other.GetComponent<GuardBehaviour>().CurrentBehaviour;
+                            lastKnownPlayerPos = _other.GetComponentInChildren<GuardVision>().LastKnownPlayerPos;
+                        }
+                    }
+                }
+            }
+        }
     }
     private void OnTriggerExit(Collider _other)
     {

@@ -12,11 +12,11 @@ public class NoiseAlarm : MonoBehaviour
     private void OnTriggerEnter(Collider _other)
     {
         if(_other.CompareTag("Player"))
-            noiseObj.ActivateNoise();
+            noiseObj.StartCoroutine(noiseObj.MakeNoise());
     }
     private void OnTriggerExit(Collider _other)
     {
         if (_other.CompareTag("Player"))
-            noiseObj.DeactivateNoise();
+            noiseObj.StartCoroutine(noiseObj.MakeNoise());
     }
 }

@@ -14,10 +14,15 @@ public class GuardHearing : MonoBehaviour
 
     private void OnTriggerEnter(Collider _other)
     {
-        if (_other.CompareTag("NoiseObj"))
+        Noise noiseObj = _other.GetComponent<Noise>();
+        if (noiseObj != null)
         {
-            noiseLocation = _other.gameObject.transform.position;
-            GetComponentInParent<GuardBehaviour>().SearchNoise();
+            if(noiseObj.MadeNoise == true)
+            {
+                noiseLocation = _other.gameObject.transform.position;
+                GetComponentInParent<GuardBehaviour>().SearchNoise();
+            }
+
         }
     }
 }

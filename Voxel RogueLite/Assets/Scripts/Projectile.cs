@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
     }
     private void Start()
     {
-        noiseObj.ActivateNoise();
+        noiseObj.StartCoroutine(noiseObj.MakeNoise());
     }
     private void FixedUpdate()
     {

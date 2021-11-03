@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class HPData : MonoBehaviour
 {
+    public float MaxHP { get { return m_maxHP; } }
     [SerializeField]
     private float m_maxHP; //maximum hp
-    private float m_currentHP; //current hp save
     public float CurrentHP
     {
         get
@@ -19,6 +19,7 @@ public class HPData : MonoBehaviour
             m_currentHP = Mathf.Clamp(value, 0, m_maxHP);
         }
     }
+    private float m_currentHP; //current hp save
 
     private void Awake()
     {

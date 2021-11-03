@@ -14,7 +14,7 @@ public class Collectible : MonoBehaviour
     }
     private void Start()
     {
-        m_Gm.AddCoin(this);
+        m_Gm.AddCollectible(this);
     }
 
     private void OnTriggerEnter(Collider _other)
@@ -26,6 +26,6 @@ public class Collectible : MonoBehaviour
     }
     private void OnDestroy()
     {
-        m_Gm.RemoveCoin(this);
+        m_Gm.RemoveCollectible(this);
     }
 }
