@@ -68,8 +68,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7777561342918132419}
   m_LocalRotation: {x: 0.7071065, y: -0, z: -0, w: 0.7071071}
-  m_LocalPosition: {x: -0.00000011920929, y: 0.7506037, z: 0.14542782}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -0.00000017881393, y: 0.7506025, z: -1.1545725}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7777561342918372641}
   - {fileID: 7777561342918372647}
@@ -143,7 +143,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7777561342918132429}
-  m_LocalRotation: {x: -0, y: 0.7071069, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 24.194576, y: 2.6500025, z: 25.505424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -163,8 +163,8 @@ GameObject:
   - component: {fileID: 7777561342918372655}
   - component: {fileID: 7777561342914948807}
   - component: {fileID: 7777561342915941127}
-  - component: {fileID: 7777561343877371309}
-  - component: {fileID: 7777561343877371308}
+  - component: {fileID: 3317415573301645763}
+  - component: {fileID: 5000375460611269888}
   m_Layer: 2
   m_Name: obj_camera
   m_TagString: Untagged
@@ -179,8 +179,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7777561342918132431}
-  m_LocalRotation: {x: -0, y: -0.0000005662441, z: -0, w: 1}
-  m_LocalPosition: {x: -0.049995497, y: 0.70060515, z: 0.19542311}
+  m_LocalRotation: {x: -0, y: 0.00000033383282, z: -0, w: 1}
+  m_LocalPosition: {x: -0.05000033, y: 0.70060515, z: -1.1045771}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7777561343590811618}
@@ -237,7 +237,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7777561343877371309
+--- !u!114 &3317415573301645763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,12 +249,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4d55ef5eceef24aa092ab4a0129228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotLeft: 25
-  rotRight: 150
+  rotLeft: 140
+  rotRight: 200
   speed: 0.5
   CameraSmooth: 5
   alarmTimer: 2
---- !u!135 &7777561343877371308
+--- !u!135 &5000375460611269888
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,8 +265,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8.83
-  m_Center: {x: 0, y: -3.28, z: 8.58}
+  m_Radius: 4.05
+  m_Center: {x: 0, y: -3.069, z: 3.4}
 --- !u!1 &7777561343590811619
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,8 +293,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7777561343590811619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25000077, y: -3.069, z: 8.75}
-  m_LocalScale: {x: 17.168152, y: 17.168152, z: 17.168152}
+  m_LocalPosition: {x: 0, y: -3.069, z: 3.4}
+  m_LocalScale: {x: 8.07813, y: 8.07813, z: 8.07813}
   m_Children: []
   m_Father: {fileID: 7777561342918372655}
   m_RootOrder: 0
