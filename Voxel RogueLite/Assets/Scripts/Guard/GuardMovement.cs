@@ -16,6 +16,11 @@ public class GuardMovement : MonoBehaviour
     [Tooltip("The distance at which the guard stops moving towards the player")]
     private float maxDistanceToPlayer; //the distance at which the guard stops moving towards the player
 
+    [SerializeField]
+    private float sprintModifier = 2;
+    private float sprintSpeed;
+    private float normalSpeed;
+
 
     private Vector3 desiredLocation;
     private void Awake()
@@ -26,6 +31,11 @@ public class GuardMovement : MonoBehaviour
         gHearing = GetComponentInChildren<GuardHearing>();
 
         InitializePatrolPoints();
+    }
+    private void Start()
+    {
+        normalSpeed = agent.speed;
+        sprintSpeed = normalSpeed * sprintModifier;
     }
 
     private void InitializePatrolPoints()
@@ -138,15 +148,28 @@ public class GuardMovement : MonoBehaviour
     /// <param name="_location">The position of the desired Location</param>
     private void MoveToPlayerCalc(Vector3 _location)
     {
+        Endurance endur = GetComponent<Endurance>();
         //if guard is not in range to shoot player
         if (Vector3.Distance(transform.position, _location) >= maxDistanceToPlayer)
         {
+            if (endur.AllowSprint)
+            {
+                endur.Excercising = true;
+                agent.speed = sprintSpeed;
+            }
+            else
+            {
+                endur.Excercising = false;
+                agent.speed = normalSpeed;
+            }
             agent.isStopped = false; //start to move
         }
         else
         {
             if (gVision.SeesPlayer)
             {
+                endur.Excercising = false;
+                agent.speed = normalSpeed;
                 transform.LookAt(_location); //rotate to the player
                 agent.isStopped = true; //stop movement
             }
@@ -202,6 +225,17 @@ public class GuardMovement : MonoBehaviour
             int p = Random.Range(0, patrolPoints.Count);
             agent.SetDestination(patrolPoints[p].position);
             agent.isStopped = false; //start movement
+        }
+    }
+    private void OnCollisionEnter(Collision _other)
+    {
+        if(_other.gameObject.CompareTag("Guard"))
+        {
+            if(_other.gameObject.GetComponent<GuardBehaviour>().CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
+            {
+                agent.ResetPath();
+                Patrol();
+            }
         }
     }
 }

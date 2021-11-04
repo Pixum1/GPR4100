@@ -7,12 +7,17 @@ public class PlayerController : MonoBehaviour
     #region Movement variables
     [SerializeField]
     private float m_moveSpeed = 5f; //player's movementspeed
+    [SerializeField]
+    private float m_sprintSpeed = 10f;
     private float maxSpeed; //player's maximum allowed movementspeed
+    private float speedSave;
     private Vector3 currMoveDir; //direction that the player moves in
     private Rigidbody rb;
     #endregion
     [SerializeField]
     private Transform m_playerSprites;
+    Endurance endur;
+
 
     private void Awake()
     {
@@ -20,7 +25,9 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
+        speedSave = m_moveSpeed;
         maxSpeed = m_moveSpeed / 12.5f; //set the maximum speed of the player according to its initial speed
+        endur = GetComponent<Endurance>();
     }
     private void Update()
     {
@@ -40,6 +47,18 @@ public class PlayerController : MonoBehaviour
             currMoveDir += new Vector3(z, 0, z);
         }
         #endregion
+
+        if (Input.GetKey(KeyCode.LeftShift) && endur.AllowSprint)
+        {
+            endur.Excercising = true;
+            m_moveSpeed = m_sprintSpeed;
+        }
+        else
+        {
+            endur.Excercising = false;
+            m_moveSpeed = speedSave;
+        }
+
 
         #region RotatePlayerSprites
         if (currMoveDir == new Vector3(0,0,2)) //move upperleft
@@ -73,7 +92,7 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(currMoveDir * m_moveSpeed);
 
         #region limit speed
-        //if player gets to fast
+        //if player gets too fast
         if (rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = rb.velocity.normalized * maxSpeed; //limit its speed

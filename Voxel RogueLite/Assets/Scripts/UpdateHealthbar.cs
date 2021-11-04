@@ -6,7 +6,7 @@ public class UpdateHealthbar : MonoBehaviour
 {
     private HPData hp;
     [SerializeField]
-    private float fullLenght = 3;
+    private float fullLenght = 1.5f;
     float lastHP;
     private void Awake()
     {
