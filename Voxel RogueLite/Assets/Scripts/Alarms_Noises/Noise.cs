@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Noise : MonoBehaviour
 {
-    public bool MadeNoise { get { return madeNoise; } }
+    public bool MadeNoise { get { return madeNoise; } set { madeNoise = value; } }
     private bool madeNoise = false;
 
     public IEnumerator MakeNoise()

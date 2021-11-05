@@ -49,9 +49,11 @@ public class GuardHearing : MonoBehaviour
         {
             //Sort the Locations based on their distance to the guard (nearest is first)
             noiseObjects = noiseObjects.OrderBy(obj => Vector3.Distance(this.transform.position, obj.transform.position)).ToList();
-
-            noiseLocation = noiseObjects[0].transform.position; //get noise location
-            GetComponentInParent<GuardBehaviour>().SearchNoise(); //change behaviour
+            if (noiseObj.MadeNoise)
+            {
+                noiseLocation = noiseObjects[0].transform.position; //get noise location
+                GetComponentInParent<GuardBehaviour>().SearchNoise(); //change behaviour
+            }
         }
     }
 

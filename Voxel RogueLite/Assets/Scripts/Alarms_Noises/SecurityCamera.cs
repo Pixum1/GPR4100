@@ -15,6 +15,14 @@ public class SecurityCamera : MonoBehaviour
     private string dir = "left";
     private bool inLOS = false;
 
+    [SerializeField]
+    private float visionRadius;
+
+    [SerializeField]
+    private GameObject radiusOrigin;
+
+    private PlayerController player;
+
     GameManager gm;
 
     Vector3 playerPos;
@@ -22,6 +30,7 @@ public class SecurityCamera : MonoBehaviour
     private void Awake()
     {
         gm = FindObjectOfType<GameManager>();
+        player = FindObjectOfType<PlayerController>();
     }
     private void Update()
     {
@@ -31,6 +40,8 @@ public class SecurityCamera : MonoBehaviour
             RotateRight();
         else
             RotateLeft();
+
+        CheckForPlayer();
     }
     private void RotateLeft()
     {
@@ -47,41 +58,6 @@ public class SecurityCamera : MonoBehaviour
     private void FollowPlayer()
     {
         transform.LookAt(playerPos);
-    }
-    private void OnTriggerStay(Collider _other)
-    {
-        PlayerController player = _other.GetComponent<PlayerController>();
-        if (player != null)
-        {
-            RaycastHit hit;
-            Vector3 direction = _other.transform.position - transform.position; //Vector from guard position to player position
-
-            //cast ray towards player's position | collide with everything
-            if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity))
-            {
-                //if ray collides with player's collider
-                if (hit.collider.CompareTag("Player"))
-                {
-                    inLOS = true;
-                    playerPos = _other.transform.position;
-                    dir = null;
-                    FollowPlayer();
-                    StartCoroutine(AlarmTimer(alarmTimer));
-                }
-                else
-                {
-                    inLOS = false;
-                }
-            }
-        }
-    }
-    private void OnTriggerExit(Collider _other)
-    {
-        PlayerController player = _other.GetComponent<PlayerController>();
-        if (player != null)
-        {
-            inLOS = false;
-        }
     }
     private IEnumerator AlarmTimer(float _time)
     {
@@ -106,5 +82,40 @@ public class SecurityCamera : MonoBehaviour
         }
         else
             StopAllCoroutines();
+    }
+
+    void CheckForPlayer()
+    {
+        if (Vector3.Distance(radiusOrigin.transform.position, player.transform.position) <= visionRadius)
+        {
+            RaycastHit hit;
+            Vector3 direction = player.transform.position - transform.position; //Vector from guard position to player position
+
+            //cast ray towards player's position | collide with everything
+            if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity))
+            {
+                //if ray collides with player's collider
+                if (hit.collider.CompareTag("Player"))
+                {
+                    inLOS = true;
+                    playerPos = player.transform.position;
+                    dir = null;
+                    FollowPlayer();
+                    StartCoroutine(AlarmTimer(alarmTimer));
+                }
+                else
+                {
+                    inLOS = false;
+                }
+            }
+        }
+        else
+            inLOS = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(radiusOrigin.transform.position, visionRadius);
     }
 }

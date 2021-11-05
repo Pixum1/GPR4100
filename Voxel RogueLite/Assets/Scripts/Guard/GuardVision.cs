@@ -45,8 +45,10 @@ public class GuardVision : MonoBehaviour
                 gBehaviour.Alarmed = false; //guard is no longer alarmed
             }
             else
-                seesPlayer = false; //guard does not see player
+                seesPlayer = false;
         }
+        else
+            seesPlayer = false; //guard does not see player
     }
 
     /// <summary>

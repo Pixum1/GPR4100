@@ -11,7 +11,7 @@ public class GuardMovement : MonoBehaviour
     public NavMeshAgent Agent { get { return agent; } }
     public float MaxDistanceToPlayer { get { return maxDistanceToPlayer; } }
     private NavMeshAgent agent;
-    private List<Transform> patrolPoints = new List<Transform>(); //list of all patrol points of the guard
+    private List<Vector3> patrolPoints = new List<Vector3>(); //list of all patrol points of the guard
     [SerializeField]
     [Tooltip("The distance at which the guard stops moving towards the player")]
     private float maxDistanceToPlayer; //the distance at which the guard stops moving towards the player
@@ -45,13 +45,9 @@ public class GuardMovement : MonoBehaviour
             //if it's a patrol point
             if (child.CompareTag("PatrolPoint"))
             {
-                patrolPoints.Add(child.transform); //add it to the list
+                patrolPoints.Add(child.transform.position); //add it to the list
+                Destroy(child.gameObject);
             }
-        }
-        //go through every Transform on patrolPoints
-        foreach (Transform point in patrolPoints)
-        {
-            point.SetParent(null); //set parent of point to null
         }
     }
 
@@ -176,7 +172,7 @@ public class GuardMovement : MonoBehaviour
             else
                 agent.isStopped = false;
 
-            if (Vector3.Distance(transform.position, _location) <= 2)
+            if (Vector3.Distance(transform.position, _location) <= 1)
             {
                 gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
 
@@ -216,11 +212,11 @@ public class GuardMovement : MonoBehaviour
         {
             //search random patrolpoint and set destination to it's position
             int p = Random.Range(0, patrolPoints.Count);
-            agent.SetDestination(patrolPoints[p].position);
+            agent.SetDestination(patrolPoints[p]);
             agent.isStopped = false; //start movement
         }
     }
-    private void OnCollisionEnter(Collision _other)
+    private void OnCollisionStay(Collision _other)
     {
         if(_other.gameObject.CompareTag("Guard"))
         {

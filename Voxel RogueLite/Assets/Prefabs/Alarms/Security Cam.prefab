@@ -164,7 +164,6 @@ GameObject:
   - component: {fileID: 7777561342914948807}
   - component: {fileID: 7777561342915941127}
   - component: {fileID: 3317415573301645763}
-  - component: {fileID: 5000375460611269888}
   m_Layer: 2
   m_Name: obj_camera
   m_TagString: Untagged
@@ -254,19 +253,8 @@ MonoBehaviour:
   speed: 0.5
   CameraSmooth: 5
   alarmTimer: 2
---- !u!135 &5000375460611269888
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7777561342918132431}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4.05
-  m_Center: {x: 0, y: -3.069, z: 3.4}
+  visionRadius: 4
+  radiusOrigin: {fileID: 7777561343590811619}
 --- !u!1 &7777561343590811619
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 7777561343590811619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -3.069, z: 3.4}
-  m_LocalScale: {x: 8.07813, y: 8.07813, z: 8.07813}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 7777561342918372655}
   m_RootOrder: 0

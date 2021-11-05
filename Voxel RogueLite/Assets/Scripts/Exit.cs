@@ -6,16 +6,10 @@ public class Exit : MonoBehaviour
 {
     [SerializeField]
     private GameManager m_Gm;
-    private bool canExit = false;
 
     private void Awake()
     {
         m_Gm = FindObjectOfType<GameManager>();
-    }
-    private void Update()
-    {
-        if (m_Gm.Collectibles.Count == 0)
-            canExit = true;
     }
 
     private void OnTriggerStay(Collider _other)
@@ -23,10 +17,8 @@ public class Exit : MonoBehaviour
         if (_other.CompareTag("Player"))
         {
             //if player wants to exit && can exit level
-            if (Input.GetKeyDown(KeyCode.E) && canExit == true)
-            {
+            if (Input.GetKeyDown(KeyCode.E))
                 m_Gm.LoadRandomLevel(); //activate next Level Load Function in GameManager
-            }
         }
     }
 }

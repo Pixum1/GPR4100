@@ -31,8 +31,11 @@ public class GuardBehaviour : MonoBehaviour
     }
     public void SearchNoise()
     {
-        alarmed = true;
-        currentBehaviour = EBehaviour.searching;
+        if(currentBehaviour != EBehaviour.chasing)
+        {
+            alarmed = true;
+            currentBehaviour = EBehaviour.searching;
+        }
     }
     private void OnDestroy()
     {
