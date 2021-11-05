@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6632001733945593142}
   - component: {fileID: 6632001733945593143}
   - component: {fileID: 6632001733945593140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Distract Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,8 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74cf0cb6a2649f4409b9c7976e310ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseDuration: 1
-  noiseRadius: {fileID: 0}
 --- !u!114 &6632001733945593140
 MonoBehaviour:
   m_ObjectHideFlags: 0

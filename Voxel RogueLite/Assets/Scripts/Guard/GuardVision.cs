@@ -4,67 +4,109 @@ using UnityEngine;
 
 public class GuardVision : MonoBehaviour
 {
-    GuardBehaviour gBehaviour;
+    GuardBehaviour gBehaviour; //the Behaviour component of the guard
     public bool SeesPlayer { get { return seesPlayer; } }
-    private bool seesPlayer;
+    private bool seesPlayer; //bool that determines wether the guard has clear sight on the player or not
     public Vector3 LastKnownPlayerPos { get { return lastKnownPlayerPos; } set { lastKnownPlayerPos = value; } }
     Vector3 lastKnownPlayerPos; //the coordinates where the guard saw the player last
+    
+    PlayerController player; //the player
+
+    [SerializeField]
+    private float visionRange; //the radius of the Spherecast
+
+    [SerializeField]
+    private LayerMask guardLayer; //the layer where guards are
+
     private void Awake()
     {
         gBehaviour = GetComponentInParent<GuardBehaviour>();
+        player = FindObjectOfType<PlayerController>();
     }
-    private void OnTriggerStay(Collider _other)
+    private void Update()
     {
-        PlayerController player = _other.GetComponent<PlayerController>();
-        if (player != null)
-        {
-            RaycastHit hit;
-            Vector3 dir = _other.transform.position - transform.position; //Vector from guard position to player position
+        CheckForPlayer();
 
-            //cast ray towards player's position | collide with everything
-            if (Physics.Raycast(transform.position, dir, out hit, Mathf.Infinity))
-            {
-                //if ray collides with player's collider
-                if (hit.collider.CompareTag("Player"))
-                {
-                    seesPlayer = true;
-                    gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.chasing;
-                    lastKnownPlayerPos = player.transform.position; //players position is saved
-                    gBehaviour.Alarmed = false;
-                }
-                else
-                {
-                    seesPlayer = false;
-                }
-            }
-        }
-        if(_other.CompareTag("Guard"))
+        CheckForGuard();
+    }
+    /// <summary>
+    /// Function that updates the guards behaviour once the player enters his vision
+    /// </summary>
+    private void CheckForPlayer()
+    {
+        //check if the player entered the guards vision range
+        if (Vector3.Distance(transform.position, player.transform.position) <= visionRange)
         {
-            RaycastHit hit;
-            Vector3 dir = _other.transform.position - transform.position;
-            if (Physics.Raycast(transform.position, dir, out hit, Mathf.Infinity))
+            if (RayHitTarget(player.gameObject, transform.position))
             {
-                if(hit.collider.CompareTag("Guard"))
-                {
-                    //if the other guard is chasing the player the guard will adapt to that behaviour
-                    if (_other.GetComponent<GuardBehaviour>().CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
-                    {
-                        {
-                            gBehaviour.CurrentBehaviour = _other.GetComponent<GuardBehaviour>().CurrentBehaviour;
-                            lastKnownPlayerPos = _other.GetComponentInChildren<GuardVision>().LastKnownPlayerPos;
-                        }
-                    }
-                }
+                seesPlayer = true; //guard sees player
+                gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.chasing; //change behaviour to chasing
+                lastKnownPlayerPos = player.transform.position; //update player location information
+                gBehaviour.Alarmed = false; //guard is no longer alarmed
+            }
+            else
+                seesPlayer = false; //guard does not see player
+        }
+    }
+
+    /// <summary>
+    /// Function that collects all guards in the guards vision range and changes its behaviour according to other guards
+    /// </summary>
+    private void CheckForGuard()
+    {
+        Collider[] guards = Physics.OverlapSphere(transform.position, visionRange, guardLayer); //collect all guards within range in an array
+
+        //if the array is not empty
+        if(guards.Length != 0)
+        {
+            GameObject guard = guards[0].gameObject; //get first entry in array
+
+            //if the guard sees the first entry in array
+            if(RayHitTarget(guard, transform.position))
+            {
+                AdaptBehaviour(guard.GetComponent<GuardBehaviour>()); //adapt behaviour accordingly
             }
         }
     }
-    private void OnTriggerExit(Collider _other)
+    /// <summary>
+    /// Changes the guards behaviour if he sees a guard that chases the player
+    /// </summary>
+    /// <param name="_guard">The guard that entered vision</param>
+    private void AdaptBehaviour(GuardBehaviour _guard)
     {
-        PlayerController player = _other.GetComponent<PlayerController>();
-        if(player != null)
+        if(_guard.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
         {
-            seesPlayer = false;
+            gBehaviour.CurrentBehaviour = _guard.GetComponent<GuardBehaviour>().CurrentBehaviour; //adapt behaviour of other guard
+            lastKnownPlayerPos = _guard.GetComponentInChildren<GuardVision>().LastKnownPlayerPos; //get player position of other guard
         }
+    }
+
+    /// <summary>
+    /// Returns true if the target was hit by the Ray
+    /// </summary>
+    /// <param name="_target">Target GameObject</param>
+    /// <param name="_origin">Origin of the Ray</param>
+    /// <returns></returns>
+    private bool RayHitTarget(GameObject _target, Vector3 _origin)
+    {
+        Vector3 dir = _target.transform.position - _origin; //direction from origin to target
+
+        if (Physics.Raycast(_origin, dir, out RaycastHit hit, Mathf.Infinity))
+        {
+            //if ray hit the targets gameobject collider
+            if (hit.collider == _target.GetComponent<Collider>())
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, visionRange);
     }
 }
 

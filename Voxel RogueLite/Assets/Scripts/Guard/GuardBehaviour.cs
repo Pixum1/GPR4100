@@ -6,7 +6,6 @@ public class GuardBehaviour : MonoBehaviour
 {
     private GameManager gm;
     private GuardVision gVision;
-    private GuardHearing gHearing;
     public bool Alarmed { get { return alarmed; } set { alarmed = value; } }
     private bool alarmed = false;
     public EBehaviour CurrentBehaviour { get { return currentBehaviour; } set { currentBehaviour = value; } }
@@ -17,8 +16,8 @@ public class GuardBehaviour : MonoBehaviour
     {
         gm = FindObjectOfType<GameManager>();
         gVision = GetComponentInChildren<GuardVision>();
-        gHearing = GetComponentInChildren<GuardHearing>();
     }
+
     private void Start()
     {
         gm.AddGuard(this);

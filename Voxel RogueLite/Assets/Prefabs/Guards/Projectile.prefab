@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7258865081093083693}
   - component: {fileID: 5545113671066766223}
   - component: {fileID: 1036680099025488840}
-  m_Layer: 2
+  m_Layer: 7
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,13 +151,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4276954057021991704}
   - component: {fileID: 4623743976852405176}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NoiseRadius
   m_TagString: NoiseObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4276954057021991704
 Transform:
   m_ObjectHideFlags: 0

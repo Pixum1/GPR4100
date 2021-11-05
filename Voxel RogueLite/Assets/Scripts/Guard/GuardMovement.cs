@@ -197,13 +197,6 @@ public class GuardMovement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, _location) <= 1f)
         {
-            //NavMeshHit hit;                                                       //will not work
-            //if (NavMesh.SamplePosition(_location, out hit, 1, NavMesh.AllAreas))
-            //{
-            //    Debug.DrawLine(transform.position, hit.position, Color.blue);
-            //    Debug.Log(hit.position);
-            //}
-
             gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
 
             if (gBehaviour.Alarmed)

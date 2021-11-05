@@ -61,29 +61,29 @@ public class PlayerController : MonoBehaviour
 
 
         #region RotatePlayerSprites
-        if (currMoveDir == new Vector3(0,0,2)) //move upperleft
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -180));
-
-        if (currMoveDir == new Vector3(1, 0, 1)) //move up
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -135));
-
-        if (currMoveDir == new Vector3(2, 0, 0)) //move upperright
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -90));
-
-        if (currMoveDir == new Vector3(1, 0, -1)) //move right
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, -45));
-
-        if (currMoveDir == new Vector3(0, 0, -2)) //move lowerright
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 0));
+        if (currMoveDir == new Vector3(0,0,-2)) //move lowerright
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -180, m_playerSprites.rotation.z));
 
         if (currMoveDir == new Vector3(-1, 0, -1)) //move down
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 45));
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -135 ,m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(-2, 0, 0)) //move lowerleft
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 90));
+        if (currMoveDir == new Vector3(-2, 0, 0)) //move lowerlwft
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -90, m_playerSprites.rotation.z));
 
         if (currMoveDir == new Vector3(-1, 0, 1)) //move left
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(-90, m_playerSprites.rotation.y, 135));
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -45, m_playerSprites.rotation.z));
+
+        if (currMoveDir == new Vector3(0, 0, 2)) //move upperleft
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 0, m_playerSprites.rotation.z));
+
+        if (currMoveDir == new Vector3(1, 0, 1)) //move up
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 45, m_playerSprites.rotation.z));
+
+        if (currMoveDir == new Vector3(2, 0, 0)) //move upperright
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 90, m_playerSprites.rotation.z));
+
+        if (currMoveDir == new Vector3(1, 0, -1)) //move right
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 135, m_playerSprites.rotation.z));
         #endregion
     }
     private void FixedUpdate()
