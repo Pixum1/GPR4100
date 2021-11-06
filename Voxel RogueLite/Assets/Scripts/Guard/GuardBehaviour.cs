@@ -12,6 +12,12 @@ public class GuardBehaviour : MonoBehaviour
     public enum EBehaviour { patrolling, chasing, searching }
     private EBehaviour currentBehaviour;
 
+    [SerializeField]
+    private LineRenderer line;
+
+    [SerializeField]
+    private Material[] mats;
+
     private void Awake()
     {
         gm = FindObjectOfType<GameManager>();
@@ -36,6 +42,20 @@ public class GuardBehaviour : MonoBehaviour
             alarmed = true;
             currentBehaviour = EBehaviour.searching;
         }
+    }
+    private void Update()
+    {
+        UpdateLineColor();
+    }
+
+    private void UpdateLineColor()
+    {
+        if(currentBehaviour == EBehaviour.patrolling)
+            line.material = mats[0];
+        else if(currentBehaviour == EBehaviour.searching)
+            line.material = mats[1];
+        else if(currentBehaviour == EBehaviour.chasing)
+            line.material = mats[2];
     }
     private void OnDestroy()
     {

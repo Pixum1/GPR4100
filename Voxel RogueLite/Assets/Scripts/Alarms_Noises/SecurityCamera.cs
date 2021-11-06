@@ -23,9 +23,15 @@ public class SecurityCamera : MonoBehaviour
 
     private PlayerController player;
 
-    GameManager gm;
+    [SerializeField]
+    private Material[] mats;
 
-    Vector3 playerPos;
+    [SerializeField]
+    private LineRenderer line;
+
+    private bool alarmed = false;
+
+    GameManager gm;
 
     private void Awake()
     {
@@ -42,6 +48,8 @@ public class SecurityCamera : MonoBehaviour
             RotateLeft();
 
         CheckForPlayer();
+
+        UpdateColor();
     }
     private void RotateLeft()
     {
@@ -57,8 +65,12 @@ public class SecurityCamera : MonoBehaviour
     }
     private void FollowPlayer()
     {
-        transform.LookAt(playerPos);
+        Vector3 tPos = new Vector3(player.transform.position.x,
+                                    transform.position.y,
+                                    player.transform.position.z);
+        transform.LookAt(tPos);
     }
+
     private IEnumerator AlarmTimer(float _time)
     {
         if(inLOS)
@@ -71,6 +83,7 @@ public class SecurityCamera : MonoBehaviour
             }
             else
             {
+                alarmed = true;
                 foreach (var guard in gm.Guards)
                 {
                     if (guard.gameObject != null)
@@ -81,7 +94,19 @@ public class SecurityCamera : MonoBehaviour
             }
         }
         else
+        {
+            alarmed = false;
             StopAllCoroutines();
+        }
+    }
+    private void UpdateColor()
+    {
+        if (inLOS && !alarmed)
+            line.material = mats[1];
+        else if (inLOS && alarmed)
+            line.material = mats[2];
+        else if (!inLOS)
+            line.material = mats[0];
     }
 
     void CheckForPlayer()
@@ -98,7 +123,6 @@ public class SecurityCamera : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     inLOS = true;
-                    playerPos = player.transform.position;
                     dir = null;
                     FollowPlayer();
                     StartCoroutine(AlarmTimer(alarmTimer));
