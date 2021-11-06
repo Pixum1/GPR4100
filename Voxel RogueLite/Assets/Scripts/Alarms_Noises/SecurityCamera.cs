@@ -30,6 +30,7 @@ public class SecurityCamera : MonoBehaviour
     private LineRenderer line;
 
     private bool alarmed = false;
+    private bool alarmStarted = false;
 
     GameManager gm;
 
@@ -63,6 +64,7 @@ public class SecurityCamera : MonoBehaviour
         if (Quaternion.Angle(transform.rotation, Quaternion.Euler(0, rotRight, 0)) < CameraSmooth)
             dir = "left";
     }
+
     private void FollowPlayer()
     {
         Vector3 tPos = new Vector3(player.transform.position.x,
@@ -75,7 +77,8 @@ public class SecurityCamera : MonoBehaviour
     {
         if(inLOS)
         {
-            if(_time > 0)
+            alarmStarted = true;
+            if (_time > 0)
             {
                 yield return new WaitForSeconds(1);
                 _time--;
@@ -101,40 +104,49 @@ public class SecurityCamera : MonoBehaviour
     }
     private void UpdateColor()
     {
-        if (inLOS && !alarmed)
-            line.material = mats[1];
-        else if (inLOS && alarmed)
-            line.material = mats[2];
-        else if (!inLOS)
-            line.material = mats[0];
+        if(player != null)
+        {
+            if (inLOS && !alarmed)
+                line.material = mats[1];
+            else if (alarmed && inLOS)
+                line.material = mats[2];
+            else if (!inLOS)
+                line.material = mats[0];
+        }
+        else
+            line.material=mats[0];
     }
 
     void CheckForPlayer()
     {
-        if (Vector3.Distance(radiusOrigin.transform.position, player.transform.position) <= visionRadius)
+        if(player != null)
         {
-            RaycastHit hit;
-            Vector3 direction = player.transform.position - transform.position; //Vector from guard position to player position
-
-            //cast ray towards player's position | collide with everything
-            if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity))
+            if (Vector3.Distance(radiusOrigin.transform.position, player.transform.position) <= visionRadius)
             {
-                //if ray collides with player's collider
-                if (hit.collider.CompareTag("Player"))
+                RaycastHit hit;
+                Vector3 direction = player.transform.position - transform.position; //Vector from guard position to player position
+
+                //cast ray towards player's position | collide with everything
+                if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity))
                 {
-                    inLOS = true;
-                    dir = null;
-                    FollowPlayer();
-                    StartCoroutine(AlarmTimer(alarmTimer));
-                }
-                else
-                {
-                    inLOS = false;
+                    //if ray collides with player's collider
+                    if (hit.collider.CompareTag("Player"))
+                    {
+                        inLOS = true;
+                        dir = null;
+                        FollowPlayer();
+                        if(!alarmStarted)
+                            StartCoroutine(AlarmTimer(alarmTimer));
+                    }
+                    else
+                    {
+                        inLOS = false;
+                    }
                 }
             }
+            else
+                inLOS = false;
         }
-        else
-            inLOS = false;
     }
 
     private void OnDrawGizmos()

@@ -17,10 +17,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Transform m_playerSprites;
     Endurance endur;
+    private HPData hp;
+    [SerializeField]
+    private UIManager uiManager;
 
 
     private void Awake()
     {
+        uiManager = FindObjectOfType<UIManager>();
+        hp = GetComponent<HPData>();
         rb = GetComponent<Rigidbody>();
     }
     private void Start()
@@ -48,6 +53,7 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
 
+        #region Sprint
         if (Input.GetKey(KeyCode.LeftShift) && endur.AllowSprint)
         {
             endur.Excercising = true;
@@ -58,32 +64,40 @@ public class PlayerController : MonoBehaviour
             endur.Excercising = false;
             m_moveSpeed = speedSave;
         }
+        #endregion
 
+        if(hp.CurrentHP <= 0)
+        {
+            uiManager.GameOverScreen();
+        }
 
         #region RotatePlayerSprites
-        if (currMoveDir == new Vector3(0,0,-2)) //move lowerright
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -180, m_playerSprites.rotation.z));
+        if (Time.timeScale > 0)
+        {
+            if (currMoveDir == new Vector3(0, 0, -2)) //move lowerright
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -180, m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(-1, 0, -1)) //move down
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -135 ,m_playerSprites.rotation.z));
+            if (currMoveDir == new Vector3(-1, 0, -1)) //move down
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -135, m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(-2, 0, 0)) //move lowerlwft
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -90, m_playerSprites.rotation.z));
+            if (currMoveDir == new Vector3(-2, 0, 0)) //move lowerlwft
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -90, m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(-1, 0, 1)) //move left
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -45, m_playerSprites.rotation.z));
+            if (currMoveDir == new Vector3(-1, 0, 1)) //move left
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -45, m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(0, 0, 2)) //move upperleft
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 0, m_playerSprites.rotation.z));
+            if (currMoveDir == new Vector3(0, 0, 2)) //move upperleft
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 0, m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(1, 0, 1)) //move up
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 45, m_playerSprites.rotation.z));
+            if (currMoveDir == new Vector3(1, 0, 1)) //move up
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 45, m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(2, 0, 0)) //move upperright
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 90, m_playerSprites.rotation.z));
+            if (currMoveDir == new Vector3(2, 0, 0)) //move upperright
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 90, m_playerSprites.rotation.z));
 
-        if (currMoveDir == new Vector3(1, 0, -1)) //move right
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 135, m_playerSprites.rotation.z));
+            if (currMoveDir == new Vector3(1, 0, -1)) //move right
+                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 135, m_playerSprites.rotation.z));
+        }
         #endregion
     }
     private void FixedUpdate()

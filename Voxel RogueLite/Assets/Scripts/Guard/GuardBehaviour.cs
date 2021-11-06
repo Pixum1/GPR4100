@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class GuardBehaviour : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class GuardBehaviour : MonoBehaviour
     private EBehaviour currentBehaviour;
 
     [SerializeField]
+    private PlayerController player;
+
+    [SerializeField]
     private LineRenderer line;
 
     [SerializeField]
@@ -20,6 +24,7 @@ public class GuardBehaviour : MonoBehaviour
 
     private void Awake()
     {
+        player = FindObjectOfType<PlayerController>();
         gm = FindObjectOfType<GameManager>();
         gVision = GetComponentInChildren<GuardVision>();
     }
@@ -30,10 +35,13 @@ public class GuardBehaviour : MonoBehaviour
     }
     public void AlarmGuards()
     {
-        alarmed = true;
-        currentBehaviour = EBehaviour.chasing;
-        PlayerController player = FindObjectOfType<PlayerController>();
-        gVision.LastKnownPlayerPos = player.transform.position;
+        if(player != null)
+        {
+            alarmed = true;
+            currentBehaviour = EBehaviour.chasing;
+            PlayerController player = FindObjectOfType<PlayerController>();
+            gVision.LastKnownPlayerPos = player.transform.position;
+        }
     }
     public void SearchNoise()
     {

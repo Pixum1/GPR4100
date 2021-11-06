@@ -38,8 +38,9 @@ public class HPData : MonoBehaviour
             }
         }
     }
-    private void Update()
+    private void LateUpdate()
     {
+        //if a object has 0 life and is not the player
         if(CurrentHP <= 0)
         {
             Destroy(gameObject);

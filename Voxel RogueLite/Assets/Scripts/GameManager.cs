@@ -25,16 +25,16 @@ public class GameManager : MonoBehaviour
     }
     private void LateUpdate()
     {
-        //if the current scene index is not equal to the main menu's index
-        if(SceneManager.GetActiveScene().buildIndex != 0)
-        {
-            //if no player was found
-            if (GameObject.FindGameObjectWithTag("Player") == null)
-            {
-                SceneManager.LoadScene(0); //load Main Menu
-                Destroy(gameObject); //destroy the game manager
-            }
-        }
+        ////if the current scene index is not equal to the main menu's index
+        //if(SceneManager.GetActiveScene().buildIndex != 0)
+        //{
+        //    //if no player was found
+        //    if (GameObject.FindGameObjectWithTag("Player") == null)
+        //    {
+        //        SceneManager.LoadScene(0); //load Main Menu
+        //        Destroy(gameObject); //destroy the game manager
+        //    }
+        //}
     }
     public void AddGuard(GuardBehaviour _guard)
     {

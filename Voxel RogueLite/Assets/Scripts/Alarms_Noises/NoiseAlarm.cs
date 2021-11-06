@@ -8,6 +8,11 @@ public class NoiseAlarm : MonoBehaviour
     private PlayerController player;
     [SerializeField]
     private float radius;
+    [SerializeField]
+    private Material[] mats;
+    [SerializeField]
+    private LineRenderer line;
+
     private void Awake()
     {
         noiseObj = GetComponent<Noise>();
@@ -15,19 +20,28 @@ public class NoiseAlarm : MonoBehaviour
     }
     private void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= radius)
+        if(player != null)
         {
-            Vector3 dir = player.transform.position - transform.position;
-            if(Physics.Raycast(transform.position, dir, out RaycastHit hit, Mathf.Infinity))
+            if (Vector3.Distance(transform.position, player.transform.position) <= radius)
             {
-                if(hit.collider.CompareTag("Player"))
+                Vector3 dir = player.transform.position - transform.position;
+                if (Physics.Raycast(transform.position, dir, out RaycastHit hit, Mathf.Infinity))
                 {
-                    noiseObj.MadeNoise = true;
+                    if (hit.collider.CompareTag("Player"))
+                    {
+                        line.material = mats[1];
+                        noiseObj.MadeNoise = true;
+                    }
                 }
+            }
+            else
+            {
+                line.material=mats[0];
+                noiseObj.MadeNoise = false;
             }
         }
         else
-            noiseObj.MadeNoise = false;
+            line.material=mats[0];
     }
     private void OnDrawGizmos()
     {

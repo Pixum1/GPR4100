@@ -34,21 +34,24 @@ public class GuardVision : MonoBehaviour
     /// </summary>
     private void CheckForPlayer()
     {
-        //check if the player entered the guards vision range
-        if (Vector3.Distance(transform.position, player.transform.position) <= visionRange)
+        if(player != null)
         {
-            if (RayHitTarget(player.gameObject, transform.position))
+            //check if the player entered the guards vision range
+            if (Vector3.Distance(transform.position, player.transform.position) <= visionRange)
             {
-                seesPlayer = true; //guard sees player
-                gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.chasing; //change behaviour to chasing
-                lastKnownPlayerPos = player.transform.position; //update player location information
-                gBehaviour.Alarmed = false; //guard is no longer alarmed
+                if (RayHitTarget(player.gameObject, transform.position))
+                {
+                    seesPlayer = true; //guard sees player
+                    gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.chasing; //change behaviour to chasing
+                    lastKnownPlayerPos = player.transform.position; //update player location information
+                    gBehaviour.Alarmed = false; //guard is no longer alarmed
+                }
+                else
+                    seesPlayer = false;
             }
             else
-                seesPlayer = false;
+                seesPlayer = false; //guard does not see player
         }
-        else
-            seesPlayer = false; //guard does not see player
     }
 
     /// <summary>

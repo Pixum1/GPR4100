@@ -6,9 +6,12 @@ public class Exit : MonoBehaviour
 {
     [SerializeField]
     private GameManager m_Gm;
+    [SerializeField]
+    private UIManager uiManager;
 
     private void Awake()
     {
+        uiManager = FindObjectOfType<UIManager>();
         m_Gm = FindObjectOfType<GameManager>();
     }
 
@@ -18,7 +21,11 @@ public class Exit : MonoBehaviour
         {
             //if player wants to exit && can exit level
             if (Input.GetKeyDown(KeyCode.E))
-                m_Gm.LoadRandomLevel(); //activate next Level Load Function in GameManager
+            {
+                Destroy(_other.gameObject);
+                uiManager.GameWonScreen();
+            }
+                //m_Gm.LoadRandomLevel(); //activate next Level Load Function in GameManager
         }
     }
 }

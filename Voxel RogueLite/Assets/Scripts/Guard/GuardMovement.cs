@@ -21,14 +21,22 @@ public class GuardMovement : MonoBehaviour
     private float sprintSpeed;
     private float normalSpeed;
 
+    [SerializeField]
+    private Endurance endur;
+
+    [SerializeField]
+    private PlayerController player;
+
 
     private Vector3 desiredLocation;
     private void Awake()
     {
+        player = FindObjectOfType<PlayerController>();
         gBehaviour = GetComponent<GuardBehaviour>();
         agent = GetComponent<NavMeshAgent>();
         gVision = GetComponentInChildren<GuardVision>();
         gHearing = GetComponentInChildren<GuardHearing>();
+        endur = GetComponent<Endurance>();
 
         InitializePatrolPoints();
     }
@@ -55,6 +63,22 @@ public class GuardMovement : MonoBehaviour
     {
         CalculateAction();
         Debug.DrawLine(transform.position, agent.destination, Color.red); //Debug: Draw line to current destination
+
+        if(player == null)
+        {
+            GameManager gm = FindObjectOfType<GameManager>();
+            foreach (var guard in gm.Guards)
+            {
+                if (guard.gameObject != null)
+                {
+                    GuardMovement move = guard.gameObject.GetComponent<GuardMovement>(); //get Movement script of guard
+                    guard.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling; //set current behaviour to patroling
+                    //move.agent.ResetPath(); //reset path so guard can patrol
+                    agent.isStopped = false;
+                    guard.Alarmed = false; //guard is no longer alarmed
+                }
+            }
+        }
     }
 
     private void CalculateAction()
@@ -211,12 +235,13 @@ public class GuardMovement : MonoBehaviour
         if (!agent.hasPath)
         {
             //search random patrolpoint and set destination to it's position
+            endur.Excercising = false;
             int p = Random.Range(0, patrolPoints.Count);
             agent.SetDestination(patrolPoints[p]);
             agent.isStopped = false; //start movement
         }
     }
-    private void OnCollisionStay(Collision _other)
+    private void OnCollisionEnter(Collision _other)
     {
         if(_other.gameObject.CompareTag("Guard"))
         {
