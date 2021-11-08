@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.AI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         speedSave = m_moveSpeed;
         maxSpeed = m_moveSpeed / 12.5f; //set the maximum speed of the player according to its initial speed
         endur = GetComponent<Endurance>();
+        NavMeshBuilder.BuildNavMesh(); ///Generates long loading time
     }
     private void Update()
     {

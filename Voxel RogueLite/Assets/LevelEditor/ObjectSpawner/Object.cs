@@ -50,7 +50,7 @@ public class Object : MonoBehaviour
                 if(allowRotation)
                     obj.transform.localRotation = Quaternion.Euler(new Vector3(objects[rndObj].transform.eulerAngles.x, Random.Range(0f, 360f), objects[rndObj].transform.eulerAngles.z));
             }
-        }    
+        }
     }
 
     public void ClearObjects()

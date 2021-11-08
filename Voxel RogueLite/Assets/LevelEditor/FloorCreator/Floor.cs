@@ -5,7 +5,7 @@ using UnityEngine;
 public class Floor : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] concreteTiles;
+    private GameObject[] tiles;
 
     private List<GameObject> vertTiles = new List<GameObject>();
     private List<GameObject> tempTiles = new List<GameObject>();
@@ -106,9 +106,9 @@ public class Floor : MonoBehaviour
     /// <returns></returns>
     private GameObject CreateRandomTile(Vector3 _offset, List<GameObject> _addToList)
     {
-        int rnd = Random.Range(0, concreteTiles.Length);
+        int rnd = Random.Range(0, tiles.Length);
 
-        GameObject tile = Instantiate(concreteTiles[rnd], _offset, Quaternion.identity); //Create a random Tile
+        GameObject tile = Instantiate(tiles[rnd], _offset, Quaternion.identity); //Create a random Tile
         _addToList.Add(tile); //add that tile to a list
         tile.transform.SetParent(transform); //set that tile as a child of the gameobject
 

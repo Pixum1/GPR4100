@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
 public class GuardMovement : MonoBehaviour
 {
     private GuardBehaviour gBehaviour;
@@ -26,7 +25,6 @@ public class GuardMovement : MonoBehaviour
 
     [SerializeField]
     private PlayerController player;
-
 
     private Vector3 desiredLocation;
     private void Awake()
@@ -62,20 +60,23 @@ public class GuardMovement : MonoBehaviour
     private void Update()
     {
         CalculateAction();
-        Debug.DrawLine(transform.position, agent.destination, Color.red); //Debug: Draw line to current destination
 
-        if(player == null)
+        Sprint();
+
+        Debug.DrawLine(transform.position, agent.destination, Color.red);
+
+        if (player == null)
         {
             GameManager gm = FindObjectOfType<GameManager>();
             foreach (var guard in gm.Guards)
             {
                 if (guard.gameObject != null)
                 {
-                    GuardMovement move = guard.gameObject.GetComponent<GuardMovement>(); //get Movement script of guard
-                    guard.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling; //set current behaviour to patroling
+                    GuardMovement move = guard.gameObject.GetComponent<GuardMovement>();
+                    guard.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
                     //move.agent.ResetPath(); //reset path so guard can patrol
                     agent.isStopped = false;
-                    guard.Alarmed = false; //guard is no longer alarmed
+                    guard.Alarmed = false;
                 }
             }
         }
@@ -85,7 +86,7 @@ public class GuardMovement : MonoBehaviour
     {
         //Guard is chasing
         if (gBehaviour.CurrentBehaviour != GuardBehaviour.EBehaviour.patrolling)
-            MoveTowardsLocation(desiredLocation); //move to location  
+            MoveTowardsLocation(desiredLocation);
 
         //Guard is patrolling
         if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
@@ -93,50 +94,19 @@ public class GuardMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// This function sends all guards back to their patroling path once one guard reached the location of the alarm
+    /// Sends the guard to his next patrol point
     /// </summary>
-    private void GuardClearedAlarm()
+    private void Patrol()
     {
-        GameManager gm = FindObjectOfType<GameManager>();
-        foreach (var guard in gm.Guards)
+        //if agent has no path (so that the next patrol point will only be chosen when the guard reached the current destination)
+        if (!agent.hasPath)
         {
-            if (guard.gameObject != null)
-            {
-                GuardMovement move = guard.gameObject.GetComponent<GuardMovement>(); //get Movement script of guard
-                guard.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling; //set current behaviour to patroling
-                move.agent.ResetPath(); //reset path so guard can patrol
-                guard.Alarmed = false; //guard is no longer alarmed
-            }
+            //search random patrolpoint and set destination to it's position
+            endur.Excercising = false;
+            int p = Random.Range(0, patrolPoints.Count);
+            agent.SetDestination(patrolPoints[p]);
+            agent.isStopped = false; //start movement
         }
-    }
-
-    /// <summary>
-    /// Calculates if the guard can reach its destination
-    /// </summary>
-    /// <param name="_targetLocation"> The position of the target Location</param>
-    /// <returns></returns>
-    private bool PathIsValid(Vector3 _targetLocation)
-    {
-        NavMeshPath path = new NavMeshPath();
-
-        //if guard can reach its destination
-        if (agent.CalculatePath(_targetLocation, path) && path.status == NavMeshPathStatus.PathComplete)
-            return true;
-        
-        else
-            return false;
-    }
-
-    /// <summary>
-    /// Calculates the desired Agent Location based on the Guards behaviour
-    /// </summary>
-    private void DesiredLocCalc()
-    {
-        if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
-            desiredLocation = gVision.LastKnownPlayerPos;
-
-        else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.searching)
-            desiredLocation = gHearing.NoiseLocation;
     }
 
     /// <summary>
@@ -163,6 +133,35 @@ public class GuardMovement : MonoBehaviour
     }
 
     /// <summary>
+    /// Calculates the desired Agent Location based on the Guards behaviour
+    /// </summary>
+    private void DesiredLocCalc()
+    {
+        if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
+            desiredLocation = gVision.LastKnownPlayerPos;
+
+        else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.searching)
+            desiredLocation = gHearing.NoiseLocation;
+    }
+
+    /// <summary>
+    /// Calculates if the guard can reach its destination
+    /// </summary>
+    /// <param name="_targetLocation"> The position of the target Location</param>
+    /// <returns></returns>
+    private bool PathIsValid(Vector3 _targetLocation)
+    {
+        NavMeshPath path = new NavMeshPath();
+
+        //if guard can reach its destination
+        if (agent.CalculatePath(_targetLocation, path) && path.status == NavMeshPathStatus.PathComplete)
+            return true;
+
+        else
+            return false;
+    }
+
+    /// <summary>
     /// Makes the guard move towards the player's location
     /// </summary>
     /// <param name="_location">The position of the desired Location</param>
@@ -172,16 +171,19 @@ public class GuardMovement : MonoBehaviour
         //if guard is not in range to shoot player
         if (Vector3.Distance(transform.position, _location) >= maxDistanceToPlayer)
         {
-            if (endur.AllowSprint)
-            {
-                endur.Excercising = true;
-                agent.speed = sprintSpeed;
-            }
-            else
-            {
-                endur.Excercising = false;
-                agent.speed = normalSpeed;
-            }
+            //#region Sprint
+            //if (endur.AllowSprint)
+            //{
+            //    endur.Excercising = true;
+            //    agent.speed = sprintSpeed;
+            //}
+            //else
+            //{
+            //    endur.Excercising = false;
+            //    agent.speed = normalSpeed;
+            //}
+            //#endregion
+
             agent.isStopped = false; //start to move
         }
         else
@@ -205,7 +207,7 @@ public class GuardMovement : MonoBehaviour
             }
         }
 
-    }    
+    }
 
     /// <summary>
     /// Makes the guard move towards the origin of the noise
@@ -227,25 +229,46 @@ public class GuardMovement : MonoBehaviour
     }
 
     /// <summary>
-    /// Sends the guard to his next patrol point
+    /// This function sends all guards back to their patroling path once one guard reached the location of the alarm
     /// </summary>
-    private void Patrol()
+    private void GuardClearedAlarm()
     {
-        //if agent has no path (so that the next patrol point will only be chosen when the guard reached the current destination)
-        if (!agent.hasPath)
+        GameManager gm = FindObjectOfType<GameManager>();
+        foreach (var guard in gm.Guards)
         {
-            //search random patrolpoint and set destination to it's position
-            endur.Excercising = false;
-            int p = Random.Range(0, patrolPoints.Count);
-            agent.SetDestination(patrolPoints[p]);
-            agent.isStopped = false; //start movement
+            if (guard.gameObject != null)
+            {
+                GuardMovement move = guard.gameObject.GetComponent<GuardMovement>();
+                guard.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
+                move.agent.ResetPath(); //reset path so guard can patrol
+                guard.Alarmed = false;
+            }
         }
     }
+
+    private void Sprint()
+    {
+        if(gBehaviour.CurrentBehaviour != GuardBehaviour.EBehaviour.patrolling)
+        {
+            if (endur.AllowSprint)
+            {
+                endur.Excercising = true;
+                agent.speed = sprintSpeed;
+            }
+            else
+            {
+                endur.Excercising = false;
+                agent.speed = normalSpeed;
+            }
+        }
+
+    }
+
     private void OnCollisionEnter(Collision _other)
     {
-        if(_other.gameObject.CompareTag("Guard"))
+        if (_other.gameObject.CompareTag("Guard"))
         {
-            if(_other.gameObject.GetComponent<GuardBehaviour>().CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
+            if (_other.gameObject.GetComponent<GuardBehaviour>().CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
             {
                 agent.ResetPath();
                 Patrol();

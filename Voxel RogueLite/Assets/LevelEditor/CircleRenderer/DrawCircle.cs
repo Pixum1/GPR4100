@@ -12,11 +12,10 @@ public class DrawCircle : MonoBehaviour
     private float yradius;
     [SerializeField]
     private LineRenderer line;
-
-    private void Start()
+    public void Create()
     {
         line = GetComponent<LineRenderer>();
-        line.SetVertexCount(segments + 1);
+        line.positionCount = segments + 1;
         line.useWorldSpace = false;
         CreatePoints();
     }
