@@ -19,12 +19,53 @@ public class Object : MonoBehaviour
     [SerializeField]
     private bool InstantiateOnStart;
 
-    private void Start()
+    private int spawnedObjects = 0;
+
+    [SerializeField]
+    private int minimumObjects;
+    [SerializeField]
+    private int maximumObjects;
+
+    private void Awake()
     {
         if(InstantiateOnStart)
         {
-            GenerateRandomObjects();
+            GenerateAll();
         }
+    }
+
+    public void GenerateAll()
+    {
+        ClearObjects();
+
+        SpawnMinimumAmount();
+
+        GenerateRandomObjects();
+
+    }
+
+    private void SpawnMinimumAmount()
+    {
+        List<int> prevSp = new List<int>();
+        int tempSpawnRate = spawnRate;
+
+        int i = 0;
+        while(i < minimumObjects)
+        {
+            spawnRate = 100;
+            int rndSp = Random.Range(0, spawnPoints.Count);
+            if (prevSp.Contains(rndSp))
+            {
+                continue;
+            }
+            else
+            {
+                CreateObject(spawnPoints[rndSp]);
+                prevSp.Add(rndSp);
+                i++;
+            }
+        }
+        spawnRate = tempSpawnRate;
     }
     public void AddSpawnpoint()
     {
@@ -36,25 +77,47 @@ public class Object : MonoBehaviour
 
     public void GenerateRandomObjects()
     {
-        ClearObjects();
-
         foreach(GameObject sp in spawnPoints)
         {
-            int rnd = Random.Range(0, 101);
-            if(rnd <= spawnRate)
-            {
-                int rndObj = Random.Range(0, objects.Length);
-                GameObject obj = Instantiate(objects[rndObj], sp.transform.position, gameObject.transform.rotation);
-                obj.transform.SetParent(sp.transform);
+            CreateObject(sp);
+        }
+    }
 
-                if(allowRotation)
-                    obj.transform.localRotation = Quaternion.Euler(new Vector3(objects[rndObj].transform.eulerAngles.x, Random.Range(0f, 360f), objects[rndObj].transform.eulerAngles.z));
+    private void CreateObject(GameObject _spawnPoint)
+    {
+        if(maximumObjects < minimumObjects)
+        {
+            maximumObjects = minimumObjects;
+            Debug.Log("Changed maximumObjects count to " + minimumObjects);
+        }
+        else if(maximumObjects <= 0)
+        {
+            maximumObjects = spawnPoints.Count;
+            Debug.Log("Changed maximumObjects count to " + maximumObjects);
+        }
+
+        if(spawnedObjects < maximumObjects)
+        {
+            if (_spawnPoint.transform.childCount == 0)
+            {
+                int rnd = Random.Range(0, 101);
+                if (rnd < spawnRate)
+                {
+                    int rndObj = Random.Range(0, objects.Length);
+                    GameObject obj = Instantiate(objects[rndObj], _spawnPoint.transform.position, _spawnPoint.transform.rotation);
+                    obj.transform.SetParent(_spawnPoint.transform);
+
+                    if (allowRotation)
+                        obj.transform.localRotation = Quaternion.Euler(new Vector3(objects[rndObj].transform.eulerAngles.x, Random.Range(0f, 360f), objects[rndObj].transform.eulerAngles.z));
+                    spawnedObjects++;
+                }
             }
         }
     }
 
     public void ClearObjects()
     {
+        spawnedObjects = 0;
         foreach(GameObject spawnPoint in spawnPoints)
         {
             foreach(Transform child in spawnPoint.transform)

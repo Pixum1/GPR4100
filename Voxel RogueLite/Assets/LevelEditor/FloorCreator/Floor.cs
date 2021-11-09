@@ -80,7 +80,7 @@ public class Floor : MonoBehaviour
     private Vector3 CalculateOffsetX(GameObject _prevObj)
     {
         Vector3 prevPos = _prevObj.transform.position; //get position of the previous object
-        BoxCollider prevCol = _prevObj.GetComponentInChildren<BoxCollider>(); //get collider of the previous object
+        BoxCollider prevCol = _prevObj.GetComponent<BoxCollider>(); //get collider of the previous object
 
         return new Vector3(prevPos.x + prevCol.size.x, prevPos.y, prevPos.z); //return the position next to the previous object based on the size and position
     }
@@ -93,7 +93,7 @@ public class Floor : MonoBehaviour
     private Vector3 CalculateOffsetY(GameObject _prevObj)
     {
         Vector3 prevPos = _prevObj.transform.position; //get position of the previous object
-        BoxCollider prevCol = _prevObj.GetComponentInChildren<BoxCollider>(); //get collider of the previous object
+        BoxCollider prevCol = _prevObj.GetComponent<BoxCollider>(); //get collider of the previous object
 
         return new Vector3(prevPos.x, prevPos.y, prevPos.z + prevCol.size.x); //return the position above the previous object based on the size and position
     }
@@ -108,7 +108,7 @@ public class Floor : MonoBehaviour
     {
         int rnd = Random.Range(0, tiles.Length);
 
-        GameObject tile = Instantiate(tiles[rnd], _offset, Quaternion.identity); //Create a random Tile
+        GameObject tile = Instantiate(tiles[rnd], _offset, tiles[rnd].transform.rotation); //Create a random Tile
         _addToList.Add(tile); //add that tile to a list
         tile.transform.SetParent(transform); //set that tile as a child of the gameobject
 

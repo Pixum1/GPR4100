@@ -32,8 +32,8 @@ public class GuardMovement : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         gBehaviour = GetComponent<GuardBehaviour>();
         agent = GetComponent<NavMeshAgent>();
-        gVision = GetComponentInChildren<GuardVision>();
-        gHearing = GetComponentInChildren<GuardHearing>();
+        gVision = GetComponent<GuardVision>();
+        gHearing = GetComponent<GuardHearing>();
         endur = GetComponent<Endurance>();
 
         InitializePatrolPoints();
@@ -86,7 +86,7 @@ public class GuardMovement : MonoBehaviour
     {
         //Guard is chasing
         if (gBehaviour.CurrentBehaviour != GuardBehaviour.EBehaviour.patrolling)
-            MoveTowardsLocation(desiredLocation);
+            MoveTowardsLocation(DesiredLocCalc());
 
         //Guard is patrolling
         if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.patrolling)
@@ -110,38 +110,47 @@ public class GuardMovement : MonoBehaviour
     }
 
     /// <summary>
+    /// Calculates the desired Agent Location based on the Guards behaviour
+    /// </summary>
+    private Vector3 DesiredLocCalc()
+    {
+        if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
+            return gVision.LastKnownPlayerPos;
+
+        else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.searching)
+            return gHearing.NoiseLocation;
+        else
+            return Vector3.zero;
+    }
+
+    /// <summary>
     /// Makes the guard move towards a position based on its behaviour
     /// </summary>
     /// <param name="_location">The position of the desired Location</param>
     private void MoveTowardsLocation(Vector3 _location)
     {
-        DesiredLocCalc();
-
         if (PathIsValid(_location))
         {
             agent.SetDestination(_location); //set ai destination to location
 
             if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
+            {
                 MoveToPlayerCalc(_location);
+                Debug.Log("Move To Player");
+            }
 
             else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.searching)
+            {
                 MoveToNoiseCalc(_location);
+                Debug.Log("Move To Noise");
+            }
         }
 
         else
+        {
             gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
-    }
-
-    /// <summary>
-    /// Calculates the desired Agent Location based on the Guards behaviour
-    /// </summary>
-    private void DesiredLocCalc()
-    {
-        if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
-            desiredLocation = gVision.LastKnownPlayerPos;
-
-        else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.searching)
-            desiredLocation = gHearing.NoiseLocation;
+            Debug.Log("Patrol");
+        }
     }
 
     /// <summary>
@@ -155,10 +164,16 @@ public class GuardMovement : MonoBehaviour
 
         //if guard can reach its destination
         if (agent.CalculatePath(_targetLocation, path) && path.status == NavMeshPathStatus.PathComplete)
+        {
+            Debug.Log("Valid");
             return true;
+        }
 
         else
+        {
+            Debug.Log("Not Valid");
             return false;
+        }
     }
 
     /// <summary>
@@ -167,23 +182,9 @@ public class GuardMovement : MonoBehaviour
     /// <param name="_location">The position of the desired Location</param>
     private void MoveToPlayerCalc(Vector3 _location)
     {
-        Endurance endur = GetComponent<Endurance>();
         //if guard is not in range to shoot player
         if (Vector3.Distance(transform.position, _location) >= maxDistanceToPlayer)
         {
-            //#region Sprint
-            //if (endur.AllowSprint)
-            //{
-            //    endur.Excercising = true;
-            //    agent.speed = sprintSpeed;
-            //}
-            //else
-            //{
-            //    endur.Excercising = false;
-            //    agent.speed = normalSpeed;
-            //}
-            //#endregion
-
             agent.isStopped = false; //start to move
         }
         else

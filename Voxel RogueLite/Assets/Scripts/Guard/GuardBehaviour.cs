@@ -37,10 +37,10 @@ public class GuardBehaviour : MonoBehaviour
     {
         if(player != null)
         {
+            Debug.Log("Called");
             alarmed = true;
-            currentBehaviour = EBehaviour.chasing;
-            PlayerController player = FindObjectOfType<PlayerController>();
             gVision.LastKnownPlayerPos = player.transform.position;
+            currentBehaviour = EBehaviour.chasing;
         }
     }
     public void SearchNoise()

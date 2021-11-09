@@ -15,6 +15,7 @@ public class CreateObjects : Editor
 
         #region Spawnpoints
         GUILayout.BeginHorizontal();
+
         if(!lockSpawnpoints)
         {
             if (GUILayout.Button("Add Spawnpoint"))
@@ -32,7 +33,7 @@ public class CreateObjects : Editor
         GUILayout.BeginHorizontal();
 
         if (GUILayout.Button("Generate Objects"))
-            obj.GenerateRandomObjects();
+            obj.GenerateAll();
 
         if (GUILayout.Button("Clear Objects"))
             obj.ClearObjects();
