@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1594877618393524841}
   - component: {fileID: 1594877618392427561}
   - component: {fileID: 1594877618396624489}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: env_grass1d
   m_TagString: Untagged
   m_Icon: {fileID: 0}

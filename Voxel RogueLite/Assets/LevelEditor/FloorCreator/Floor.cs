@@ -111,7 +111,6 @@ public class Floor : MonoBehaviour
         GameObject tile = Instantiate(tiles[rnd], _offset, tiles[rnd].transform.rotation); //Create a random Tile
         _addToList.Add(tile); //add that tile to a list
         tile.transform.SetParent(transform); //set that tile as a child of the gameobject
-
         return tile; //return tile
     }
 }

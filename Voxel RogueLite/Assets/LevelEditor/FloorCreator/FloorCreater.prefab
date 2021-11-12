@@ -43,6 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2097740ecb25c994f934ca7ab880da52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  concreteTiles: []
+  tiles: []
   horizontalRows: 2
   verticalRows: 2
+  layer:
+    serializedVersion: 2
+    m_Bits: 0

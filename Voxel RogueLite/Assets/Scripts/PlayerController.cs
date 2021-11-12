@@ -40,19 +40,35 @@ public class PlayerController : MonoBehaviour
     {
         #region Movement Direction
         currMoveDir = Vector3.zero;
-
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
-        if(x != 0)
+
+        #region Diagonal Movement
+        //if (x != 0)
+        //{
+        //    //if +, move to lower right || if -, move to upper left (- x - = +)
+        //    currMoveDir += new Vector3(x, 0, -x);
+        //}
+        //if (z != 0)
+        //{
+        //    //if +, move to upper right || if -, move to lower left
+        //    currMoveDir += new Vector3(z, 0, z);
+        //}
+        #endregion
+
+        #region Normal Movement
+        if (x != 0)
         {
             //if +, move to lower right || if -, move to upper left (- x - = +)
-            currMoveDir += new Vector3(x, 0, -x);
+            currMoveDir += new Vector3(x, 0, 0);
         }
         if (z != 0)
         {
             //if +, move to upper right || if -, move to lower left
-            currMoveDir += new Vector3(z, 0, z);
+            currMoveDir += new Vector3(0, 0, z);
         }
+        #endregion
+
         #endregion
 
         #region Sprint
@@ -74,33 +90,35 @@ public class PlayerController : MonoBehaviour
         }
 
         #region RotatePlayerSprites
-        if (Time.timeScale > 0)
-        {
-            if (currMoveDir == new Vector3(0, 0, -2)) //move lowerright
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -180, m_playerSprites.rotation.z));
+        //if (Time.timeScale > 0)
+        //{
+        //    if (currMoveDir == new Vector3(0, 0, -2)) //move lowerright
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -180, m_playerSprites.rotation.z));
 
-            if (currMoveDir == new Vector3(-1, 0, -1)) //move down
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -135, m_playerSprites.rotation.z));
+        //    if (currMoveDir == new Vector3(-1, 0, -1)) //move down
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -135, m_playerSprites.rotation.z));
 
-            if (currMoveDir == new Vector3(-2, 0, 0)) //move lowerlwft
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -90, m_playerSprites.rotation.z));
+        //    if (currMoveDir == new Vector3(-2, 0, 0)) //move lowerlwft
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -90, m_playerSprites.rotation.z));
 
-            if (currMoveDir == new Vector3(-1, 0, 1)) //move left
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -45, m_playerSprites.rotation.z));
+        //    if (currMoveDir == new Vector3(-1, 0, 1)) //move left
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, -45, m_playerSprites.rotation.z));
 
-            if (currMoveDir == new Vector3(0, 0, 2)) //move upperleft
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 0, m_playerSprites.rotation.z));
+        //    if (currMoveDir == new Vector3(0, 0, 2)) //move upperleft
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 0, m_playerSprites.rotation.z));
 
-            if (currMoveDir == new Vector3(1, 0, 1)) //move up
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 45, m_playerSprites.rotation.z));
+        //    if (currMoveDir == new Vector3(1, 0, 1)) //move up
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 45, m_playerSprites.rotation.z));
 
-            if (currMoveDir == new Vector3(2, 0, 0)) //move upperright
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 90, m_playerSprites.rotation.z));
+        //    if (currMoveDir == new Vector3(2, 0, 0)) //move upperright
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 90, m_playerSprites.rotation.z));
 
-            if (currMoveDir == new Vector3(1, 0, -1)) //move right
-                m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 135, m_playerSprites.rotation.z));
-        }
+        //    if (currMoveDir == new Vector3(1, 0, -1)) //move right
+        //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 135, m_playerSprites.rotation.z));
+        //}
         #endregion
+
+        LookAtMouse();
     }
     private void FixedUpdate()
     {
@@ -116,5 +134,22 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #endregion
+    }
+
+    private void LookAtMouse()
+    {
+        Vector3 worldPositon;
+
+        Plane plane = new Plane(Vector3.up, 0);
+        float distance;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if(plane.Raycast(ray, out distance))
+        {
+            worldPositon = ray.GetPoint(distance);
+
+            Vector3 dir = worldPositon - m_playerSprites.position;
+            float  angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, angle, 0));
+        }
     }
 }

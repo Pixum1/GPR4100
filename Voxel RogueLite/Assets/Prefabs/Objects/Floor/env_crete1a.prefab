@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5951577116286495194}
   - component: {fileID: 5951577116285430682}
   - component: {fileID: 5951577116289627610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: env_crete1a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
