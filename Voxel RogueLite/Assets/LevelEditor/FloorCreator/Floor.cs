@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.AI;
+using UnityEngine.AI;
 
 public class Floor : MonoBehaviour
 {
@@ -19,12 +19,14 @@ public class Floor : MonoBehaviour
     [SerializeField]
     private bool buildNavmesh;
 
+    [SerializeField]
+    private NavMeshSurface surface;
+
     private void Start()
     {
         if(buildNavmesh)
         {
-            NavMeshBuilder.ClearAllNavMeshes();
-            NavMeshBuilder.BuildNavMesh();
+            surface.BuildNavMesh();
         }
     }
 

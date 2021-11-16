@@ -105,7 +105,8 @@ public class Object : MonoBehaviour
                 {
                     int rndObj = Random.Range(0, objects.Length);
                     GameObject obj = Instantiate(objects[rndObj], _spawnPoint.transform.position, _spawnPoint.transform.rotation);
-                    obj.transform.SetParent(_spawnPoint.transform);
+                    if(!obj.CompareTag("Player"))
+                        obj.transform.SetParent(_spawnPoint.transform);
 
                     if (allowRotation)
                         obj.transform.localRotation = Quaternion.Euler(new Vector3(objects[rndObj].transform.eulerAngles.x, Random.Range(0f, 360f), objects[rndObj].transform.eulerAngles.z));
@@ -148,16 +149,20 @@ public class Object : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        BoxCollider colOfObj = objects[0].GetComponent<BoxCollider>();
-        Gizmos.color = Color.green;
-        for (int i = 0; i < spawnPoints.Count; i++)
+        if(objects[0].GetComponent<BoxCollider>() != null)
         {
-            if (spawnPoints[i] != null)
-                if (allowRotation)
-                    Gizmos.DrawWireSphere(spawnPoints[i].transform.position, (Mathf.Max(colOfObj.size.x, colOfObj.size.z) / 2) + 1);
-                else
-                    Gizmos.DrawWireCube(spawnPoints[i].transform.position + colOfObj.center, colOfObj.size);
+            BoxCollider colOfObj = objects[0].GetComponent<BoxCollider>();
+            Gizmos.color = Color.green;
+            for (int i = 0; i < spawnPoints.Count; i++)
+            {
+                if (spawnPoints[i] != null)
+                    if (allowRotation)
+                        Gizmos.DrawWireSphere(spawnPoints[i].transform.position, (Mathf.Max(colOfObj.size.x, colOfObj.size.z) / 2) + 1);
+                    else
+                        Gizmos.DrawWireCube(spawnPoints[i].transform.position + colOfObj.center, colOfObj.size);
 
+            }
         }
+            
     }
 }

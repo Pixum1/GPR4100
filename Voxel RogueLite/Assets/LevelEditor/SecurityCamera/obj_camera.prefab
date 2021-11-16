@@ -96,11 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4d55ef5eceef24aa092ab4a0129228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotLeft: 0
-  rotRight: 0
+  rotLeft: {x: 0, y: 0, z: 0}
+  rotRight: {x: 0, y: 0, z: 0}
   speed: 0.5
   CameraSmooth: 2.5
-  alarmTimer: 2
+  alarmTimer: 0.5
   visionRadius: 4
   radiusOrigin: {fileID: 3771451022546265720}
   mats:

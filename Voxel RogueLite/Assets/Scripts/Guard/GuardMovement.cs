@@ -31,7 +31,6 @@ public class GuardMovement : MonoBehaviour
     private void Awake()
     {
         gAttack = GetComponent<GuardAttack>();
-        player = FindObjectOfType<PlayerController>();
         gBehaviour = GetComponent<GuardBehaviour>();
         agent = GetComponent<NavMeshAgent>();
         gVision = GetComponent<GuardVision>();
@@ -42,6 +41,7 @@ public class GuardMovement : MonoBehaviour
     }
     private void Start()
     {
+        player = FindObjectOfType<PlayerController>();
         normalSpeed = agent.speed;
         sprintSpeed = normalSpeed * sprintModifier;
     }
@@ -164,11 +164,13 @@ public class GuardMovement : MonoBehaviour
         //if guard can reach its destination
         if (agent.CalculatePath(_targetLocation, path) && path.status == NavMeshPathStatus.PathComplete)
         {
+            Debug.Log("Is Valid");
             return true;
         }
 
         else
         {
+            Debug.Log("Is not valid");
             return false;
         }
     }
@@ -211,10 +213,8 @@ public class GuardMovement : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, _location) >= 1f)
                 agent.isStopped = false;
-            else
-                agent.isStopped = true;
 
-            if (Vector3.Distance(transform.position, _location) <= 1f)
+            if (Vector3.Distance(transform.position, _location) <= 1f && !gVision.SeesPlayer)
             {
                 gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
 

@@ -21,6 +21,9 @@ public class GuardVision : MonoBehaviour
     private void Awake()
     {
         gBehaviour = GetComponentInParent<GuardBehaviour>();
+    }
+    private void Start()
+    {
         player = FindObjectOfType<PlayerController>();
     }
     private void Update()

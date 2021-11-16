@@ -16,6 +16,9 @@ public class NoiseAlarm : MonoBehaviour
     private void Awake()
     {
         noiseObj = GetComponent<Noise>();
+    }
+    private void Start()
+    {
         player = FindObjectOfType<PlayerController>();
     }
     private void Update()

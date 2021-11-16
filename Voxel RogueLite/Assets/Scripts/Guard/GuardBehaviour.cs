@@ -24,13 +24,13 @@ public class GuardBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        player = FindObjectOfType<PlayerController>();
         gm = FindObjectOfType<GameManager>();
         gVision = GetComponentInChildren<GuardVision>();
     }
 
     private void Start()
     {
+        player = FindObjectOfType<PlayerController>();
         gm.AddGuard(this);
     }
     public void AlarmGuards()

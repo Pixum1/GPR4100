@@ -40,6 +40,9 @@ public class SecurityCamera : MonoBehaviour
     private void Awake()
     {
         gm = FindObjectOfType<GameManager>();
+    }
+    private void Start()
+    {
         player = FindObjectOfType<PlayerController>();
     }
     private void Update()

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2557336397344132065}
   - component: {fileID: 2557336397344132064}
+  - component: {fileID: 2855091318615523394}
   m_Layer: 0
   m_Name: FloorCreater
   m_TagString: Untagged
@@ -46,6 +47,34 @@ MonoBehaviour:
   tiles: []
   horizontalRows: 2
   verticalRows: 2
-  layer:
+  buildNavmesh: 1
+  surface: {fileID: 2855091318615523394}
+--- !u!114 &2855091318615523394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557336397344132071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48fad6a186652944b66ce5ecf9c1abc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1797
+  m_UseGeometry: 1
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.060000002
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 67bb3e8c2d9ea06479e8f5574edbc2f9, type: 2}

@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 5679985918858788920}
   - component: {fileID: 8144455267806073423}
   - component: {fileID: 7083170557051267878}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: EnduranceBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5730,6 +5730,10 @@ PrefabInstance:
     - target: {fileID: 2489001545533731232, guid: 145f40980fc24dd46ab9315346d28de5, type: 3}
       propertyPath: m_Name
       value: Healthbar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489001545533731232, guid: 145f40980fc24dd46ab9315346d28de5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2489001545533731235, guid: 145f40980fc24dd46ab9315346d28de5, type: 3}
       propertyPath: m_RootOrder

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -17,6 +18,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
     private List<AudioClip> alreadyPlayed = new List<AudioClip>();
+
+    public GameObject loadingScreen;
+    public Slider slider;
 
     private void Awake()
     {    
@@ -73,7 +77,8 @@ public class GameManager : MonoBehaviour
         if (lastLevels.Count >= numberOfScenes - 1)
         {
             Debug.Log("Load Main");
-            SceneManager.LoadScene(0); //load main menu
+            //SceneManager.LoadScene(0); //load main menu
+            StartCoroutine(LoadAsynchronously(0));
             Destroy(gameObject);
         }
         //if the chosen (randomLevel) index has already been loaded once
@@ -82,8 +87,26 @@ public class GameManager : MonoBehaviour
             return; //return function => choose another randomLevel
         }
         Debug.Log("Load Level");
-        SceneManager.LoadScene(randomLevel); //load the random scene
+        //SceneManager.LoadScene(randomLevel); //load the random scene
+        StartCoroutine(LoadAsynchronously(randomLevel));
         SwitchSoundtrack();
+    }
+
+    private IEnumerator LoadAsynchronously(int _index)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(_index);
+
+        loadingScreen.SetActive(true);
+
+        while (!operation.isDone) 
+        {
+            float progress = Mathf.Clamp01(operation.progress / .9f);
+            slider.value = progress;
+
+            yield return null;
+        }
+
+        loadingScreen.SetActive(false);
     }
 
     private void SwitchSoundtrack()
