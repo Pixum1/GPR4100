@@ -18,6 +18,9 @@ public class Endurance : MonoBehaviour
     private bool depleted;
 
     [SerializeField]
+    ParticleSystem particles;
+
+    [SerializeField]
     private float depletionMultiplier = 1;
 
     private void Start()
@@ -30,11 +33,13 @@ public class Endurance : MonoBehaviour
         {
             depleted = false;
             endurance -= Time.deltaTime * depletionMultiplier;
+            particles.Play();
         }
         else if (!depleted && !excercising && endurance <= maxEndurance)
         {
             depleted = false;
             endurance += Time.deltaTime;
+            particles.Stop();
         }
         if(endurance < 0)
         {
@@ -43,6 +48,7 @@ public class Endurance : MonoBehaviour
         if(depleted)
         {
             endurance += Time.deltaTime;
+            particles.Stop();
             allowSprint = false;
             if(endurance >= maxEndurance)
             {

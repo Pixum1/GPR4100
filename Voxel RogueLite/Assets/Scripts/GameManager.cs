@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public List<Collectible> Collectibles { get { return collectibles; } }
     public List<GuardBehaviour> Guards { get { return guards; } }
     private List<GuardBehaviour> guards;
+    [SerializeField]
+    private AudioClip[] soundtrack;
+    [SerializeField]
+    private AudioSource audioSource;
+    private List<AudioClip> alreadyPlayed = new List<AudioClip>();
 
     private void Awake()
     {    
@@ -23,19 +28,12 @@ public class GameManager : MonoBehaviour
         collectibles = new List<Collectible>();
         guards = new List<GuardBehaviour>();
     }
-    private void LateUpdate()
+    private void Start()
     {
-        ////if the current scene index is not equal to the main menu's index
-        //if(SceneManager.GetActiveScene().buildIndex != 0)
-        //{
-        //    //if no player was found
-        //    if (GameObject.FindGameObjectWithTag("Player") == null)
-        //    {
-        //        SceneManager.LoadScene(0); //load Main Menu
-        //        Destroy(gameObject); //destroy the game manager
-        //    }
-        //}
+        SwitchSoundtrack();
     }
+
+    #region Remove/Add Objects
     public void AddGuard(GuardBehaviour _guard)
     {
         guards.Add(_guard);
@@ -52,6 +50,7 @@ public class GameManager : MonoBehaviour
     {
         collectibles.Remove(_collectible);
     }
+    #endregion
 
     /// <summary>
     /// A new random scene from the build that hasn't been loaded before is taken and loaded
@@ -84,5 +83,30 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log("Load Level");
         SceneManager.LoadScene(randomLevel); //load the random scene
+        SwitchSoundtrack();
+    }
+
+    private void SwitchSoundtrack()
+    {
+        int rnd = Random.Range(0, soundtrack.Length);
+
+        if(alreadyPlayed.Contains(soundtrack[rnd]))
+            SwitchSoundtrack();
+
+        else
+        {
+            audioSource.clip = soundtrack[rnd];
+            audioSource.Play();
+            alreadyPlayed.Add(soundtrack[rnd]);
+            StartCoroutine(WaitForSong(soundtrack[rnd]));
+        }
+        if (alreadyPlayed.Count >= soundtrack.Length)
+            foreach (var s in alreadyPlayed)
+                alreadyPlayed.Remove(s);
+    }
+    private IEnumerator WaitForSong(AudioClip _audio)
+    {
+        yield return new WaitForSeconds(_audio.length);
+        SwitchSoundtrack();
     }
 }

@@ -32,12 +32,13 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         speedSave = m_moveSpeed;
-        maxSpeed = m_moveSpeed / 12.5f; //set the maximum speed of the player according to its initial speed
         endur = GetComponent<Endurance>();
 
     }
     private void Update()
     {
+        maxSpeed = m_moveSpeed / 12.5f; //set the maximum speed of the player according to its initial speed
+
         #region Movement Direction
         currMoveDir = Vector3.zero;
         float x = Input.GetAxisRaw("Horizontal");
@@ -84,11 +85,6 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
 
-        if(hp.CurrentHP <= 0)
-        {
-            uiManager.GameOverScreen();
-        }
-
         #region RotatePlayerSprites
         //if (Time.timeScale > 0)
         //{
@@ -117,8 +113,6 @@ public class PlayerController : MonoBehaviour
         //        m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, 135, m_playerSprites.rotation.z));
         //}
         #endregion
-
-        LookAtMouse();
     }
     private void FixedUpdate()
     {
@@ -135,21 +129,8 @@ public class PlayerController : MonoBehaviour
 
         #endregion
     }
-
-    private void LookAtMouse()
+    private void OnDestroy()
     {
-        Vector3 worldPositon;
-
-        Plane plane = new Plane(Vector3.up, 0);
-        float distance;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if(plane.Raycast(ray, out distance))
-        {
-            worldPositon = ray.GetPoint(distance);
-
-            Vector3 dir = worldPositon - m_playerSprites.position;
-            float  angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
-            m_playerSprites.rotation = Quaternion.Euler(new Vector3(0, angle, 0));
-        }
+        uiManager.GameOverScreen();
     }
 }

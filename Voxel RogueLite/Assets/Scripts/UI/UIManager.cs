@@ -33,6 +33,7 @@ public class UIManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        Destroy(FindObjectOfType<GameManager>().gameObject);
         SceneManager.LoadScene(0);
     }
     public void LoadNextLevel()

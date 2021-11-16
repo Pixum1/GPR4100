@@ -37,7 +37,6 @@ public class GuardBehaviour : MonoBehaviour
     {
         if(player != null)
         {
-            Debug.Log("Called");
             alarmed = true;
             gVision.LastKnownPlayerPos = player.transform.position;
             currentBehaviour = EBehaviour.chasing;

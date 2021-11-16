@@ -14,7 +14,7 @@ public class SecurityCamera : MonoBehaviour
     [SerializeField]
     private float CameraSmooth;
     [SerializeField]
-    private float alarmTimer = 2;
+    private float alarmTimer = .5f;
     private string dir = "left";
     private bool inLOS = false;
 

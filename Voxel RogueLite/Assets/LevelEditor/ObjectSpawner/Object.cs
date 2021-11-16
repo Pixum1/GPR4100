@@ -156,7 +156,7 @@ public class Object : MonoBehaviour
                 if (allowRotation)
                     Gizmos.DrawWireSphere(spawnPoints[i].transform.position, (Mathf.Max(colOfObj.size.x, colOfObj.size.z) / 2) + 1);
                 else
-                    Gizmos.DrawWireCube(spawnPoints[i].transform.position, colOfObj.size);
+                    Gizmos.DrawWireCube(spawnPoints[i].transform.position + colOfObj.center, colOfObj.size);
 
         }
     }

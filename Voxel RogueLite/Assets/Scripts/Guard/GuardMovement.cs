@@ -7,6 +7,7 @@ public class GuardMovement : MonoBehaviour
     private GuardBehaviour gBehaviour;
     private GuardVision gVision;
     private GuardHearing gHearing;
+    private GuardAttack gAttack;
     public NavMeshAgent Agent { get { return agent; } }
     public float MaxDistanceToPlayer { get { return maxDistanceToPlayer; } }
     private NavMeshAgent agent;
@@ -29,6 +30,7 @@ public class GuardMovement : MonoBehaviour
     private Vector3 desiredLocation;
     private void Awake()
     {
+        gAttack = GetComponent<GuardAttack>();
         player = FindObjectOfType<PlayerController>();
         gBehaviour = GetComponent<GuardBehaviour>();
         agent = GetComponent<NavMeshAgent>();
@@ -136,20 +138,17 @@ public class GuardMovement : MonoBehaviour
             if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.chasing)
             {
                 MoveToPlayerCalc(_location);
-                Debug.Log("Move To Player");
             }
 
             else if (gBehaviour.CurrentBehaviour == GuardBehaviour.EBehaviour.searching)
             {
                 MoveToNoiseCalc(_location);
-                Debug.Log("Move To Noise");
             }
         }
 
         else
         {
             gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
-            Debug.Log("Patrol");
         }
     }
 
@@ -165,13 +164,11 @@ public class GuardMovement : MonoBehaviour
         //if guard can reach its destination
         if (agent.CalculatePath(_targetLocation, path) && path.status == NavMeshPathStatus.PathComplete)
         {
-            Debug.Log("Valid");
             return true;
         }
 
         else
         {
-            Debug.Log("Not Valid");
             return false;
         }
     }
@@ -182,24 +179,42 @@ public class GuardMovement : MonoBehaviour
     /// <param name="_location">The position of the desired Location</param>
     private void MoveToPlayerCalc(Vector3 _location)
     {
-        //if guard is not in range to shoot player
-        if (Vector3.Distance(transform.position, _location) >= maxDistanceToPlayer)
+        if(gAttack.hasGun)
         {
-            agent.isStopped = false; //start to move
+            //if guard is not in range to shoot player
+            if (Vector3.Distance(transform.position, _location) >= maxDistanceToPlayer)
+            {
+                agent.isStopped = false; //start to move
+            }
+            else
+            {
+                if (gVision.SeesPlayer)
+                {
+                    endur.Excercising = false;
+                    agent.speed = normalSpeed;
+                    transform.LookAt(_location); //rotate to the player
+                    agent.isStopped = true; //stop movement
+                }
+                else
+                    agent.isStopped = false;
+
+                if (Vector3.Distance(transform.position, _location) <= 1)
+                {
+                    gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
+
+                    if (gBehaviour.Alarmed)
+                        GuardClearedAlarm(); //clear alarm for all guards
+                }
+            }
         }
         else
         {
-            if (gVision.SeesPlayer)
-            {
-                endur.Excercising = false;
-                agent.speed = normalSpeed;
-                transform.LookAt(_location); //rotate to the player
-                agent.isStopped = true; //stop movement
-            }
-            else
+            if (Vector3.Distance(transform.position, _location) >= 1f)
                 agent.isStopped = false;
+            else
+                agent.isStopped = true;
 
-            if (Vector3.Distance(transform.position, _location) <= 1)
+            if (Vector3.Distance(transform.position, _location) <= 1f)
             {
                 gBehaviour.CurrentBehaviour = GuardBehaviour.EBehaviour.patrolling;
 

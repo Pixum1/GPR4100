@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428416}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: obj_fence1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

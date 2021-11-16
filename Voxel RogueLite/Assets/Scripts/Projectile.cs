@@ -35,7 +35,7 @@ public class Projectile : MonoBehaviour
         //if anything else than the guards vision hitbox was hit
         if (!_other.gameObject.CompareTag("Ignore Projectile"))
         {
-            Destroy(gameObject); //destroy the projectile
+            DeactivateProjectile();
         }
     }
     public void Launch(Vector3 _impulse, float _lifeSpan, GameObject _whoShot)
@@ -48,4 +48,16 @@ public class Projectile : MonoBehaviour
     {
 
     }
+
+    private void DeactivateProjectile()
+    {
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
+        if (GetComponent<ParticleSystem>().time <= 0f)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
 }

@@ -22,7 +22,7 @@ public class Exit : MonoBehaviour
             //if player wants to exit && can exit level
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Destroy(_other.gameObject);
+                //Destroy(_other.gameObject);
                 uiManager.GameWonScreen();
             }
                 //m_Gm.LoadRandomLevel(); //activate next Level Load Function in GameManager

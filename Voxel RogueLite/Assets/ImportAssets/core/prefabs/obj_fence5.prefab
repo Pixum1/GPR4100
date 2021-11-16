@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471966}
-  m_Layer: 10
+  m_Layer: 2
   m_Name: obj_fence5
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.AI;
 
 public class Floor : MonoBehaviour
 {
@@ -14,6 +15,18 @@ public class Floor : MonoBehaviour
     private int horizontalRows;
     [SerializeField]
     private int verticalRows;
+
+    [SerializeField]
+    private bool buildNavmesh;
+
+    private void Start()
+    {
+        if(buildNavmesh)
+        {
+            NavMeshBuilder.ClearAllNavMeshes();
+            NavMeshBuilder.BuildNavMesh();
+        }
+    }
 
     /// <summary>
     /// Generates a Matrix of tiles based on the given values
