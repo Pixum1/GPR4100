@@ -23,12 +23,16 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.Escape) && !gameWonUI.activeInHierarchy && !gameOverUI.activeInHierarchy )
-        {
-            pauseUI.SetActive(true);
-            inGameUI.SetActive(false);
-            Time.timeScale = 0;
+        if (SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(0)) {
+            if (Input.GetKey(KeyCode.Escape) && !gameWonUI.activeInHierarchy && !gameOverUI.activeInHierarchy) {
+                pauseUI.SetActive(true);
+                inGameUI.SetActive(false);
+                Time.timeScale = 0;
+            }else if(!pauseUI.activeInHierarchy)
+                inGameUI.SetActive(true);
         }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
+            inGameUI.SetActive(false);
     }
 
     public void LoadMainMenu()
