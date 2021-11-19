@@ -189,7 +189,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.32
-  m_Speed: 5
+  m_Speed: 4
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 840
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistanceToPlayer: 2.5
-  sprintModifier: 1.5
+  sprintModifier: 2
   endur: {fileID: 306533670281078698}
   player: {fileID: 0}
 --- !u!114 &1456994585336111621
@@ -337,7 +337,7 @@ AudioSource:
   m_GameObject: {fileID: 1456994585336111742}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c9c50b54f5c2588438dd4bd5ec8b0a2b, type: 2}
   m_audioClip: {fileID: 8300000, guid: c3d0ad0eb497a5e49a50310d4dce8d0e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -5266,7 +5266,7 @@ AudioSource:
   m_GameObject: {fileID: 1456994585336111742}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c9c50b54f5c2588438dd4bd5ec8b0a2b, type: 2}
   m_audioClip: {fileID: 8300000, guid: 6912fd0ef1b6cc4498908ba6662da0d6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.05

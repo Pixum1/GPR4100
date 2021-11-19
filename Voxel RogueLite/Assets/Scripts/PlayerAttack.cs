@@ -21,6 +21,20 @@ public class PlayerAttack : MonoBehaviour
     private AudioSource punchSound;
     public bool hasGun;
 
+    private float rangeCooldown;
+    [SerializeField]
+    private float rangeAttacksPerSecond;
+    [SerializeField]
+    private Projectile projectilePrefab;
+    [SerializeField]
+    private float impulsePower;
+    [SerializeField]
+    private float lifeSpan;
+    [SerializeField]
+    private AudioSource launchSound;
+    [SerializeField]
+    private GameObject gunObj;
+
     private void Awake()
     {
         meleeCooldown = 1 / meleePerSecond;
@@ -45,6 +59,10 @@ public class PlayerAttack : MonoBehaviour
                 Shoot();
             }
         }
+        if (hasGun)
+            gunObj.SetActive(true);
+        else
+            gunObj.SetActive(false);
     }
 
     private void MeleeAttack()
@@ -72,17 +90,6 @@ public class PlayerAttack : MonoBehaviour
         yield return 0;
     }
 
-    private float rangeCooldown;
-    [SerializeField]
-    private float rangeAttacksPerSecond;
-    [SerializeField]
-    private Projectile projectilePrefab;
-    [SerializeField]
-    private float impulsePower;
-    [SerializeField]
-    private float lifeSpan;
-    [SerializeField]
-    private AudioSource launchSound;
     private void Shoot()
     {
         if(hasGun)

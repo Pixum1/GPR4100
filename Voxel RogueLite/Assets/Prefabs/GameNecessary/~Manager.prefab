@@ -130,6 +130,8 @@ MonoBehaviour:
   audioSource: {fileID: 3680593366551134375}
   loadingScreen: {fileID: 6875289898218791527}
   slider: {fileID: 4392203031143996887}
+  optionsScreen: {fileID: 0}
+  mixer: {fileID: 24300002, guid: c9c50b54f5c2588438dd4bd5ec8b0a2b, type: 2}
 --- !u!82 &3680593366551134375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -139,7 +141,7 @@ AudioSource:
   m_GameObject: {fileID: 3029509072718997498}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c9c50b54f5c2588438dd4bd5ec8b0a2b, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.1
@@ -609,6 +611,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3029509072718997496}
     m_Modifications:
+    - target: {fileID: 6894736151740698887, guid: 2bd1b9b0c66ab13419aae8785017601c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3029509072718997497}
     - target: {fileID: 6894736152975765729, guid: 2bd1b9b0c66ab13419aae8785017601c, type: 3}
       propertyPath: m_Name
       value: UI

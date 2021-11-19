@@ -164,13 +164,11 @@ public class GuardMovement : MonoBehaviour
         //if guard can reach its destination
         if (agent.CalculatePath(_targetLocation, path) && path.status == NavMeshPathStatus.PathComplete)
         {
-            Debug.Log("Is Valid");
             return true;
         }
 
         else
         {
-            Debug.Log("Is not valid");
             return false;
         }
     }

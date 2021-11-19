@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.022001667, g: 0.011603172, b: 0.019577667, a: 1}
+  m_IndirectSpecularColor: {r: 0.021924708, g: 0.011559215, b: 0.019478923, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8185,6 +8185,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 418052, guid: d67345be958ba499783b10702d5cda2d, type: 3}
   m_PrefabInstance: {fileID: 411188420}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &416673978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.606802
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04999733
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.626358
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3402693647776513030, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8765012320669957470, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
+      propertyPath: m_Name
+      value: pistol
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d04cf57cfc209041af9d050f4b8a8b5, type: 3}
 --- !u!1 &418904517
 GameObject:
   m_ObjectHideFlags: 0
@@ -13265,7 +13322,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &511847796
 PrefabInstance:
@@ -19738,7 +19795,7 @@ Transform:
   - {fileID: 606250993}
   - {fileID: 1961299375}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824629178
 GameObject:
@@ -35135,7 +35192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1331919065
 PrefabInstance:
@@ -49769,7 +49826,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2123446493
 GameObject:

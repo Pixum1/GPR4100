@@ -9,7 +9,8 @@ public class GuideUI : MonoBehaviour
     private Text text;
     [SerializeField]
     private Animator textAnim;
-    private bool triggered = false;
+
+    private bool triggered;
 
     private GameManager gm;
     private void Awake()
@@ -24,8 +25,7 @@ public class GuideUI : MonoBehaviour
 
     private void Update()
     {
-        if(gm.Collectibles.Count <= 0 && !triggered)
-        {
+        if (gm.Collectibles.Count <= 0 && !triggered) {
             ShowObjective("FIND AND ENTER EXIT!");
             triggered = true;
         }

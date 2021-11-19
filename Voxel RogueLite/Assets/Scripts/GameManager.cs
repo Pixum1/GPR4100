@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +22,12 @@ public class GameManager : MonoBehaviour
 
     public GameObject loadingScreen;
     public Slider slider;
+
+    [SerializeField]
+    private GameObject optionsScreen;
+
+    [SerializeField]
+    private AudioMixerGroup mixer;
 
     private void Awake()
     {    
@@ -131,5 +138,13 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(_audio.length);
         SwitchSoundtrack();
+    }
+
+    public void ChangeVolume(float _volume) {
+        mixer.audioMixer.SetFloat("Master Volume", Mathf.Log10(_volume) * 20f);
+    }
+
+    public void OptionsScreen(bool _bool) {
+        optionsScreen.SetActive(_bool);
     }
 }
