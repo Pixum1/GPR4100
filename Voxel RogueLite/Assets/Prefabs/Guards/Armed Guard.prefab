@@ -233,7 +233,7 @@ MonoBehaviour:
   m_projectileSpawn: {fileID: 1456994585812282654}
   m_impulsePower: 20
   m_lifeSpan: 3
-  m_attacksPerSecond: 2
+  m_attacksPerSecond: 1
   m_minShootRange: 0.5
   m_launchSound: {fileID: 1456994585336111627}
   hasGun: 1

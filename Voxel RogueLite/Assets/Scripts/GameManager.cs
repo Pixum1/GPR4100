@@ -76,14 +76,12 @@ public class GameManager : MonoBehaviour
             //if lastLevels list has not already added the current Scene index to it
             if (!lastLevels.Contains(SceneManager.GetActiveScene().buildIndex))
             {
-                Debug.Log("Level added");
                 lastLevels.Add(SceneManager.GetActiveScene().buildIndex); //it will be added
             }
         }
         //if every scene has been loaded once (except the main menu)
         if (lastLevels.Count >= numberOfScenes - 1)
         {
-            Debug.Log("Load Main");
             //SceneManager.LoadScene(0); //load main menu
             StartCoroutine(LoadAsynchronously(0));
             Destroy(gameObject);
@@ -93,7 +91,6 @@ public class GameManager : MonoBehaviour
         {
             return; //return function => choose another randomLevel
         }
-        Debug.Log("Load Level");
         //SceneManager.LoadScene(randomLevel); //load the random scene
         StartCoroutine(LoadAsynchronously(randomLevel));
         SwitchSoundtrack();

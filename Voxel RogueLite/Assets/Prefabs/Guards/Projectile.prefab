@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f7d846d58f2664a82bbfb1974224e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_damage: 50
+  m_damage: 20
 --- !u!114 &1036680099025488840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74cf0cb6a2649f4409b9c7976e310ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initPos: {x: 0, y: 0, z: 0}
 --- !u!199 &6718150840443548184
 ParticleSystemRenderer:
   serializedVersion: 6

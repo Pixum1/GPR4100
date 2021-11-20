@@ -21,6 +21,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private UIManager uiManager;
 
+    [SerializeField]
+    private GameObject idleAnim;
+    [SerializeField]
+    private GameObject walkAnim;
+
 
     private void Awake()
     {
@@ -32,7 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         speedSave = m_moveSpeed;
         endur = GetComponent<Endurance>();
-
+        uiManager.ResetScreens();
     }
     private void Update()
     {
@@ -43,18 +48,6 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
 
-        #region Diagonal Movement
-        //if (x != 0)
-        //{
-        //    //if +, move to lower right || if -, move to upper left (- x - = +)
-        //    currMoveDir += new Vector3(x, 0, -x);
-        //}
-        //if (z != 0)
-        //{
-        //    //if +, move to upper right || if -, move to lower left
-        //    currMoveDir += new Vector3(z, 0, z);
-        //}
-        #endregion
 
         #region Normal Movement
         if (x != 0)
@@ -66,6 +59,15 @@ public class PlayerController : MonoBehaviour
         {
             //if +, move to upper right || if -, move to lower left
             currMoveDir += new Vector3(0, 0, z);
+        }
+
+        if(x != 0 || z != 0) {
+            walkAnim.SetActive(true);
+            idleAnim.SetActive(false);
+        }
+        else if( x == 0 && z == 0) {
+            walkAnim.SetActive(false);
+            idleAnim.SetActive(true);
         }
         #endregion
 

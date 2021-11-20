@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ddc0d918399586446982cd777fb34f75
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: WalkCycle
+    second: {fileID: 7400000, guid: e26fd877df9024f4f8d0389505774ff2, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: aecd2106718f2444db3ca21345da2cef, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0
