@@ -7,6 +7,8 @@ public class Collectible : MonoBehaviour
     [SerializeField]
     private float m_Value;
     private GameManager m_Gm;
+    [SerializeField]
+    ParticleSystem particles;
 
     private void Awake()
     {
@@ -21,6 +23,8 @@ public class Collectible : MonoBehaviour
     {
         if(_other.CompareTag("Player"))
         {
+            particles.transform.parent = null;
+            particles.Play();
             Destroy(gameObject);
         }
     }

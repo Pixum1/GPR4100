@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private GameObject optionsScreen;
+    [SerializeField]
+    private GameObject tutorialScreen;
 
     [SerializeField]
     private AudioMixerGroup mixer;
@@ -143,5 +145,16 @@ public class GameManager : MonoBehaviour
 
     public void OptionsScreen(bool _bool) {
         optionsScreen.SetActive(_bool);
+    }
+    public void TutorialScreen(bool _bool) { 
+        tutorialScreen.SetActive(_bool);
+    }
+    public void LoadMainMenu() {
+        SceneManager.LoadScene(0);
+        Destroy(this.gameObject);
+    }
+
+    public void QuitGame() {
+        Application.Quit();
     }
 }
