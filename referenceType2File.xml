@@ -1,0 +1,3702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>842f43ac94b4b4f72ac0898650ddcc44</guid>
+    <fileName>Assets/Cleaner/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.AssetCollector</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>805140a4856714e288ea84985d3023df</guid>
+    <fileName>Assets/Cleaner/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>202c278a17939b24c8b79c0ee1f94d8f</guid>
+    <fileName>Assets/Cleaner/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ClassReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>0d05386265df34bac8d0b6df44aa494c</guid>
+    <fileName>Assets/Cleaner/Editor/CollectionData.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>CollectionData</string>
+      <string>TypeDate</string>
+      <string>IReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>74eec3bfba0594259ac2843353c082a3</guid>
+    <fileName>Assets/Cleaner/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2c4f01a79a77a45a9a84004cc2b78098</guid>
+    <fileName>Assets/Cleaner/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2015-12-09T19:51:26+01:00</timeStamp>
+    <typeFullName>
+      <string>AssetClean.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>cea3a39b71a6f48999d2f884b3b41239</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Editor/NavMeshPrefabInstanceEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0583997+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03bc8063c9e95401f9a8a38bc716750d</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/AgentLinkMover.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0893178+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9472e73a59274b9b8da79d72004bd8b</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/ClickToMove.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0903155+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c786c4b29e72040b881bf13065fb9788</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/DestroyOnTrigger.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0903155+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c56d911659e3c4b499e11b47a73a4dbb</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/DungeonManager.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0913123+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c56046daca8eb46f3af030c05f030e37</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/EnableIffSleeping.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0913123+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b6c30eb361e754b75ac25325c5d024bd</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/FreeCam.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0923107+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>115dfe7b0938447cbbf9507076f54049</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/LocalNavMeshBuilder.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0933065+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9d5a3e609186342b2a976cd32fd7d0f0</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/MeshTool.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0933065+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4abfa16db9d114ec0ae6e10e4a566cb4</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/NavMeshPrefabInstance.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0943042+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6e038bf700cfa444fb16c6ef963be9f9</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/NavMeshSourceTag.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0943042+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c59ac8154f1b24ea7a85cab0f39a4489</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/Oscillator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0943042+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0805752a20e62489680c7c8ba929bccc</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/RandomInstancing.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0962991+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd76b8ee2dbcf4be6998e917c65cd6ed</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/RandomWalk.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0972957+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c751607f01df8445c86b012985b8b152</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Examples/Scripts/SpawnPrefabOnKeyDown.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.0972957+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>070e7d68aa3a5f9449868e913388eca2</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshAssetManager.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1132536+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a410fd7a8fd33b74ca541d0b242df670</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1142506+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>012c56241b358ee4c8fe873c91d63cf8</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshLinkEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1152474+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a3a039ddb6834f24f9d8ca7a01008177</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshModifierEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.116246+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>80fa2f25d0e0d4a4ea01a8082c6f846e</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1172432+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>918f11f5c26b2bc45bd871530292f087</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1172432+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b259646a809a943438cf30bb2761c373</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshLink.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1192374+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>17027e19b266af14b9fa6b0049ba716c</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshModifier.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1192374+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8cb30e414661fed40a0c7c3ca51e1186</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshModifierVolume.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1192374+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a48fad6a186652944b66ce5ecf9c1abc</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1202353+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>47668db8e61a24945968fe397a39547f</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceAgentTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1272161+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d8b2cef7f62114c45a6c6de0b5feff2a</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceLinkTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1272161+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4b358af4a0c240848a170759cf19f1fb</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceModifierTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1282132+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0fcd8006bb26d66459af5d67055bc2ee</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceModifierVolumeTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1282132+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7ef1c10800a922643a2653590a7362e4</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/NavMeshSurfaceTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.12921+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>70af7f72be947cb46b07cf2d2330b6dc</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/Editor/NavMeshModifierVolumeInPrefabTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1232273+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dc704ac0b9ccf5a48a0832a83dd5b864</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/Editor/NavMeshSurfaceInPrefabTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1242237+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>70ce8de43328d484eab79dbd81f049d1</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/Editor/NavMeshSurfaceInPrefabVariantTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1252211+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ad54e4a7250faa6418264dcb553d15eb</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/Editor/PrefabSavingUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1252211+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>68fbd9d2e70a0b24e9d7c3dbfb928ea6</guid>
+    <fileName>Assets/Imported Plugins/NavMeshComponents-master/Assets/Tests/Editor/PrefabStageAutoSavingUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1262181+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>727dafd648a17b74c951a2f08187637e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/Menu.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1800739+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c73bab19bcf7dca42be82c82a38a4011</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/SerializedPropertyEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1840638+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0f8cc79b14e847b6a9f12c3ff2631661</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/Animation/AnimationValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1651139+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>13575306b7614de68d6a391a4e0617bc</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/EditorSettingsValidator/IUnitySettingsValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1661112+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4fb7fb2dae3f440986a9ffbea333b902</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/EditorSettingsValidator/Messages.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1661112+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>557eabb6ad494c2ea3b644fd0c7d6b1b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/EditorSettingsValidator/UnityColorSpaceSettingsValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1671088+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ce6737b0aab046408f7eff4c40d957f4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/EditorSettingsValidator/UnityEditorSettingsValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1671088+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>47aff4cc4cb74492a0ccd640868df48d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/EditorSettingsValidator/UnityEditorSettingsValidatorWindow.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1681059+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>60b1c040cdf4bad42a40c8467ae9923b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/Generator/DeserializerWriter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1691047+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1eff612a2dd70574db807fb58a21212b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/Generator/FormatWriter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1701014+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>550a0a585e47bf44781b5c447169cc33</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/Generator/Generator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1701014+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8875ecbd55657e148a7483e597058ab3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/Generator/SerializerWriter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1710985+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6431a3223ebec22419298a43183912e3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/IndexTargets.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1720967+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5540ebde94dc9924989c2c8066b736d7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/JsonSchemaParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1730938+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>901c2cd9dc849e94296e50965f438e0e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/JsonSchemaSource.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1730938+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e52b7d2274918294ebac38aba0c9fb1c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/JsonSchemaType.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.17409+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>79c912c0da0179f42889a1746c8d4741</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/StringExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1800739+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dd2ee0b1bf849a94bb504ba32e107418</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/ArrayJsonSchema.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1750875+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4aa7a0339438a054781dbdf96e97ae9e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/DictionaryJsonSchema.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.176086+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1479130f877f4d24f8ff772a56ad631e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/EnumJsonSchema.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1770825+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>754fd3156f24fc648bfe7cb766cf88f0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/ExtensionJsonSchema.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1770825+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5dd0100b5b0d18f45ad1485ee493b439</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/JsonSchemaBase.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1770825+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e345d604804282c4881ea5b2e580b237</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/JsonSchemaBaseExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1780796+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ae9dcedb49a42f9449672e00b34e8598</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/ObjectJsonSchema.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1780796+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e64153bf38e165643bb501c5967734d2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/PrimitiveJsonSchema.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1790766+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b5c3f6cf80367e542b1464a316fe868b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/StringJsonSchema.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1790766+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f169b3199e32ab24c82c6968e6113f14</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/JsonSchema/Schemas/TraverseContext.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1800739+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>da24ccbbed21eb94d902d42337df3699</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/MeshUtility/AssetsPath.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1810717+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>881b00db73f639c48a3f043a775fa61a</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/MeshUtility/BoneMeshEraserWizard.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1810717+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>86cbd6470ebef2f4c976410efaf45638</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/MeshUtility/MeshProcessDialog.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1820696+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c1bbe850b95e44740bbbb44064e17d25</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/MeshUtility/MeshUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1830665+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>01c8541cb3fd27f4882e3d32c37a45aa</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/MeshUtility/TextureSaver.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1840638+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>08fd3e6c59bc903468e139f9e46684b1</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/UniGLTFPreference.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2129867+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>292cdc4b7dd3b6d47a1215ad528f50c2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/ExportDialogBase.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1860583+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>77f1f7ea6f2c8ef4b8f284d9aa0187a4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/ExportDialogState.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1860583+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fd4010850f4b6bf4e8c3cc58a5af9fc9</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/GltfExportWindow.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1870556+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5af5e8f17a650a849bb2cde54c4cd8a5</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/InternalTPose.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1870556+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3cde586e47f32424a82a4af6c2ce031e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/M17N.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1880528+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6ba5723a5618eac438268641047d9549</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/MaterialValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1880528+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>15b6e58b6aafb284783d551ac475ca3f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/MeshExportValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1900488+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8ee89d1820e4d30468d2d69f7ddcf717</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/MeshExportValidatorEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1910453+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>35dc28badc82c5e4a8aa813ddd3369fe</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/SaveFileDialog.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1910453+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>639b5c2a1cd8f5345b7d8a799712e25f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ExportDialog/TabBar.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1910453+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>748babbafd77e0b478581a17cd015859</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Gizmo/BoneInfo.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.192042+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c6fcbb0dd0018cf4c81922681f91240c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Gizmo/BoneInfoDrawer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1930396+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b71ca936ec0015f418b769181c470025</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Gizmo/BoneSelector.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1930396+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e4de0be894fc8964591963c774aa9503</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/EnabledScope.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1990241+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cc45016b844e7624dae3aec10fb443ea</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/GlbScriptedImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1990241+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2a09b107e404d4442adbc351d044536f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/GlbScriptedImporterEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.1990241+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aecd2106718f2444db3ca21345da2cef</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/GltfScriptedImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2000223+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ae1df0d1926e49f489c74bdf6ca369b5</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/GltfScriptedImporterBase.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2000223+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>83c77bd3888dffa439b1feb6986b1b54</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/GltfScriptedImporterEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2010188+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>11ced9da7136c3546bb9c65e3e35bb34</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/RemapEditorAnimation.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2010188+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>43b33bc54de8f3a4b82690bf090ed661</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/RemapEditorBase.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2030132+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>85720aed7aabf5e4c86c9ea492f05f00</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/RemapEditorMaterial.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2030132+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a3af37d3219ffeb4a9bda4960fb20cbe</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/RemapScriptedImporterEditorBase.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2040104+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6f9b903cff6f27c4dbee54a9b8e8d1af</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/ScriptedImporterAxes.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2040104+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>556e0ca7f0824e44b9000d04e0e9914c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/TextureExtractor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2050077+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8e13aa2d6ae3bf843aaca5298bb4d26c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/ZipArchivedGltfScriptedImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2050077+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4d2f9772e8a290e47812172c7fa6f34d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/ScriptedImporter/ZipArchivedGltfScriptedImporterEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2050077+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e85f0c5204f5ac3429503462ef29cdae</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/ArraySerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.206005+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>52a81be56b0149144aa0836e59d9bc3b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/CollectionSerializationBase.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.207002+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c2f242dff8534b1409257c4e7fe8a21d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/DeserializerGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2079998+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>135bb9bd3d924ea4abe8fc6219355a6b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/EnumSerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2079998+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>827d441621713194c88a8c94b7b1c2f0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/ExtensionSerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2089979+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3c26deb26a3941642a30691d374199da</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/FieldSerializationInfo.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2089979+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>199c91bbade4ea043928e29946a28502</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/IValueSerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2099954+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2d23c57f5d8b3314fba9c1b9de18e5e6</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/ListSerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2099954+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>87a20b1fb7336e34bbc61c9d7476c6db</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/ObjectSerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2109917+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8ddae9fc19efaec43a6d3aacad1c8d56</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/PrimitiveSerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2109917+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a9c53a1e9bb8c9244927b7a7041e8e3a</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/SerializerGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2119889+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>760fc2dffd8f64544ab2c6a16fea7d79</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Serialization/StringKeyDictionarySerialization.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2119889+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c870883375b0c14ca5da057cccc84c7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Validation/HierarchyValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2129867+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>df9a3cf795d4b8e4aaf1d46b36e3cb8b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Validation/HumanoidValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2139836+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>27720b3b18437104b91e44c3f66166ee</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Validation/NameValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2139836+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c3545b8a3783c8940a8fa5effa140e7a</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Editor/UniGLTF/Validation/ValidationExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2139836+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a942ac1d32b5c604988565d1d5442237</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/Extensions/ArrayExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2179736+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c2b6bc13ed6e459e98834507edfede07</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/Extensions/ColorConversionExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.21897+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>870cb47398900534994d90eb1cecace8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/Extensions/glTFExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.21897+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d4a7532836c4d1d4d965dc867e51cbd7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/Extensions/NumericsExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2199673+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>54b33d3e5f599eb419fae2bbf00f1613</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/Extensions/StringExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2199673+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bbcda9130f35803408b216dbc6be05b7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/Extensions/UnityExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2209653+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3ada4f7077a352343aed57e71a58885d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/BindposeGizmo.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.221962+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>270bf7461f6f8d546ae540cb7d5fc6f3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/BoneMeshEraser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2229602+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b330ec419f98af14687c302638922ab0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/BoneNormalizer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2239594+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4181f0b5e9a271b45b3e995a38202780</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/MeshExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2239594+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e1c66a21d479b3e4a92eedd622d27f4f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/MeshIntegrationResult.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2249541+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>547dd57b50bf4820a570336659345084</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/MeshIntegrator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2249541+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a982d9d30c0145038245b0214dc2f2e4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/MeshIntegratorUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2259519+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5d049a3daed1255499aaec8b6d1a2afe</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/MeshUtility/StaticMeshIntegrator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2259519+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>423fb0cccbe420047ac28163cce68db4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/RuntimeGltfInstance.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3197003+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>34c865b003bc1f44abcdb95dc99979cf</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/UniGLTFException.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3197003+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>caf06572635c12c4cb85d6ee09ab8f5e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/UniGLTFVersion.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3206976+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>40d707af2901e3f4781e20d8326723e8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/UniGLTFVersion_partial.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3206976+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f857b8b7ca45b1746af90c7fb86b2398</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ArraySegmentByteBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2758181+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9238dc0c44df9484bbdca85d818c9b73</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glbTypes.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2808042+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>378358a997cd2e9418f180593fb04a6f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glEnum.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2808042+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>317adeaa75a118a4f857721c90946933</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTF.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2818016+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f571aa160b9de354c8f5fcc6a38e41f1</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFAnimation.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2827994+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1b759a27457c3cb49adea3fba807e447</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFAssets.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2837971+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>50888f361f18c3140a23e9bfdcf43557</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2837971+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a4ff02eb93400b142a5ff47d1067bd8b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFCamera.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2847943+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fd51f973e67cbb448bab93da7ea596a8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/GltfDeserializer.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2847943+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f6315a9155238724c9b221c155c73f68</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFMaterial.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2857912+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>20634c83ea30c99449cd85ef46368b13</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFMesh.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2857912+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>655775a9435baed4281c569519829362</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFNode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2867885+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0421d021918de864aab65cce94937b61</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/GltfSerializer.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2867885+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>592c03928131f494f99dca5ef46a8ba0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFSkin.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2867885+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5eabe858953de424787a21d633fedda0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/glTFTexture.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2877857+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2ce69a95857efe041a1e3dd9d2e6c98b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/IBytesBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2877857+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f87f7ed809642e0429061fd5f6c169f3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/IStorage.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2877857+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>648733606660ecc4d8b8b25e37c1194f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/JsonSchemaAttribute.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2887828+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>967f9ca5fbe35cc42b1b5a294958ab41</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/UnityEngineCompatibility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2887828+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d078ffd4a6179da48af7c4290beeb140</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ExtensionsAndExtras/gltfExtension.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2788098+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c8450226c96b1454483cab736a03a337</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ExtensionsAndExtras/gltf_mesh_extras_targetNames.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2788098+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c95b5ebe597e924fa2e7fcce3a65f76</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ExtensionsAndExtras/KHR_materials_unlit.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.279807+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>04b631e1572e84d47b88aebc3631865b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ExtensionsAndExtras/KHR_texture_transform.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.279807+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>751f36caf65fbcd4a91ae0d5419fdbd8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ExtensionsAndExtras/EmissiveMultiplier/Deserializer.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2768154+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>222764601817e1f459cb9ce3119ab0be</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ExtensionsAndExtras/EmissiveMultiplier/Format.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2778124+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2fc13fdbe30a3fa4381d8cb4aa8346c6</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Format/ExtensionsAndExtras/EmissiveMultiplier/Serializer.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2778124+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d095d4c4eb5e68f4bb10c21bb3604cdb</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/ArrayByteBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.291775+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>451e525839f17f84e8092265effaddcb</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/ArrayPin.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.291775+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ec65074bc74907c4580348aa0b159411</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Axes.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2927725+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7d396586954b6d34a84d9af8638e492e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Byte4.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2927725+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ecae7b7664269624ba8e03025a53819e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/BytesReader.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2937702+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8c397b99fe3e0db4fa7a25dc63fff6af</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/ExportingGltfData.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2937702+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ca59fdd271a96dd409ea98e128fbebca</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/FileSystemStorage.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.294767+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4a51e78bfa249be4c88e7612ed05eb6f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/glbImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.294767+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ae3083233546b58449904dca65e76005</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/GltfData.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.294767+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a82bf73539bdd2d4c81595b5108819ce</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/gltfExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2957645+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ffb6f28f0bcf447468389128f208019c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/GltfExportSettings.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2967626+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8d2d07b67753fb0489decee9926ab2da</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/ImporterContext.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2967626+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c4f44b8c475a43a469d9d57786857eaa</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/ImporterContextExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2967626+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e99bb16028e30ce4b972caecca5343b1</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/ImporterContextSpeedLog.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2977592+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8a9174a8f8ee45dc948d93c5e8af5714</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MigrationFlags.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3097277+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7cee53236ca4f234ab42ba8e92afd178</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MonoBehaviourComparator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3097277+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dcc3725a84dcf7f49960c89f1f68534c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/NodeImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3107247+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1881e2dc50569df478f166eb4d6ca8f1</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/SkinJoint.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.313717+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8ef774aa861dc6f46a94330c7169bf04</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/SpanLike.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3147137+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3386db594e76066409ddf28bad123839</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/UnityPath.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.317706+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8b75aca0e4a7415418cd1c3d018483b2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/UriByteBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.317706+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b1f199669bb47f747865a96bcd7bcbfb</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/UShort4.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3187032+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b5aadac20fc53d04abe0492399479ce5</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/ZipArchiveStorage.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3187032+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1af21722605d44f58deebfcfca642b32</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/AnimationIO/AnimationCurveData.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2897802+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>015ae41bf6cb4428b8257ead79772908</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/AnimationIO/AnimationExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2907778+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a6e858fe43dba6342902d72392b1bdce</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/AnimationIO/AnimationImporterUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2907778+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e27ef4fb768e49f591c2bb5eadd3b19b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/AnimationIO/AnimationKeyframeData.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.291775+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>06d7ddbd9b8b38544a74013a6992210b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/GltfMaterialDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2987569+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>96c0d7434bd69ba478e2d77e1b3e4bd2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/GltfPbrMaterialImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2987569+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f9748317ec6964a47b0a1c4150fe62e8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/GltfUnlitMaterialImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2997537+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c309fb8ee8534a54b291d408511c9331</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/IMaterialDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.2997537+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>afbe933c51a9404199ba1efe6d2f8c62</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/IMaterialExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.300751+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>89f71b1d593633c47bfd4cfef050ae0d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/MaterialExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.300751+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>95bb02953e0720c45a848856c1006ed4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/MaterialImporterParamExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.300751+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>87bf5e0c19fe0584084fcddfd5294ad3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/RenderPipelineTypes.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3017482+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a652f0fdb4236434a9a64aa35a3cb44f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/TextureTransform.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3017482+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>08a0ae763ee70ed45809fad80ffe8e78</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/URP/GltfPbrURPMaterialImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3027456+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4ae66bf5ee5e1cb44b7dc416727d3bc1</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MaterialIO/URP/GltfURPMaterialDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3027456+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>49e5f06c3492116409bc0c0745b5edf7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/BlendShapeExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3037432+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d962c03c08e3d3a4eb5c52f5b4e0c93f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/BlendShapeFilter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3037432+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>af458063bbd13e54887954ab50947fe2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/JointsAccessor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3047404+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>39e41ff133b545d43a1dfb6eb98cdf60</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/MeshExporter_DividedVertexBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3057376+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a07de839f30ac2348a5810c50c8b5b3d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/MeshExporter_SharedVertexBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3057376+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ecf20ba1c412b944fb37bf627ed986c8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/MeshExportInfo.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3067349+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d765a267f1a340d4a9349b032a05e922</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/MeshExportUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3067349+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d9658f6e46942b146ad7e752c6592401</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/MeshImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3077324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>555c9a71ae3b25343af6146908e19fc7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/MeshWithMaterials.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3077324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>595d12f21fcf6564c8ecc24ba73d15c1</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/TriangleUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3077324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>63e5d425c70cb5f4480e3ad09f323425</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/VertexColorState.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3087297+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8a3d76eeac7fd094dabdbcce8d22a9a0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/MeshIO/WeightsAccessor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3087297+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bc9d157827565c84f9ad41c907fd12e5</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Parser/AutoGltfFileParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3107247+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ba0fe1be89e041138d2937dc07e9fdca</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Parser/GlbBinaryParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3117219+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5ba8d14b45824a97a4e63c2ced2c4bb4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Parser/GlbFileParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3117219+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>880cb82ec6f8498fbae6a5579484e171</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Parser/GlbLowLevelParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3117219+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f8d3a8226f2d49b78529a62fa26aa386</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Parser/GltfFileWithResourceFilesParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3127194+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>78c9576bb53142eea2fef19b8ba16fa8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/Parser/ZipArchivedGltfFileParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.313717+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9a1c5210d71f47ab80a1549b77c9a8a3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/TextureIO/GltfPbrTextureImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3147137+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>205a551be16aede40baa76e1f36e42a2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/TextureIO/GltfTextureDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3157111+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>edc800243b783ea4392e1d916789c803</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/TextureIO/GltfTextureExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3157111+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9128dde9a44e1f43a808330ebfba145</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/TextureIO/GltfTextureImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3167083+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8e671772001d477b82c414ce708b7e7f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/TextureIO/ITextureDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3167083+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>62f23c5ca623a9f4083c25a63b2c82af</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/IO/TextureIO/TextureSamplerUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3167083+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>517a813d69d7a774f8277f39bfde8a76</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Util/CacheEnum.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3216951+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b145055d294286a4bb7247265967b735</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniGLTF/Validation/Validation.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3226933+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5de1b9c915ceb8d41b95bdc432680fc3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ByteBuffer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3236904+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c7697929e4510048a5238dd9d227b2e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ConcreteCast.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3236904+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d15ce8227d1aec64ab3fd82c4b271747</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ConcreteCast.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3246873+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d854b575d2e031f40b37a49e1bff8656</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Exceptions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3246873+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eb87cc122742d7544b818c171b15f746</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/FormatterExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.327679+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>865a0727ffe095a40abbb2b8d799e720</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/IFileSystemAccessor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3286762+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5fb858fc98e29c54d87df97ead98608e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/IFormatter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3286762+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>66a8eb0c7cffd8849999e6e19ff45b3a</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ValueNodeType.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3406443+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>12d3e22e2e62d4948a5aff4bc42208e9</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Extensions/ArraySegmentExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3256843+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aa32ad3ea4c1ec540a03225c0d520af9</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Extensions/ByteExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3256843+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d2fd687914fcde848ab36867817cb873</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Extensions/DateTimeOffsetExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3266817+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d8691eccccb3e214db8bc5b86179f428</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Extensions/EnumExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3266817+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c25e655e5dc993145a70d9ddde6a6034</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Extensions/ParserExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3266817+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2fb728ca27f90c947890313df5f94d4d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Extensions/TypeExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.327679+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d49a52418427394499c901cb23f13d30</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/IStore/BytesStore.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.329674+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>90602a3805f09cb46a2e25d5e9cb3cf4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/IStore/ByteUnion.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.329674+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>558419bba2d829e4884fca9c2046fc3c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/IStore/IStore.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.329674+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b87313b5306b62d4ea4f743055ae60f4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/IStore/StreamStore.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.330671+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>74639d64f5620dd45a1a8edc65f48aab</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/IStore/StringBuilderStore.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.330671+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>97356eb7e23aca64c84f836d6c298f43</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Json/JsonDiff.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3316687+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9968766fe6cce164a8c7e950200cbb11</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Json/JsonFormatter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3326659+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3ab6245869fe6f7448aa8f4e84286cdd</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Json/JsonParser.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3326659+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8b7033668ce791e40819d16e664efe18</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Json/JsonPointer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3336633+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>04a331b0f78f87e4d928172d735672d9</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Json/JsonString.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3336633+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0b59a66ed8e7b1c419d69f7ee07900c1</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Json/JsonValue.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3346604+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>26f90c47d985b3e4c8cf153607f9fb31</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ListTreeNode/ListTreeNode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3346604+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0633f1f90105acc41b82ef809fe4ebbd</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ListTreeNode/ListTreeNodeArrayExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3356576+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a612ae688d8bc844aa89f13109b665d3</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ListTreeNode/ListTreeNodeExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3366559+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>20e02dc7c390454448d4a3ce7aca4d17</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ListTreeNode/ListTreeNodeJsonPointerExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3366559+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b3b4670381937134c9ce96d058f2f730</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/ListTreeNode/ListTreeNodeObjectExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3376527+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d41f7c86ebb46934c8511b31de827279</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Utf8String/IUtf8String.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3386497+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a5c7531d2d3a77a4ba81e8ee43426726</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Utf8String/Utf8Iterator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3386497+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>93adff1e1b4725f498a92faccf7e240d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Utf8String/Utf8String.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.339647+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ba2dbf26152e2704d986754eb12f5af4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Utf8String/Utf8StringBuilder.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.339647+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f613907c8a91aa049809fe1f754776de</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Utf8String/Utf8StringExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3406443+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1627ff7e9bb16a8459021fda0223909c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Runtime/UniJSON/Utf8String/Utf8StringSplitterExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3406443+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cc38273c6ab8068408ffe4f2d2cec7bf</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Samples/ScreenSpace/ScaleOffset.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.34264+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>513b70f5eb05a53479b2b12a85139cbe</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/AssetTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3466286+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9051db9a028cfa64bacbae8644969dd0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/CacheEnumTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3476259+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>19082be49cd24881a2f53c13de83ac70</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/EditorTextureSerializerTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3476259+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>21904270c266400aa6fe5edf3915a31e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/GlbParserTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3486231+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c0454ecef7a44cf4280a6f0fcacf3666</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/GltfLoadTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3486231+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6dab77b78a3d45bf8c20e7dcc8046881</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/JsonDeserializeTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3496217+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e993fe746592bab4abe41c880b81555a</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/M17NTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3496217+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>37dbc1bc37728a44f8e33ad44e407c91</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/MaterialTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3496217+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c6f1c95a9487fb44fb4a366eda22bd02</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/MatrixTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3506184+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>125889535256e95488606b67463c18cb</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/MeshExportValidatorTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3506184+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>319f54b4f10c93a4d80670e424f4fe34</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/MeshTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3506184+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>36c14eec5ed000f4cbb5dddf4e4c1af4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/NumericTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3516153+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f70b7312ba0d32b4493231c6f8a42e4c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/SpanLikeTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3526132+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>544988eb7d07aca41b87d167dbc79c62</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/TextureEnumerateTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3526132+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>195a45a1caf480e41a7af798f30520f0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/TextureTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3536101+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>164dff9806a684447ae2c9d679ae730b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniGLTF/UniGLTFTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3536101+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>961cb5c87e54b5d4685e7447783259e7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/GenericCallUtilityTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3546072+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bda1e03d682e63749a6b114fd6cc0add</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/IWriteStreamTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3546072+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>61f513d7f9bea254690ee01fcb70e843</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/TreeTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.357599+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c8821be74ee9054d81e25151e023015</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/Utf8StringTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.357599+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bafda51ddeeb2b84b920b119176499b8</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/Json/JsonDiffTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3556043+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3defb263d8925164683447a978248b1d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/Json/JsonFormatterTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3556043+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4af58e17f98c9a141b9fef25dabbd9ce</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/Json/JsonParserTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3566017+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b08b704c97f3bc54c8469f9f1822432d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/Json/JsonSerializerTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3566017+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1b0dfab85f59470d8cba21b351fa766b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/Tests/UniJSON/Json/JsonValueTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.357599+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>06b3418a97f8c204da34a849fa86a7c0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Editor/BoneMappingEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3585962+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4283558adf39c194cb6c5d66d5a348de</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Editor/bvhAssetPostprocessor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3595937+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ee7ea50401b78f64a950f59564838270</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Editor/HumanoidEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3595937+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d51cc8ca343beb647bc6d8e23600dd66</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Editor/HumanPoseTransferEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3605916+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0d2c3401d1adf41488c19ec4d47386a0</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Editor/MuscleInspectorEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3605916+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>568764cb60017fc44ad4361d5a18b478</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Editor/Tests/BvhLoaderTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3620996+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>14d18bc5a296a894eb7154d3f5f0e18b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/PoseModifier/HandPose.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3650887+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>45d55d80a64783c41ace70d5d81db454</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/PoseModifier/HandRig.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3650887+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>973f36da309a48d4ea3c5526a51e957f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/PoseModifier/IPoseModifier.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3650887+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dfdcf658d2da05649974b59b849de74c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scenes/HumanBuilderTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3860324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7b994e1476323bf4fbe1ae28bea164f2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scenes/RuntimeBvhLoader.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3870297+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e13984a5449ddb843b03e21c3409df67</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/AnimationClipUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3890244+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>976e99d37c093ce4c9b249c81c2cbdd5</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/AvatarDescription.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3900236+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>677492d2843780e40aa2a6c7a6ae8fe6</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/BoneGizmoDrawer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3900236+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>44f5895a2095a2848ba2c9627a5c1ad9</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/BoneMapping.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3900236+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c1a88b26726f137419428078debd253f</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/BvhBone.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3910193+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>97a39af5b64ede64e86b92b5bf94a0e7</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/Humanoid.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.393014+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7b88d4c3436f9894ebc69f162d804cd4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/HumanoidLoader.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.393014+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4fdf4ef744a103a4ca01657c00d7fec2</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/HumanPoseClip.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.394011+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e5548e4785b76854cbbf3f6d9a8e9c1d</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/HumanPoseTransfer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.394011+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9c2e3ee9fe29a84cb902e54a90c5dec</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/IBone.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.394011+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>14aaa52c3da53004ea85dbb38e9e4698</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/MuscleDebug.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3980004+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d2cc8a27b7978e54d9226bc91e53a502</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/MuscleInspector.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3980004+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>883d8b6e07cbda24384ce65d613d128e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/Skeleton.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3989977+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4f0d2728cd7343f4ab2e7f7c2b961d5c</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/SkeletonEstimator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3989977+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>92bf6005e8d6db94b8b55c67caea9ddd</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/SkeletonMeshUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3989977+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>04d0b56405dbe18439be5a95598deb36</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/Extensions/EnumExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3920167+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2e7bf08c7b7056e4ea1f50b1e008cb7e</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/Format/Bvh.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.393014+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>45951aadbd5e6b34282cd17ee163f58b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/IO/BvhAnimationClip.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3950082+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>da8ccd6cbe1692448872063195e5c71b</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/IO/BvhImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3950082+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c6231d0aafc9554ca596f35e8f395c4</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/IO/BvhImporterContext.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3960066+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>30d4db9a01d6aee4db9a77d762e608f6</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/IO/Extensions/BvhExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3970037+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c4a2b80b74e499428637f36774bbdcf</guid>
+    <fileName>Assets/Imported Plugins/UniGLTF/UniHumanoid/Scripts/IO/Extensions/UnityExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.3970037+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c0cbbad79b820c540af31a5d62eab5c7</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/CIBuild.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4079737+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fccecb79adf40a948b2c218b4e7703b3</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/VRMDeserializerGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4219364+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3d2c627c6adaf4962bea0144a492bad2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/VRMExportUnityPackage.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4229338+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>557330772b8af474c9342f543cd61550</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/VRMMonoBehaviourComparator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4229338+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e5b8946e673f54a47bc28160002646b0</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/VrmPreference.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4239312+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ea35ccbf1dc9c654d9b27a2fc54b3f5a</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/VRMSerializerGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4239312+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1cde1e2369885f14181eb58009310c92</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/BlendShapeAvatarEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4029881+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6a31667cfcf461c47b3b384211e2d9ff</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/BlendShapeClipDrawer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4039851+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4b3d6730e24442c44baaa50a1e6f3a6d</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/BlendShapeClipEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4039851+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fcb56a7eb1db73c4cb9ea1689635b246</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/BlendShapeClipEditorHelper.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4049818+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7842ed7a65c676740aa02678316dd625</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/BlendShapeClipSelector.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4049818+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3eee31718196e8e41a491f9a4f650ac7</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/PreviewEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4059789+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b59705d1618086148b505c2c3d9f1992</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/PreviewFaceRenderer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4059789+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eaafa3ff7bf991642b922e6af7ecbbc0</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/SerializedBlendShapeClipEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4059789+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0f9ca53e9d292ce48a7e6449a03734a9</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/VRMBlendShapeProxyEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4069763+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>50a28b39ccee4874b85d99c095180e5a</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/BlendShape/VRMBlendShapeProxyValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4069763+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ddbc54a3a83438841a744bf50b34ebb9</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/FirstPerson/RendererFirstPersonFlagsDrawer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4079737+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e68be7adce7f09d4287af62a2bac63d7</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/FirstPerson/VRMFirstPersonEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4089712+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>48854dc6374b64d45a8a5e099bf5ced0</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/FirstPerson/VRMFirstPersonValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4089712+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b304ed2aeece5a54191a5a8b69d9d113</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/RecordDisposer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4099684+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>400503f201487874f93b0efdc892cbf3</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMAOTMenu.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4109657+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>561392fdfe88bf14e83b6e89a075cc52</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/vrmAssetPostprocessor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4109657+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8b409aa5d363b9948995cc00f7f1a0d0</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMAssetWriter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4119632+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d634cf68918e2f947b7ea0288d52a720</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMBlendShapeExportFilter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4119632+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cea266830a7f57843bb928d0ea37bcbc</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMEditorExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4129604+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>58b502cc8f926b74fadb536f3b033100</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMEditorImporterContext.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4129604+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bc233cbadb897eb4886de9927bee9fc2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMExporterVaildator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.413958+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a8e41aa30fcc76e43ad8588aef8572ea</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMExporterWizard.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.413958+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f1bcfcc2d4692ef41b0c8f0f9ec3df14</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMExportSettings.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4149549+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a4dedd0bd9be75140833b413c489c2fc</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMExportSettingsEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4149549+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b3e1aacd7b7e1fb468b3378de03e5629</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMHumanoidNormalizerMenu.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4149549+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>da5decfeae53a6444977caf85d09bc88</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMImporterMenu.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4159525+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>337d92050225b0a408e558e344a4e9a2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMSampleCopy.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4169504+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0c69abb555d67f647a7d3175e35e37d8</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Format/VRMVersionMenu.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4169504+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c4b1a599166c48488a860a0017c884a</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/LookAt/VRMLookAtHeadEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4179475+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ca21d8c33b34adc4db45afd930049fc1</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Meta/VRMMetaEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4179475+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c244f35fd2772004c9d51095f6326420</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/Meta/VRMMetaObjectEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.418945+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>648920943c26bde4b920119bdbb38f70</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/SkinnedMeshUtility/MeshIntegratorEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4199421+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>744f66c7013807b4cae1d38d2ecfff38</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/SkinnedMeshUtility/MeshIntegratorWizard.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4199421+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d66a91f4b51e42a6b165fe39fdb48d64</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/SkinnedMeshUtility/SkinnedMeshUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4199421+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1f8b723890cc43042b070277cb3b73ef</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/SpringBone/VRMSpringBoneColliderGroupEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4209394+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dc588ccd280c0e2429d1d3cc3db5d950</guid>
+    <fileName>Assets/Imported Plugins/VRM/Editor/SpringBone/VRMSpringBoneValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4219364+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>da515e03d4b6ec244839077b79aad26a</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/EnumUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4309128+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3edd6ae2fa8e64746b11daac1d1d9bad</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IVRMComponent.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4618296+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>329dca3bf78fcdd42b2df941673db76f</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/BlendShapeAvatar.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4259259+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ca4c8446451eeed46b1598db9e08bb73</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/BlendShapeBindingMerger.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4269229+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>37562b39ff933b245ac2f35d87edbcd6</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/BlendShapeClip.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4269229+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b93cb40fe6ff9ec4a8dcac1686f90ce8</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/BlendShapeClipHandler.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4279208+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>273b1f57f417db8408c13673d45890ff</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/BlendShapeKey.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4279208+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>08be778bf6b570847a9fb8dc57e29946</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/BlendShapeMerger.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4279208+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>69ea1f88e8d74e04e9341465573a4ef8</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/Blinker.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4289178+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4ccc88d77d5d1e74499d053083ade08d</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/MaterialValueBindingMerger.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4299158+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a8f34605a43f30459f50399149f5929</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/MeshPreviewItem.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4299158+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f478195c182f6d344b5d30b4318321a4</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/PreviewSceneManager.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4309128+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5b678c1df50cfb547990db24a32856da</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/BlendShape/VRMBlendShapeProxy.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4309128+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d5e9521d3f142254ab773f38bacd0905</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Extensions/EnumExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4319098+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5fbd5248b4a422e47be4510ca85c9ade</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Extensions/glTF_VRMExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4319098+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>158e5a48e96dfce4a92244763bc1d69d</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Extensions/VrmHumanoidExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4329073+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>cc94117758e24aca9cf44d3f930fdcb0</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittableCollider.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4339044+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9bceae7ad8eb4021912778484d1b2ebc</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittableColliderGroup.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4339044+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>61f56040664345a8aba5309e7714f8f2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittableColliderGroups.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4349016+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>07087baebec34286ac230d58cd0163d2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittableColliders.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4349016+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f3f0fc54e34944c892cec2b1e86de7d7</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittablePoint.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4358995+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0c39cdb389d141bbb084030dd8ebfe8b</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittablePoints.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4358995+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bc470487e0a546f087709dbab3c7a6f1</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittableRootBone.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4368967+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bffbbf422e984d028cd82c11f2ca00b1</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Blittables/BlittableTransform.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4368967+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c6ab135b4b945ee9d75c5476ea6bcc0</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Components/FastSpringBoneColliderGroup.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4378936+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2ea019701873487a8533c05f0daa1b37</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Components/FastSpringBoneScheduler.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4378936+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>24cdd60af2d54c908e84b17802bfb5bc</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Components/FastSpringRootBone.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4388909+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4cf2baba01384c31a1fdcca7489007f4</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/NativeWrappers/NativeColliderGroup.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4398886+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3944dc9ee4a94814bc1d333fd0b7ba82</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/NativeWrappers/NativeColliderGroups.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4408858+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>70f8b67ae2644eb999cfb45ea5bf25a3</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/NativeWrappers/NativePointer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4408858+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7a8763ad7e8243d3b4001a2beb37bf9d</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/NativeWrappers/NativePoints.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4418829+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2acc8862ffb44f4fbd4e1e03e9a9d46e</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/NativeWrappers/NativeTransform.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4428815+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>eec0fe3cd3694a379885fa62a9994bd5</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Registries/ColliderGroupRegistry.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4438785+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0d3b558d03dd42b184512fe19797ff07</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Registries/Registry.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4438785+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4609c8e2a4c64fb7b3bfa587f475e965</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Registries/RootBoneRegistry.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4448758+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>102dd7059fb34c00a7d1d6d4f2c38729</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Registries/TransformRegistry.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4448758+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6d3911eb7ee54861b51bccf4ed32aec2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Registries/TransformSynchronizationType.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4458722+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>83ca6a73284247c0a809eb9b83b6296b</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Schedulers/PullTransformJobScheduler.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4468701+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5a12fcea984d4387a5f3d0f5291df34e</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Schedulers/PushTransformJobScheduler.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4468701+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a6b730c674ce4484862ddee8459c8598</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FastSpringBone/Schedulers/UpdateSpringBoneJobScheduler.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4478673+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>dedba1309bdf12b42af2362f52eea134</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FirstPerson/VRMFirstPerson.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4478673+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6b34fb2c039c3ce4881f04e476a2128f</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/FirstPerson/VRMFirstPersonCameraManager.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4488642+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>73f7fb3db66d55b4684333583a685757</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/glTF_VRM_BlendShape.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4498616+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d58b001b3cfa63e41b4d2d6afa403f5d</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/glTF_VRM_extensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4498616+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>fe59508ed49a5db4287c74e0061799b3</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/glTF_VRM_FirstPerson.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4498616+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3f9f79a650473ec46b54bf693bd745d2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/glTF_VRM_Humanoid.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4508594+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>130dbb872890027439584d752fe160ef</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/glTF_VRM_Material.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4508594+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>06d4ab405dbbf9041b20a3b99f1cbe4f</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/glTF_VRM_Meta.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4518569+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5fb9119ad9fa65849ad2379d4da417bd</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/glTF_VRM_SecondaryAnimation.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4518569+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7d3f5617d4d8fd74494cab1e56d6b001</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/VRMDeserializer.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4528541+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c34ca281dd113124cbe3d277d0955291</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/VRMException.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4528541+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e6690cb3c5aaeaa4f862b396991bf4a5</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/VRMSerializer.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4538511+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3c5b8467d0154d6da78a74ecae5f85e7</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/VRMSpecVersion.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4538511+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>93c46c8b64555f14bada9f5bb0b7761a</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/VRMVersion.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4538511+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4ab9ac9856a4d4c4aa652c07c5b496e6</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Format/VRMVersionPartial.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4548484+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3869812175467a143ab9cd865752b4a9</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Humanoid/VRMHumanoidDescription.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4548484+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b0e742fcd2ddaec4e95346e8be56bacb</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMData.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4568443+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ca411333fc4a541409b0b826f232cf90</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMException.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4568443+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>73f9ea5f415aa1d449d6cd63aeaccb67</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4578408+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3299c9bf57c48cc46a0bcd96b1394f18</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMImporterContext.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4578408+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>95b5f265639808b408d8dd3bd6328e60</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMImporterContextExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4588379+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9dd63f87d0de96f4ca4ad4dcd8540584</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMMaterialDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4588379+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d2c64f4ed81bb144b90cca5260272ecf</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMMaterialExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4598358+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9278370bf609490fa83b1f7ccdf118c7</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMMToonMaterialImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4598358+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6c6ca158f51f41fab48b800cc6c406eb</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMMToonTextureImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4608324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f9d2e1522c584b49bbe9c2875eae3370</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VrmTextureDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4608324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>51208fe94c21c4b4abb16fd89a3aa7f2</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMUnlitTransparentZWriteMaterialImporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4608324+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e5aeab73a304ef644b0d20fac93bcfb9</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/IO/VRMURPMaterialDescriptorGenerator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4618296+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>baf8dab7dcbbb03429b01dfa7e2f65cd</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/CurveMapper.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4618296+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bcd30950d78a34d48a749efb962224e6</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/LookAtTargetSwitcher.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4628272+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d1cc319f70f55264eb38d1959c4222c6</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/LookTarget.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4628272+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ab9df13cea6667a4bbf488fc297bd014</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/Matrix4x4Extensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4638248+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e8e294185b0b06148a057dc3a21cc55f</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/OffsetOnTransform.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4638248+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>04a3e59a0190f1647892e3709c075845</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/VRMLookAt.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4648216+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>845471fb50db3cd4aa2f7a3fae3cc3a4</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/VRMLookAtBlendShapeApplyer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4648216+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a8b72334adf6f7948bd98b4f0a873949</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/VRMLookAtBoneApplyer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4648216+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e0a1a470564f16f4f94acb4b9ef56367</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/LookAt/VRMLookAtHead.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4658192+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>690ea0146224b8b4694a1925dddeb352</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Meta/VRMMeta.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4658192+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8ea874a3d9d53e54a86ff1724ede087f</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Meta/VRMMetaInformation.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4668162+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>63b589176a34b344b9ccbee2b7e7114a</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/Meta/VRMMetaObject.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4668162+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c0aa7232aa52244aa546dcabf17fadd</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SkinnedMeshUtility/VRMBoneNormalizer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.467814+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8eebeb093136b7f429c0e9e7295816b3</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SkinnedMeshUtility/VRMMeshIntegratorUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.468811+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0b96d696de06439e97ac33ed2d890c88</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SpringBone/FastSpringBoneDisposer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4698098+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>a344a05a3634bac419be8a218d8b85d6</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SpringBone/FastSpringBoneReplacer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4708064+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7c3edad580b54158b37169025a1e207d</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SpringBone/FastSpringBoneService.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4708064+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d5465187646dee944ac1bc45ddf0fc7a</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SpringBone/TransformExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4708064+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>00ea06e1753e16f4ca870c39c067c86b</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SpringBone/VRMSpringBone.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4718032+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>646b65a4a57afd34d8c4ed557efb46a5</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SpringBone/VRMSpringBoneColliderGroup.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4718032+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>42564d357aca11d4882ab504d7f99166</guid>
+    <fileName>Assets/Imported Plugins/VRM/Runtime/SpringBone/VRMSpringUtility.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4728003+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d4a5f44a23cb4884b9667b622f262497</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/EnumUtilTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4737979+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bd80effebd71ba445976e6285b714f1c</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/Exception.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4737979+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8511ed091b59bca4da4fd280693b7c82</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/InvalidFileNameTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4737979+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0fa06e6e83b995a49a1357924b9ef23e</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/MeshTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4747949+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5eca964fee499734f804454bf635e374</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/MToonTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4747949+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4014814a6ed5bf84faa36c7b99d6d4b8</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/NormalizeTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4757928+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>06e8ebf6af2b4e19a0c72ad986e88444</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/UniVRMSerializeTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4817763+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>40fe68d2a0dd7fa40bb4c5d05da70a21</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/VersionTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4827747+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ca2bf37b88b7c3a45adbeebb8a17559d</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/VRMBlendShapeKeyTest.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4837728+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5739a74d19763bb498ed1a035e25daf7</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/VrmDividedMeshTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4847694+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f4a4042cfb50bb84495fd90f548683ca</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/VRMLoadTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4847694+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e7b3adead70dd34489ba7921d5ccef1c</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/VRMLookAtTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4857659+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>983946c4f70cc494e87c8c8cf47d2589</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/VRMTestAssets.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4857659+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>72dc7f800d853bd4289ac73fe53e499f</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/VRMTextureEnumerateTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4857659+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>81c157c7c98f02742b7af724527af586</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/SampleTests/VRMImportExportTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4807789+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>642d2c084bb4b914f9c58fddbf3e13fe</guid>
+    <fileName>Assets/Imported Plugins/VRM/Tests/SampleTests/VRMMaterialTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4807789+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6efbb66c1ac168848beead1fe3b16263</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Editor/Texture/Exporter/EditorTextureSerializer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4887576+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>193b7c6393807a04f8aafabc23478f8e</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Editor/Texture/Importer/TextureImporterConfigurator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4887576+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5e97eeb2080e43e18ba57f1a3820a7e6</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/ColorSpace.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4967376+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>93ab2216c7e8c684d84873bd2ae72c6e</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/IResponsibilityForDestroyObjects.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4967376+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0c9d1b62a112b9045beb99b48000b71e</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/SubAssetKey.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4987308+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c82f7416fc3e8a44da2fe940bdb57281</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Animation/Importer/AnimationClipFactory.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4927471+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9cd79193a3dfa7148bb76882f4988071</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/AwaitCaller/IAwaitCaller.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4937446+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>30f43d5b7d6b4184fb775a315b835365</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/AwaitCaller/ImmediateCaller.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4937446+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3ce7defdc7144878a058274ae561d0be</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/AwaitCaller/NextFrameTaskScheduler.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4947419+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>e4e64b1835ca4cd2b682a6bda572b8fb</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/AwaitCaller/RuntimeOnlyAwaitCaller.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4947419+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9c52ff07a0834bdc8f4c8d6c7f9a634f</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/AwaitCaller/TinyManagedTaskScheduler.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.495739+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0844821341efaf644b91bff72f813a2c</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Material/Importer/MaterialDescriptor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4987308+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>49debef8f9942e8478c291dc7a41870c</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Material/Importer/MaterialFactory.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4987308+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3640a6aad209c3f4d9178b078af8362f</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Converter/NormalConverter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.4997287+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9de35f7c2673d5d48b84d494e71f25ff</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Converter/OcclusionMetallicRoughnessConverter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5007259+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>843bfd183520d064ea63b4716d26b7cc</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Converter/TextureConverter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5007259+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4e22c9906e3e42038724e1bcf46450bf</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Exporter/ITextureExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5017238+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>949143040e6a4a9d987d405d90107d7c</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Exporter/ITextureSerializer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5027205+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>57623966155c423ba30bf76d64a66760</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Exporter/RuntimeTextureSerializer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5027205+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>65fdfff6cc4b1e14a882259e903fc830</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Exporter/TextureExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5037179+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3698d17d1e624396a74390f338fda684</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Exporter/TextureExportParam.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5037179+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>bf56f43baf1e4b47becb7d0ba42a72dc</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Exporter/TextureExportTypes.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5047149+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>47b889c85e814e7eae6f5b7f760c7ef3</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/ITextureDeserializer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5047149+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>85fc44cc7e2cb4048866c1e3dfdcf6e0</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/SamplerParam.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5057123+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>405597f56d6540347bbecb1203aba033</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/TextureDescriptor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5057123+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7fb4c38b82f943b2b8fa4f1a7d71eedb</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/TextureDescriptorSet.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5067099+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4d6069f2bfbfc0c4c9276e8a5f8b0789</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/TextureFactory.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5067099+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0d005850c7abbb24582e9788657afd35</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/TextureImportName.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5077073+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b30953f01d374784e8e4de02d649cb06</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/TextureImportTypes.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5077073+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>170beedd62e24506acc42b7c04464e84</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Importer/UnityTextureDeserializer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5087046+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>48a12f7410d9670439e5aef512fe0a6c</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Texture/Util/TextureExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5097027+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7dd6ef3302d21eb4b83c4f8f2c1e47cf</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Util/KeyValuePariExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5106997+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>0b4d1043455aa2c489e9ad8250a80fc4</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Runtime/Util/UnityObjectDestroyer.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5106997+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3b001f23191141369d3482cfebfaae2f</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Tests/CopyTextureTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5136913+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>98670a2a3852f3f40a7f9cbd5791e506</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Tests/MetallicRoughnessConverterTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5136913+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2c9ac46bc2fc4d947bab6555f14d1d9f</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/IO/Tests/TextureBytesTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5136913+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4c70714358bb2fb4fa96ef08640763fd</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/UniUnlit/Editor/UniUnlitEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5156859+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>318c9e903f457f94589b2c5513d7d914</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/GLTF/UniUnlit/Runtime/UniUnlitUtil.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.517681+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>5eb12c186c6337e4db278b5f01d47cae</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Editor/ShaderPropMenu.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5206727+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>50935dd2f9f3fa445a687f30d4dd663b</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/PreShaderPropExporter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5266562+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>279964035c950b24cb745511298855dd</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/ShaderProps.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5266562+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>90dcef1978c51e74386b76d77689dc82</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/GLTF/PreExportShaders_GLTF.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5216697+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>54043e349b047bf4b8f127cd919a757d</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/GLTF/Standard.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5236649+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>ad4b6b115b83ecd48a513f697afc95f0</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/GLTF/UniGLTF_UniUnlit.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5236649+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4f91421c5846d5d48933d2ee4ffeeceb</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/GLTF/Unlit_Color.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5246621+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8273e1e61ad8e914baae94d06836f2ad</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/GLTF/Unlit_Texture.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5246621+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b98a8ee8ca13abb43809305cc4e5571a</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/GLTF/Unlit_Transparent.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5256591+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>844490f13976543478d82efe28251941</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/GLTF/Unlit_Transparent_Cutout.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5256591+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>625b5ee8b5811dc4a915a2fbb2cb319d</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/VRM/PreExportShaders_VRM.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5276535+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4629d794c8969c141a4724e182af082e</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/VRM/VRM_MToon.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5276535+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>611b546ea471ad34cb7d94740c63b558</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/VRM/VRM_UnlitCutout.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.528651+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>22a8083880389b3498f421e6a5c340d5</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/VRM/VRM_UnlitTexture.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.528651+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>140d6538826e0eb448929d3e4bb2f1cd</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/VRM/VRM_UnlitTransparent.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.528651+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>165ec79b7aac1564a850fb3d3d19396e</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/IO/Runtime/VRM/VRM_UnlitTransparentZWrite.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5296484+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>24156f9da0724eb5a159f36c69a7d90a</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Editor/EditorEnums.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5316437+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>531922bb16b74a00b81445116c49b09c</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Editor/EditorUtils.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5316437+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8b43baa9f62f04748bb167ad186f1b1a</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Editor/MToonInspector.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5326407+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9a3fb070d7eb4114b5cf387e2cd60391</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Scripts/Enums.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5406188+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>2849b99d94074fcf9e10c5ca3eab15a8</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Scripts/MToonDefinition.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5416166+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>9d2012c170a74b3db0002f7ecda53622</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Scripts/Utils.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5416166+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6724aa45c8c349fabd5954a531301aa8</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Scripts/UtilsGetter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5416166+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b24a672e82874c9fbfef9c2b2dfdab42</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Scripts/UtilsSetter.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5426141+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4702d4b2c1414cc08b4382c3762eebab</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM/MToon/MToon/Scripts/UtilsVersion.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5426141+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>7bbff45dd057a5a4d935d5ee9a64e40a</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/Format/Runtime/MaterialsMToon/Format.g.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5456056+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>af7abf08bb63495fae1f334377be0b23</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Editor/LabelScope.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5466027+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>22a9170004064d029bc205fc5b5a1acc</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Editor/MToon10EditorEditMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5466027+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>b8b6f1e6a8a133a4987361f178d9f548</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Editor/MToonInspector.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5466027+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1f07ab1da80c4891938ee36c6f2042a2</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/MToon10Context.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5565764+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>920db45663454ba8b8debaf2aeb7f5c9</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/MToon10Migrator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5565764+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>18b52251a22d40ccbfc16c4a89d09c51</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/MToonValidator.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5575736+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>173b50f65d2a44109cc67a84f18bde53</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/Extensions/MaterialExtensions.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5565764+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4915ab0041b841b6aa0cdfecae764008</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10AlphaMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5585711+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c3c422f6c0ac416bbcd70ee3203bca6a</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10DoubleSidedMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5585711+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>c9f4547527b3411aa87d8322ce9d9132</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10EmissiveMapKeyword.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5595683+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>78ea3fe03cac402083bd53882d186b95</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10NormalMapKeyword.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5595683+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>8aece52be2cb42de9bfde4a072e5a6a0</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10OutlineMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5605656+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>94313b3f0f4943d681f40e4cfbd5b600</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10OutlineModeKeyword.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5605656+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4cf6251408b74e228660a1a43f4de9c9</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10ParameterMapKeyword.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5605656+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>f22a9af9be334674ad2638be0af0c818</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10RimMapKeyword.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5615631+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d5df515a36d3460891b348872459476f</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/MToonDefinedValues/MToon10TransparentWithZWriteMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5615631+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4cb4057134654c769422a3618b76bccc</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/Properties/MToon10Meta.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5635588+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>aea6e3bb9944499e94c1026d60104432</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/Properties/MToon10Prop.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5635588+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>3c8828cd778c400f81b8a1c93b54ee50</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/Properties/MToon10Properties.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5635588+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>1e9a4286845a4c998a402e50da51ecc9</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/ShaderLabDefinedValues/UnityAlphaModeKeyword.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5655528+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>d254dee2e3b3407abcdc3f6f84b3cd59</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/ShaderLabDefinedValues/UnityAlphaToMaskMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5655528+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>03ac85ab52a547019ff7e377f1778225</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/ShaderLabDefinedValues/UnityCullMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5665499+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>df547717467444c29ff3dcec1e555e17</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/ShaderLabDefinedValues/UnityRenderTag.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5665499+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4c80d709af9c46f9b57290659de4c1c6</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Runtime/UnityShaderLab/ShaderLabDefinedValues/UnityZWriteMode.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5675469+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>6530bdc57fd7d354db37f84b93222964</guid>
+    <fileName>Assets/Imported Plugins/VRMShaders/VRM10/MToon10/Tests/MigrationTests.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5685443+01:00</timeStamp>
+    <typeFullName />
+  </TypeDate>
+  <TypeDate>
+    <guid>4f023806306bad14e8d1dfc1d201bcf1</guid>
+    <fileName>Assets/LevelEditor/CircleRenderer/DrawCircle.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5715362+01:00</timeStamp>
+    <typeFullName>
+      <string>DrawCircle</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f7c649c071b50d6409bdc77f02a306aa</guid>
+    <fileName>Assets/LevelEditor/CircleRenderer/Editor/CreateCircle.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5715362+01:00</timeStamp>
+    <typeFullName>
+      <string>CreateCircle</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2097740ecb25c994f934ca7ab880da52</guid>
+    <fileName>Assets/LevelEditor/FloorCreator/Floor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5735314+01:00</timeStamp>
+    <typeFullName>
+      <string>Floor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3bf67c384c6b63f48bb1e7b05dab8469</guid>
+    <fileName>Assets/LevelEditor/FloorCreator/Editor/CreateFloor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5735314+01:00</timeStamp>
+    <typeFullName>
+      <string>CreateFloor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d6161cef9cd9c124784f0ac5b60217bf</guid>
+    <fileName>Assets/LevelEditor/ObjectSpawner/Object.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5775209+01:00</timeStamp>
+    <typeFullName>
+      <string>Object</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d728f6c6ec5d5e04abd8ab1ffc73beb4</guid>
+    <fileName>Assets/LevelEditor/ObjectSpawner/Editor/CreateObjects.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5765247+01:00</timeStamp>
+    <typeFullName>
+      <string>CreateObjects</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5c4d55ef5eceef24aa092ab4a0129228</guid>
+    <fileName>Assets/LevelEditor/SecurityCamera/SecurityCamera.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.579515+01:00</timeStamp>
+    <typeFullName>
+      <string>SecurityCamera</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8d3bc31f477c58745a2d14fb6a8bf8f0</guid>
+    <fileName>Assets/LevelEditor/SecurityCamera/Editor/SecurityCamEditor.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.5785176+01:00</timeStamp>
+    <typeFullName>
+      <string>SecurityCamEditor</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ed4f95c4fc1b10d4c9fda084838a1d6f</guid>
+    <fileName>Assets/Scripts/AttentionMark.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.7720001+01:00</timeStamp>
+    <typeFullName>
+      <string>AttentionMark</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7c26fae56dc1adc4c9de905cfd545cef</guid>
+    <fileName>Assets/Scripts/BloodParticles.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.7789816+01:00</timeStamp>
+    <typeFullName>
+      <string>BloodParticles</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b4b9497b36e588349bdec951bab9451f</guid>
+    <fileName>Assets/Scripts/Coin.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.7789816+01:00</timeStamp>
+    <typeFullName>
+      <string>Coin</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>21542eac1ea64bd46975398c53c02f31</guid>
+    <fileName>Assets/Scripts/CoinsLeftText.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8039155+01:00</timeStamp>
+    <typeFullName>
+      <string>CoinsLeftText</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f1784b037e2a3ea4baa561f6d58133be</guid>
+    <fileName>Assets/Scripts/Collectible.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8039155+01:00</timeStamp>
+    <typeFullName>
+      <string>Collectible</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a402a55a57a613a4b9a6bfd96ba48c67</guid>
+    <fileName>Assets/Scripts/DeleteParticles.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8378241+01:00</timeStamp>
+    <typeFullName>
+      <string>DeleteParticles</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fc229fdf8bb829e42abe94cb17677cb1</guid>
+    <fileName>Assets/Scripts/Endurance.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8388217+01:00</timeStamp>
+    <typeFullName>
+      <string>Endurance</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>10eeb4139b1602f459d794a4661eb097</guid>
+    <fileName>Assets/Scripts/Exit.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8517868+01:00</timeStamp>
+    <typeFullName>
+      <string>Exit</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>debfd9ec8015b604387583890a666a1a</guid>
+    <fileName>Assets/Scripts/ExitSpawner.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8517868+01:00</timeStamp>
+    <typeFullName>
+      <string>ExitSpawner</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e70ca4651e5ff874ab3c61b94c6a1208</guid>
+    <fileName>Assets/Scripts/FindCamera.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8722392+01:00</timeStamp>
+    <typeFullName>
+      <string>FindCamera</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6ae02baf90ca173459930803e95c7e0c</guid>
+    <fileName>Assets/Scripts/GameManager.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8722392+01:00</timeStamp>
+    <typeFullName>
+      <string>GameManager</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c44c9b401e2728248a39c7049fc2fb9e</guid>
+    <fileName>Assets/Scripts/GuardAttack.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8812152+01:00</timeStamp>
+    <typeFullName>
+      <string>GuardAttack</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ddd2a91555b749042bafddc6c87ccfc2</guid>
+    <fileName>Assets/Scripts/GuardBehaviour.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8812152+01:00</timeStamp>
+    <typeFullName>
+      <string>GuardBehaviour</string>
+      <string>GuardBehaviour+EBehaviour</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6d19c1f902e2ae147a1886f97a24835b</guid>
+    <fileName>Assets/Scripts/GuardHearing.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.890191+01:00</timeStamp>
+    <typeFullName>
+      <string>GuardHearing</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a73eb4dcbcbe0bb47a00997c692aa377</guid>
+    <fileName>Assets/Scripts/GuardMovement.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8911887+01:00</timeStamp>
+    <typeFullName>
+      <string>GuardMovement</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c6daa79b51a845e4084a9803d7adc517</guid>
+    <fileName>Assets/Scripts/GuardVision.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8971731+01:00</timeStamp>
+    <typeFullName>
+      <string>GuardVision</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>06331df41cd219e44b0ab4dfde5193fd</guid>
+    <fileName>Assets/Scripts/GuideUI.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.8971731+01:00</timeStamp>
+    <typeFullName>
+      <string>GuideUI</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e5bfe3e39c1de7444b40f8329863e703</guid>
+    <fileName>Assets/Scripts/HPData.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9031571+01:00</timeStamp>
+    <typeFullName>
+      <string>HPData</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7db2904f3b943094e8887a5d3cb4b66f</guid>
+    <fileName>Assets/Scripts/LaserGate.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9031571+01:00</timeStamp>
+    <typeFullName>
+      <string>LaserGate</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5df5c685945c1aa4c9f58baeee3e1d2a</guid>
+    <fileName>Assets/Scripts/LookAtMouse.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9051511+01:00</timeStamp>
+    <typeFullName>
+      <string>LookAtMouse</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>74cf0cb6a2649f4409b9c7976e310ca5</guid>
+    <fileName>Assets/Scripts/Noise.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9061485+01:00</timeStamp>
+    <typeFullName>
+      <string>Noise</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2b7f50ad199fad342b1b39555fd1fd99</guid>
+    <fileName>Assets/Scripts/NoiseAlarm.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9081437+01:00</timeStamp>
+    <typeFullName>
+      <string>NoiseAlarm</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>086d15515799f5341a7537c34aef1ef2</guid>
+    <fileName>Assets/Scripts/PistolItem.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9081437+01:00</timeStamp>
+    <typeFullName>
+      <string>PistolItem</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7d31df4206335d343acf967363582958</guid>
+    <fileName>Assets/Scripts/PlayerAttack.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9101384+01:00</timeStamp>
+    <typeFullName>
+      <string>PlayerAttack</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>41fd413eea65bea41bc1cb37387b66c1</guid>
+    <fileName>Assets/Scripts/PlayerController.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9101384+01:00</timeStamp>
+    <typeFullName>
+      <string>PlayerController</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a9f7d846d58f2664a82bbfb1974224e4</guid>
+    <fileName>Assets/Scripts/Projectile.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9111355+01:00</timeStamp>
+    <typeFullName>
+      <string>Projectile</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>03502a424a4201746bef0d1b27555d2e</guid>
+    <fileName>Assets/Scripts/Tutorial.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9111355+01:00</timeStamp>
+    <typeFullName>
+      <string>Tutorial</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>40831ec9c7c275e4db2cfb944e5857fc</guid>
+    <fileName>Assets/Scripts/UIManager.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9121327+01:00</timeStamp>
+    <typeFullName>
+      <string>UIManager</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>198e22386190e1048b61baeaba32e488</guid>
+    <fileName>Assets/Scripts/UpdateEnduranceBar.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.9121327+01:00</timeStamp>
+    <typeFullName>
+      <string>UpdateEnduranceBar</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ba3638f4b775a364f833021a4f8bc92f</guid>
+    <fileName>Assets/Scripts/UpdateHealthbar.cs</fileName>
+    <timeStamp>2021-11-27T13:04:31.91313+01:00</timeStamp>
+    <typeFullName>
+      <string>UpdateHealthbar</string>
+    </typeFullName>
+    <assemblly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assemblly>
+  </TypeDate>
+</ArrayOfTypeDate>
